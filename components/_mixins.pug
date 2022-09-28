@@ -1,0 +1,7 @@
+mixin socialLink(link,icon,title)
+    a(href=link rel="noreferrer" target="_blank" class="hover:scale-110 hover:text-red-400 ease-in-out duration-500" title=title)
+        span.fa-brands(class=icon)
+        
+mixin navLink(link,name,title)
+    a(href=link rel="noreferrer" target="_blank" class=" hover:underline decoration-red-400 decoration-2 underline-offset-4" title=title)=name
+    

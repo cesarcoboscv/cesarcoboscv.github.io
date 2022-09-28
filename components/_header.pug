@@ -1,0 +1,17 @@
+.navbar#navbar(class="w-full h-16 bg-white text-black"
+        class="flex items-center justify-center ease-in-out duration-1000")
+    .mobileBar#mobileBar(class=" w-10/12 justify-center md:justify-start ")
+        .span.fa-solid.fa-bars(class="text-3xl")
+    .menuBar#menuBar(class=" w-10/12 max-w-screen-lg")
+        .menuItems(class="flex justify-end w-full")
+            .ul(class="flex justify-center w-5/12 space-x-6")
+                .li 
+                    +navLink("#","Home","Ir al Inicio")
+                .li 
+                    +navLink("#","Portafolio","Portafolio")
+                .li
+                    +navLink("#","Proyectos","Proyectos")
+                .li 
+                    +navLink("#","Blog","Blog")
+
+    
