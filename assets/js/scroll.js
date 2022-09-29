@@ -3,12 +3,12 @@ navBar = document.getElementById("navbar");
 window.onscroll = function () {
     if (document.documentElement.scrollTop >= 80) {
         navBar.classList.add("bg-neutral-900");
-        navBar.classList.remove("bg-white")
+        navBar.classList.remove("bg-transparent")
         navBar.classList.remove("text-black")
         navBar.classList.add("text-white")
     } else {
         navBar.classList.remove("bg-neutral-900");
-        navBar.classList.add("bg-white")
+        navBar.classList.add("bg-transparent")
         navBar.classList.add("text-black")
         navBar.classList.remove("text-white")
     }

@@ -16,14 +16,17 @@ html(lang="en" class="scroll-smooth font-karla font-thin")
         //-Script
         
         title César Cobos 
-    body 
-        header 
+    body
+        header#header(class="w-full fixed bottom-0 z-20")
             include ./components/_header.pug
-            
-        
+
         main 
+            include ./components/_aboutSection.pug
             include ./components/_myToolssection.pug
-        footer 
+            include ./components/_blogEntriesSection.pug
+
+        footer
             include ./components/_footer.pug
+
         script(src="./assets/js/scroll.js")
         script(src="./assets/js/device.js")
