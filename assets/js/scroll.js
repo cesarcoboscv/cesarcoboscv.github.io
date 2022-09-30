@@ -13,21 +13,3 @@ window.onscroll = function () {
         navBar.classList.remove("text-white")
     }
 }
-
-
-
-// var icons = document.getElementsByClassName('toolIcon');
-
-// for (var i = 0; i < icons.length; i++) {
-//     icons[i].onmouseover = function() {
-//         console.log('hovered');
-//     };
-// }
-
-
-// for (var i = 0; i < icons.length; i++) {
-//     icons[i].onmouseout = function() {
-//         console.log('out');
-//     };
-// }
-

@@ -7,16 +7,16 @@ mixin navLink(link,name,title)
 
 mixin toolIcon(link,alt,name)
     div.toolIcon(class="w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center")
-        img(width=40 height=40 src=link alt=alt class="drop-shadow-2xl")
-        span.toolName(class="text-transparent")=name
+        img(width=40 height=40 src=link alt=alt)
+        p.toolName(class="text-xs mt-1")=name
 
-mixin blogCard()
-    div.card(class="w-72 h-auto rounded-3xl p-3 hover:bg-slate-100 ease-in-out duration-200 hover:scale-110")
+mixin blogCard(title,date,description,image,altimage)
+    div.card(class="w-72 h-auto rounded-3xl p-3 hover:bg-slate-100 ease-in-out duration-200 hover:scale-110 hover:shadow-xl")
         .image
-            img(class="rounded-2xl" src="https://drive.google.com/uc?export=view&id=1BnBaV6yL9Xg57EGvAK9Py-XcshaNr0-i", alt="", srcset="")
+            img(class="rounded-2xl" src=image, alt=altimage, srcset="")
         .content
-            p(class="font-bold mt-4") Titulo 
-            p(class="text-sm text-red-400 mb-4") 29 de septiembre de 2022
-            p(class="mb-4") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed malesuada mauris. Donec luctus porta leo lobortis finibus.
+            p(class="font-bold mt-4")=title
+            p(class="text-sm text-red-400 mb-4")=date
+            p(class="mb-4")=description
         .div(class="flex justify-end")
             button(type="button" class="text-white bg-neutral-900 hover:bg-rose-600 focus:ring-4 focus:ring-red-200  rounded-lg text-sm px-8 py-1 mr-2 mb-2 focus:outline-none") Leer

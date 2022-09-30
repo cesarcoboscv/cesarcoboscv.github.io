@@ -9,6 +9,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;600;700;800&amp;display=swap" rel="stylesheet">
+    <style>
+      .toolIcon {
+          color:transparent;
+      }
+      .toolIcon:hover {
+          color:black;
+      }
+      .carousel:hover .controls {
+          opacity: 1;
+      }
+      .controls{
+          justify-content: space-between;
+      }
+      .slides {
+          transform: translateY(-50%);
+          transition: 1s ease-in-out all;
+      }
+      .slide {
+          min-width: 100%;     
+          height: auto;
+      }
+      
+    </style>
     <title>César Cobos </title>
   </head>
   <body>
@@ -34,14 +57,14 @@
       </nav>
     </header>
     <main>
-      <section class="hero w-full h-screen flex flex-col justify-start md:justify-center items-center bg-center bg-no-repeat" style="background-image: url('https://drive.google.com/uc?export=view&amp;id=1poymSzho6gRecCrhYmYIt05esWIf6wxN')">
+      <section class="hero w-full h-screen flex justify-center items-center bg-center bg-no-repeat" style="background-image: url('https://drive.google.com/uc?export=view&amp;id=1poymSzho6gRecCrhYmYIt05esWIf6wxN')">
         <div class="w-8/12 md:6/12 h-auto mt-32">
           <p class="w-28 text-2xl font-light bg-[rgba(252,252,252,0.3)]">Hello!! I'm </p>
-          <p class="w-full md:w-80 text-4xl md:text-5xl font-bold uppercase text-rose-600 mt-4 mb-2 bg-[rgba(252,252,252,0.3)]">César Cobos</p>
-          <p class="w-full md:w-8/12 text-xl font-light uppercase bg-[rgba(252,252,252,0.3)]">civil engineer | project manager | frontend | python</p>
+          <p class="w-full md:max-w-[350px] text-4xl md:text-5xl font-bold uppercase text-rose-600 mt-4 mb-2 bg-[rgba(252,252,252,0.3)]">César Cobos</p>
+          <p class="w-full md:max-w-[550px] text-xl font-light uppercase bg-[rgba(252,252,252,0.3)]">civil engineer | project manager | frontend | python</p>
         </div>
       </section>
-      <section class="flex justify-center items-center w-full h-auto bg-slate-200">
+      <section class="flex justify-center items-center w-full h-[450px] bg-slate-200">
         <div class="flex flex-col justify-center items-center max-w-5xl min-h-96 py-12">
           <p class="mb-8 text-3xl font-bold">Lorem</p>
           <div class="description mb-8 px-8 text-justify"> 
@@ -50,82 +73,111 @@
           <button class=" mb-8 text-white text-lg bg-rose-600 ease-in-out duration-200 hover:bg-neutral-900 focus:ring-4 focus:ring-rose-200  rounded-lg text-sm px-12 py-2 mr-2 mb-2 " type="button">CV</button>
         </div>
       </section>
-      <section class="project w-full h-96 flex flex-col justify-center items-center">
-        <p class="text-3xl font-bold">Proyectos </p>
-        <div class="w-8/12 h-64 bg-blue-200"></div>
+      <section class="project w-full  flex flex-col justify-center items-center pt-16 pb-20">
+        <p class="text-3xl font-bold mb-12">Proyectos </p>
+        <div class="carousel h-[600px] w-full lg:w-10/12 xl:w-8/12 overflow-hidden lg:rounded-3xl relative shadow-xl">
+          <div class="slides absolute top-1/2 left-0 flex w-full h-full">
+            <div class="slide image bg-center bg-no-repeat bg-cover" style="background-image: url('https://drive.google.com/uc?export=view&amp;id=1poymSzho6gRecCrhYmYIt05esWIf6wxN'"></div><img class="slide h-1/2 md:h-[600px]" src="https://picsum.photos/1280/720?random=1" alt="slide image"><img class="slide h-1/2 md:h-[600px]" src="https://picsum.photos/1280/720?random=2" alt="slide image"><img class="slide h-1/2 md:h-[600px]" src="https://picsum.photos/1280/720?random=3" alt="slide image">
+          </div>
+          <div class="controls opacity-0 flex absolute top-[calc(50%-20px)] left-0 right-0 w-[98%] z-20 ease-in-out duration-500">
+            <div class="control prev-slide my-1 mx-4 flex items-center justify-center w-10 h-10 rounded-full hover:opacity-100 opacity-50 ease-in-out duration-500 cursor-pointer bg-[rgba(255,255,255,0.7)]">&#9668;</div>
+            <div class="control next-slide my-1 mx-2 flex items-center justify-center w-10 h-10 rounded-full hover:opacity-100 opacity-50 ease-in-out duration-500 cursor-pointer bg-[rgba(255,255,255,0.7)]">&#9658;</div>
+          </div>
+        </div>
+        <script src="./assets/js/slides.js"> </script>
       </section>
       <section class="mytools flex h-auto justify-center items-center flex-col bg-slate-300 pb-12">
-        <div class="flex justify-center items-center w-full h-16 mt-4">
+        <div class="flex justify-center items-center w-full h-16 mt-4 mb-6">
           <p class="text-3xl font-bold text-white">Mis herramientas</p>
         </div>
         <div class="h-auto place-items-center grid grid-flow-row gap-6 grid-cols-3 md:grid-cols-6 lg:grid-cols-10">
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img class="drop-shadow-2xl" width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1qj7Go9vFA_WYrs3Py2iaTtCUwSxRR9tf" alt="Revit Logo"/><span class="toolName text-transparent">Python</span></div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img class="drop-shadow-2xl" width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1zL1jlRoqzln7iB_SYEwW1TNt2JVcRRwi" alt="Inventor Logo"/><span class="toolName text-transparent">Python</span></div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img class="drop-shadow-2xl" width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1W22upnb3BY0-QIn2TUBTFC-7Y44N5aO6" alt="AutoCAD Logo"/><span class="toolName text-transparent">Python</span></div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img class="drop-shadow-2xl" width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1oQocKv1MWezeMU6ECi8CVLO7vRWc-Dkz" alt="SolidWorks Logo"/><span class="toolName text-transparent">Python</span></div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img class="drop-shadow-2xl" width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1WSBCEu3ikzugJVJdX9tat208aH2uCkWP" alt="Python Logo"/><span class="toolName text-transparent">Python</span></div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img class="drop-shadow-2xl" width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=17R07kHo3igxYyBaCbwM49eByvfFvNoAj" alt="Javascript Logo"/><span class="toolName text-transparent">Python</span></div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img class="drop-shadow-2xl" width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1fiRQdoiQNSmQGNyv8YhVCaCcQBWLP9Fr" alt="HTML 5 Logo"/><span class="toolName text-transparent">Python</span></div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img class="drop-shadow-2xl" width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1sCE9opP0dtTNdKlGHWJJSHjyUifLULtG" alt="CSS 3 Logo"/><span class="toolName text-transparent">Python</span></div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img class="drop-shadow-2xl" width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1Sed5M9pki00_OjsYAX1Iq653MrbckbXm" alt="Tailwind CSS Logo"/><span class="toolName text-transparent">Python</span></div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img class="drop-shadow-2xl" width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1TdBjhyC661RMDDTnrGKxa9E8fvgGutjR" alt="Sass Logo"/><span class="toolName text-transparent">Python</span></div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img class="drop-shadow-2xl" width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1uzDkVHTElBgotG-No709re0yHevUDb91" alt="Git Logo"/><span class="toolName text-transparent">Python</span></div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img class="drop-shadow-2xl" width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1NX-lyl7FoUynvlA4ZxTT23ZskzTShRPn" alt="GitHub Logo"/><span class="toolName text-transparent">Python</span></div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img class="drop-shadow-2xl" width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1OUnPV_9Gxa--zXLjYtObU_2Lck4IMDs4" alt="Visual Studio Code Logo"/><span class="toolName text-transparent">Python</span></div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img class="drop-shadow-2xl" width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1oHDIvVewakJD6LmZKjBAItqlm7fx1cN-" alt="Google Logo"/><span class="toolName text-transparent">Python</span></div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img class="drop-shadow-2xl" width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1dbpiZFP2yFnDwARTlI5B__PNipRoX1PN" alt="Microsoft Project Logo"/><span class="toolName text-transparent">Python</span></div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img class="drop-shadow-2xl" width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1Qa4E26b3VN0Bav_HZujjGdSXQTpKhaE_" alt="Photoshop Logo"/><span class="toolName text-transparent">Python</span></div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img class="drop-shadow-2xl" width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=12ZSISqVOHFzZe9SZj6ujk05P5NxV2WQ1" alt="Notion Logo"/><span class="toolName text-transparent">Python</span></div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img class="drop-shadow-2xl" width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1k0ufripom9X6CgmrSaqv7NJvRi8cmbxK" alt="Adobe Illustrator Logo"/><span class="toolName text-transparent">Python</span></div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img class="drop-shadow-2xl" width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1P7TsOmeo188wQDbAmiFMiRst19Rr8kP_" alt="Google Colab Logo"/><span class="toolName text-transparent">Python</span></div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img class="drop-shadow-2xl" width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1XewZ9TkdKyC-1h7yJhdtkpQT8UF8giuO" alt="Adobe XD Logo"/><span class="toolName text-transparent">Python</span></div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img class="drop-shadow-2xl" width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1U6lZ6q0v-Alk2EigoBtlyPVhZktdBVPm" alt="Croel DRAW Logo"/><span class="toolName text-transparent">Python</span></div>
+          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1qj7Go9vFA_WYrs3Py2iaTtCUwSxRR9tf" alt="Revit Logo"/>
+            <p class="toolName text-xs mt-1"> Revit</p>
+          </div>
+          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1zL1jlRoqzln7iB_SYEwW1TNt2JVcRRwi" alt="Inventor Logo"/>
+            <p class="toolName text-xs mt-1"> Inventor</p>
+          </div>
+          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1W22upnb3BY0-QIn2TUBTFC-7Y44N5aO6" alt="AutoCAD Logo"/>
+            <p class="toolName text-xs mt-1"> AutoCAD</p>
+          </div>
+          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1oQocKv1MWezeMU6ECi8CVLO7vRWc-Dkz" alt="SolidWorks Logo"/>
+            <p class="toolName text-xs mt-1">SolidWorks</p>
+          </div>
+          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1WSBCEu3ikzugJVJdX9tat208aH2uCkWP" alt="Python Logo"/>
+            <p class="toolName text-xs mt-1">Python</p>
+          </div>
+          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=17R07kHo3igxYyBaCbwM49eByvfFvNoAj" alt="Javascript Logo"/>
+            <p class="toolName text-xs mt-1">Javascript</p>
+          </div>
+          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1fiRQdoiQNSmQGNyv8YhVCaCcQBWLP9Fr" alt="HTML 5 Logo"/>
+            <p class="toolName text-xs mt-1">HTML 5</p>
+          </div>
+          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1sCE9opP0dtTNdKlGHWJJSHjyUifLULtG" alt="CSS 3 Logo"/>
+            <p class="toolName text-xs mt-1">CSS 3</p>
+          </div>
+          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1Sed5M9pki00_OjsYAX1Iq653MrbckbXm" alt="Tailwind CSS Logo"/>
+            <p class="toolName text-xs mt-1">Tailwind</p>
+          </div>
+          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1TdBjhyC661RMDDTnrGKxa9E8fvgGutjR" alt="Sass Logo"/>
+            <p class="toolName text-xs mt-1">Sass</p>
+          </div>
+          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1uzDkVHTElBgotG-No709re0yHevUDb91" alt="Git Logo"/>
+            <p class="toolName text-xs mt-1">Git</p>
+          </div>
+          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1NX-lyl7FoUynvlA4ZxTT23ZskzTShRPn" alt="GitHub Logo"/>
+            <p class="toolName text-xs mt-1">GitHub</p>
+          </div>
+          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1OUnPV_9Gxa--zXLjYtObU_2Lck4IMDs4" alt="Visual Studio Code Logo"/>
+            <p class="toolName text-xs mt-1">VS Code</p>
+          </div>
+          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1oHDIvVewakJD6LmZKjBAItqlm7fx1cN-" alt="Google Logo"/>
+            <p class="toolName text-xs mt-1">Google</p>
+          </div>
+          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1dbpiZFP2yFnDwARTlI5B__PNipRoX1PN" alt="Microsoft Project Logo"/>
+            <p class="toolName text-xs mt-1">MS Project</p>
+          </div>
+          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1Qa4E26b3VN0Bav_HZujjGdSXQTpKhaE_" alt="Photoshop Logo"/>
+            <p class="toolName text-xs mt-1">Photoshop</p>
+          </div>
+          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=12ZSISqVOHFzZe9SZj6ujk05P5NxV2WQ1" alt="Notion Logo"/>
+            <p class="toolName text-xs mt-1">Notion</p>
+          </div>
+          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1k0ufripom9X6CgmrSaqv7NJvRi8cmbxK" alt="Adobe Illustrator Logo"/>
+            <p class="toolName text-xs mt-1">Illustrator</p>
+          </div>
+          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1P7TsOmeo188wQDbAmiFMiRst19Rr8kP_" alt="Google Colab Logo"/>
+            <p class="toolName text-xs mt-1">Colab</p>
+          </div>
+          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1XewZ9TkdKyC-1h7yJhdtkpQT8UF8giuO" alt="Adobe XD Logo"/>
+            <p class="toolName text-xs mt-1">Adobe XD</p>
+          </div>
+          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1U6lZ6q0v-Alk2EigoBtlyPVhZktdBVPm" alt="Corel DRAW Logo"/>
+            <p class="toolName text-xs mt-1">Corel DRAW</p>
+          </div>
         </div>
       </section>
       <section class="w-full h-auto bg-slate-200 flex flex-col justify-center items-center py-12">
         <div class="my-6">
-          <p class="text-3xl font-bold mb-4">Entradas recientes</p>
+          <p class="text-3xl font-bold mb-8">Entradas recientes</p>
         </div>
-        <div class="justify-center items-center grid grid-flow-row gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-          <div class="card w-72 h-auto rounded-3xl p-3 hover:bg-slate-100 ease-in-out duration-200 hover:scale-110">
-            <div class="image"><img class="rounded-2xl" src="https://drive.google.com/uc?export=view&amp;id=1BnBaV6yL9Xg57EGvAK9Py-XcshaNr0-i" alt="" srcset=""/></div>
+        <div class="justify-center items-center grid grid-flow-row  gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-auto">
+          <div class="card w-72 h-auto rounded-3xl p-3 hover:bg-slate-100 ease-in-out duration-200 hover:scale-110 hover:shadow-xl">
+            <div class="image"><img class="rounded-2xl" src="https://drive.google.com/uc?export=view&amp;id=1BnBaV6yL9Xg57EGvAK9Py-XcshaNr0-i" alt="blog" srcset=""/></div>
             <div class="content">
-              <p class="font-bold mt-4">Titulo </p>
-              <p class="text-sm text-red-400 mb-4">29 de septiembre de 2022</p>
-              <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed malesuada mauris. Donec luctus porta leo lobortis finibus.</p>
+              <p class="font-bold mt-4">titulo</p>
+              <p class="text-sm text-red-400 mb-4">29 de Septiembre de 2022</p>
+              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, ex dignissimos suscipit sit saepe ea hic asperiores quod minima aperiam dolores commodi fuga dolorum accusamus ipsum et rerum. Laborum, accusantium?</p>
             </div>
             <div class="div flex justify-end">
               <button class="text-white bg-neutral-900 hover:bg-rose-600 focus:ring-4 focus:ring-red-200  rounded-lg text-sm px-8 py-1 mr-2 mb-2 focus:outline-none" type="button">Leer</button>
             </div>
           </div>
-          <div class="card w-72 h-auto rounded-3xl p-3 hover:bg-slate-100 ease-in-out duration-200 hover:scale-110">
-            <div class="image"><img class="rounded-2xl" src="https://drive.google.com/uc?export=view&amp;id=1BnBaV6yL9Xg57EGvAK9Py-XcshaNr0-i" alt="" srcset=""/></div>
+          <div class="card w-72 h-auto rounded-3xl p-3 hover:bg-slate-100 ease-in-out duration-200 hover:scale-110 hover:shadow-xl">
+            <div class="image"><img class="rounded-2xl" src="https://drive.google.com/uc?export=view&amp;id=1-GX8SRRG9c32qadDJ1zrPIa8DSNAOzoF" alt="imagen" srcset=""/></div>
             <div class="content">
-              <p class="font-bold mt-4">Titulo </p>
-              <p class="text-sm text-red-400 mb-4">29 de septiembre de 2022</p>
-              <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed malesuada mauris. Donec luctus porta leo lobortis finibus.</p>
-            </div>
-            <div class="div flex justify-end">
-              <button class="text-white bg-neutral-900 hover:bg-rose-600 focus:ring-4 focus:ring-red-200  rounded-lg text-sm px-8 py-1 mr-2 mb-2 focus:outline-none" type="button">Leer</button>
-            </div>
-          </div>
-          <div class="card w-72 h-auto rounded-3xl p-3 hover:bg-slate-100 ease-in-out duration-200 hover:scale-110">
-            <div class="image"><img class="rounded-2xl" src="https://drive.google.com/uc?export=view&amp;id=1BnBaV6yL9Xg57EGvAK9Py-XcshaNr0-i" alt="" srcset=""/></div>
-            <div class="content">
-              <p class="font-bold mt-4">Titulo </p>
-              <p class="text-sm text-red-400 mb-4">29 de septiembre de 2022</p>
-              <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed malesuada mauris. Donec luctus porta leo lobortis finibus.</p>
-            </div>
-            <div class="div flex justify-end">
-              <button class="text-white bg-neutral-900 hover:bg-rose-600 focus:ring-4 focus:ring-red-200  rounded-lg text-sm px-8 py-1 mr-2 mb-2 focus:outline-none" type="button">Leer</button>
-            </div>
-          </div>
-          <div class="card w-72 h-auto rounded-3xl p-3 hover:bg-slate-100 ease-in-out duration-200 hover:scale-110">
-            <div class="image"><img class="rounded-2xl" src="https://drive.google.com/uc?export=view&amp;id=1BnBaV6yL9Xg57EGvAK9Py-XcshaNr0-i" alt="" srcset=""/></div>
-            <div class="content">
-              <p class="font-bold mt-4">Titulo </p>
-              <p class="text-sm text-red-400 mb-4">29 de septiembre de 2022</p>
-              <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed malesuada mauris. Donec luctus porta leo lobortis finibus.</p>
+              <p class="font-bold mt-4">titulo</p>
+              <p class="text-sm text-red-400 mb-4">30 de septiembre de 2022</p>
+              <p class="mb-4">orem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, ex dignissimos suscipit sit saepe ea hic asperiores quod minima aperiam dolores commodi fuga dolorum accusamus ipsum et rerum. Laborum, accusantium?</p>
             </div>
             <div class="div flex justify-end">
               <button class="text-white bg-neutral-900 hover:bg-rose-600 focus:ring-4 focus:ring-red-200  rounded-lg text-sm px-8 py-1 mr-2 mb-2 focus:outline-none" type="button">Leer</button>

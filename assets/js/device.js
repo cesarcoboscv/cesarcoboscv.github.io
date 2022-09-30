@@ -34,6 +34,7 @@ if(deviceType() == "mobile" ){
         mobileBar.classList.add("hidden")
 
         header.classList.remove("bottom-0")
+        console.log("Esto es una computadora")
         
 }
-console.log("You're not alone in all this, you're not alone I promise.")
+console.log("You're not alone in all this, you're not alone, I promise.")

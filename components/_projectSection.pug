@@ -1,4 +1,14 @@
-section.project(class="w-full h-96 flex flex-col justify-center items-center")
-    p(class="text-3xl font-bold") Proyectos 
-    div(class="w-8/12 h-64 bg-blue-200")
+section.project(class="w-full  flex flex-col justify-center items-center pt-16 pb-20")
+    p(class="text-3xl font-bold mb-12") Proyectos 
+    div(class="carousel h-[600px] w-full lg:w-10/12 xl:w-8/12 overflow-hidden lg:rounded-3xl relative shadow-xl")
+        div(class="slides absolute top-1/2 left-0 flex w-full h-full")
+            div(style="background-image: url('https://drive.google.com/uc?export=view&id=1poymSzho6gRecCrhYmYIt05esWIf6wxN'" class="slide image bg-center bg-no-repeat bg-cover")
+            img(src="https://picsum.photos/1280/720?random=1" alt="slide image" class="slide h-1/2 md:h-[600px]")
+            img(src="https://picsum.photos/1280/720?random=2" alt="slide image" class="slide h-1/2 md:h-[600px]")
+            img(src="https://picsum.photos/1280/720?random=3" alt="slide image" class="slide h-1/2 md:h-[600px]")
+        div(class="controls opacity-0 flex absolute top-[calc(50%-20px)] left-0 right-0 w-[98%] z-20 ease-in-out duration-500")
+            div(class="control prev-slide my-1 mx-4 flex items-center justify-center w-10 h-10 rounded-full hover:opacity-100 opacity-50 ease-in-out duration-500 cursor-pointer bg-[rgba(255,255,255,0.7)]") &#9668;
+            div(class="control next-slide my-1 mx-2 flex items-center justify-center w-10 h-10 rounded-full hover:opacity-100 opacity-50 ease-in-out duration-500 cursor-pointer bg-[rgba(255,255,255,0.7)]") &#9658;
+
+    script(src="./assets/js/slides.js") 
     
