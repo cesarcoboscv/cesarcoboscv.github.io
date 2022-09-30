@@ -15,15 +15,25 @@ const deviceType = () => {
 
 if(deviceType() == "mobile" ){  
     menuBar.classList.add("hidden");
+    menuBar.classList.remove("flex");
+    
     mobileBar.classList.add("flex");
 
     }else if(deviceType() =="tablet"){
+        menuBar.classList.remove("hidden")
         menuBar.classList.add("flex")
+
         mobileBar.classList.add("hidden")
+
         header.classList.remove("bottom-0")
     } else {
+        menuBar.classList.remove("hidden")
         menuBar.classList.add("flex")
+
+        mobileBar.classList.remove("flex")
         mobileBar.classList.add("hidden")
+
         header.classList.remove("bottom-0")
         
 }
+console.log("You're not alone in all this, you're not alone I promise.")

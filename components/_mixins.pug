@@ -8,7 +8,7 @@ mixin navLink(link,name,title)
 mixin toolIcon(link,alt,name)
     div.toolIcon(class="w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center")
         img(width=40 height=40 src=link alt=alt class="drop-shadow-2xl")
-        span.toolName(class="hidden")=name
+        span.toolName(class="text-transparent")=name
 
 mixin blogCard()
     div.card(class="w-72 h-auto rounded-3xl p-3 hover:bg-slate-100 ease-in-out duration-200 hover:scale-110")
