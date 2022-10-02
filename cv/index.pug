@@ -1,0 +1,15 @@
+include ../components/_mixins
+doctype html
+html(lang="en" class="scroll-smooth font-karla font-thin")
+    head
+        +head("Portafolio")
+    body
+        header#header(class="w-full fixed bottom-0 z-20")
+            include ../components/_header.pug
+
+        main(class="md:pt-16")
+            +heroSection("background-image: url('https://drive.google.com/uc?export=view&id=1HQBs05TYQDDjXiQvF3ZPqO8UVUC7wGkq')","CV")
+        footer
+            include ../components/_footer.pug
+
+        +jsScripts()

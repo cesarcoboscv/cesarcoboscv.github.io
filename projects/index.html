@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="scroll-smooth font-karla font-thin" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../assets/css/style.css"/>
+    <script src="https://kit.fontawesome.com/32dce108fb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;600;700;800&amp;display=swap" rel="stylesheet"/>
+    <link rel="shortcut icon" href="https://drive.google.com/uc?export=view&amp;id=1S5Dfb4ER5X1faqUdnRqa1qwsqWTvLRPp" type="image/x-icon"/>
+    <title>Proyectos</title>
+  </head>
+  <body>
+    <header class="w-full fixed bottom-0 z-20" id="header">
+      <nav class="w-full h-16 bg-[rgba(252,252,252,0.3)] text-black flex items-center justify-center ease-in-out duration-1000 text-lg font-light" id="navbar">
+        <div class="mobileBar  flex lg:hidden w-10/12 justify-center md:justify-start" id="mobileBar">
+          <div class="overlay w-0 fixed h-screen z-2 left-0 top-0 overflow-hidden bg-[rgba(0,0,0,0.9)]" id="myNav"><a href="javascript:void(0)" class="closebtn text-white text-5xl absolute bottom-16 text-center w-full" onclick="closeNav()">&times;</a>
+            <div class="overlay-content relative top-1/4 w-full mt-1/3 text-5xl text-white"><a class="hover:text-rose-600 hover:underline decoration-rose-600 decoration-2 underline-offset-4 block py-2" href="../" rel="noreferrer" target="_self" title="Ir al Inicio">Home</a><a class="hover:text-rose-600 hover:underline decoration-rose-600 decoration-2 underline-offset-4 block py-2" href="../portfolio" rel="noreferrer" target="_self" title="Portafolio">Portafolio</a><a class="hover:text-rose-600 hover:underline decoration-rose-600 decoration-2 underline-offset-4 block py-2" href="../projects" rel="noreferrer" target="_self" title="Proyectos">Proyectos</a><a class="hover:text-rose-600 hover:underline decoration-rose-600 decoration-2 underline-offset-4 block py-2" href="../blog" rel="noreferrer" target="_self" title="Blog">Blog</a>
+            </div>
+          </div>
+          <div class="span fa-solid fa-bars text-3xl" id="openbtn" onClick="openNav()"></div>
+        </div>
+        <div class="menuBar hidden w-10/12 max-w-screen-lg" id="menuBar">
+          <div class="menuItems flex justify-end w-full">
+            <div class="ul flex justify-center w-5/12 space-x-6">
+              <div class="li"> <a class="hover:text-rose-600 hover:underline decoration-rose-600 decoration-2 underline-offset-4" href="../" rel="noreferrer" target="_self" title="Ir al Inicio">Home</a>
+              </div>
+              <div class="li"> <a class="hover:text-rose-600 hover:underline decoration-rose-600 decoration-2 underline-offset-4" href="../portfolio" rel="noreferrer" target="_self" title="Portafolio">Portafolio</a>
+              </div>
+              <div class="li"><a class="hover:text-rose-600 hover:underline decoration-rose-600 decoration-2 underline-offset-4" href="../projects" rel="noreferrer" target="_self" title="Proyectos">Proyectos</a>
+              </div>
+              <div class="li"> <a class="hover:text-rose-600 hover:underline decoration-rose-600 decoration-2 underline-offset-4" href="../blog" rel="noreferrer" target="_self" title="Blog">Blog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="pt-16">
+      <section class="h-48 md:h-72 w-full flex items-center justify-start mt-[-64px] md:mt-0  bg-center bg-no-repeat bg-cover" style="background-image: url('https://drive.google.com/uc?export=view&amp;id=1e6Amni7gfaNwGxZZ0x63sU8aBnUSHdtk')">
+        <div class="w-auto  h-auto mx-16 ">
+          <p class="w-auto text-4xl md:text-5xl font-bold uppercase text-rose-600 mt-4 mb-2 bg-[rgba(252,252,252,0.4)]">Proyectos</p>
+        </div>
+      </section>
+      <section class="h-64 w-full bg-red-200"></section>
+    </main>
+    <footer>
+      <section class="w-full h-auto bg-neutral-900 flex justify-center items-center md:mb-0 py-12 mb-16">
+        <div class="w-10/12 h-3/4 text-white flex flex-col justify-center items-center ">
+          <p class="mb-4">Déjame un mensaje </p><a class="ease-in-out duration-500 mb-8 text-rose-600 font-bold hover:text-white text-lg border-solid border-2 border-rose-600 ease-in-out duration-200 hover:bg-rose-600 focus:ring-4 focus:ring-rose-200  rounded-lg text-sm px-12 py-2 mr-2 mb-2 " href="../cv">Contacto</a>
+          <p class="mb-4 mt-8">Veámonos en</p>
+          <div class="social-buttons w-8/12 md:4/12 h-16 text-3xl flex space-x-12 items-center justify-center "><a class="hover:scale-150 hover:text-rose-600 ease-in-out duration-300" href="https://github.com/cesarcoboscv" rel="noreferrer" target="_blank" title="Mira mis proyectos"><span class="fa-brands fa-github"></span></a><a class="hover:scale-150 hover:text-rose-600 ease-in-out duration-300" href="https://twitter.com/cesarcoboscv" rel="noreferrer" target="_blank" title="Sigamos la plática"><span class="fa-brands fa-twitter"></span></a><a class="hover:scale-150 hover:text-rose-600 ease-in-out duration-300" href="https://linkedin.com/in/cesarcoboscv" rel="noreferrer" target="_blank" title="Mira mi perfil"><span class="fa-brands fa-linkedin"></span></a>
+          </div>
+          <p class="text-xs mt-4">César Cobos 202x</p>
+        </div>
+      </section>
+    </footer>
+    <script src="../assets/js/scroll.js"></script>
+    <script src="../assets/js/device.js"></script>
+    <script src="../assets/js/nav.js"></script>
+  </body>
+</html>
