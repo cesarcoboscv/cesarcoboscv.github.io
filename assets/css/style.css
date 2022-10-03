@@ -627,16 +627,16 @@ video {
   margin-top: 1rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
 
 .mt-1 {
   margin-top: 0.25rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
 }
 
 .ml-8 {
@@ -703,10 +703,6 @@ video {
   height: 12rem;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
 .h-5\/6 {
   height: 83.333333%;
 }
@@ -755,8 +751,8 @@ video {
   max-width: 1024px;
 }
 
-.max-w-6xl {
-  max-width: 72rem;
+.max-w-5xl {
+  max-width: 64rem;
 }
 
 .transform {
@@ -912,11 +908,6 @@ video {
   padding-right: 1.5rem;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -925,6 +916,16 @@ video {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-8 {
@@ -1139,12 +1140,24 @@ video {
     grid-column-start: 4;
   }
 
+  .md\:col-start-5 {
+    grid-column-start: 5;
+  }
+
   .md\:col-end-4 {
     grid-column-end: 4;
   }
 
   .md\:col-end-9 {
     grid-column-end: 9;
+  }
+
+  .md\:col-end-5 {
+    grid-column-end: 5;
+  }
+
+  .md\:col-end-7 {
+    grid-column-end: 7;
   }
 
   .md\:mb-0 {
@@ -1187,10 +1200,6 @@ video {
     max-width: 650px;
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -1201,6 +1210,10 @@ video {
 
   .md\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:grid-cols-3 {
@@ -1244,8 +1257,24 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-start-1 {
+    grid-column-start: 1;
+  }
+
+  .lg\:col-start-5 {
+    grid-column-start: 5;
+  }
+
   .lg\:col-start-3 {
     grid-column-start: 3;
+  }
+
+  .lg\:col-end-5 {
+    grid-column-end: 5;
+  }
+
+  .lg\:col-end-7 {
+    grid-column-end: 7;
   }
 
   .lg\:col-end-3 {
@@ -1258,6 +1287,10 @@ video {
 
   .lg\:h-\[550px\] {
     height: 550px;
+  }
+
+  .lg\:w-8\/12 {
+    width: 66.666667%;
   }
 
   .lg\:w-96 {
