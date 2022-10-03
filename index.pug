@@ -25,6 +25,9 @@ include ./components/_head.pug
                 min-width: 100%;     
                 height: auto;
             }
+            .tab button.active {
+                border: 4px solid #e11d48;
+            }
     
         title César Cobos 
     body
@@ -36,9 +39,12 @@ include ./components/_head.pug
             include ./components/_aboutSection.pug
             //- include ./components/_projectSection.pug
             include ./components/_myToolssection.pug
+            include ./components/_workedSection.pug
             include ./components/_blogEntriesSection.pug
 
         footer
             include ./components/_footer.pug
 
         +jsScripts()
+        script(src="./assets/js/tabs.js") 
+        link(rel="stylesheet", href="./assets/css/tabs.css")
