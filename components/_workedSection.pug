@@ -1,46 +1,57 @@
-p(class="text-center text-4xl font-bold pt-12 pb-16") Who I worked with
-section(class="flex justify-center md:justify-center items-center w-full")
-    div(class="grid grid-cols-1 md:grid-cols-8 h-[800px] md:h-[600px] w-11/12 md:w-[600px] lg:w-[900px]")
+p(class="text-center text-4xl font-bold pt-12 pb-16 text-rose-200") Who I worked with
+section(class="flex justify-center flex-col md:justify-center items-center w-full")
+    p(class="w-10/12 max-w-5xl my-16 text-lg") During my experience, some places where I'va worked led me to develop projects for large companies in different areas: Oil & gas, Automotive, Energy, even personal projects.
+    div(class="grid grid-cols-1 md:grid-cols-8 h-[800px] md:h-[500px] w-11/12 md:w-[600px] lg:w-[900px]")
         div( class="tab gap-4 h-48 md:max-h-96 grid grid-cols-2 md:grid-cols-1 md:col-start-1 md:col-end-4 lg:col-end-3")
             +tabWork("openTab(event, 'benteler')","defaultOpen","Benteler")
             +tabWork("openTab(event, 'tenneco')","","Tenneco")
             +tabWork("openTab(event, 'mitsubishi')","","Mitsubishi")
             +tabWork("openTab(event, 'ptb')","","PTB")
+            +tabWork("openTab(event, 'personal')","","Personal")
 
-        //- div(id="benteler" class="tabcontent w-full md:w-[450px] lg:w-[650px] pl-8 h-[800px] text-lg flex flex-col items-start")
         div(id="benteler" class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9")
-            p(class="text-3xl font-bold mb-4") Benteler
             p(class="mb-4") I have carried out multiple HVAC projects for air extraction in welding ops., including activities like:
             ul(class="ml-8")
                 li - Project Management
                 li - Indoor Surveys 
                 li - Metallic Structure Design
                 li - Task tracking
-                li - LISP Routines for drawing
-                li . Python Routines for files administration
-                li - MS Project
+                li - 
+                    span(class="font-bold hover:text-rose-600") LISP 
+                    span Routines for drawing
+                li . 
+                    span(class="font-bold hover:text-rose-600") Python 
+                    span Routines for files administration
+                li - 
+                    span(class="font-bold hover:text-rose-600") MS Project
             p(class="my-4 font-bold") The tools 
             ul(class="ml-8")
-                li - AutoCAD Mechanical
-                li - AutoDESK Inventor
-                li - VS Code
-                li - MS Project
+                li - 
+                    span(class="font-bold hover:text-rose-600") AutoCAD Mechanical
+                li - 
+                    span (class="font-bold hover:text-rose-600")AutoDESK Inventor
+                li - 
+                    span(class="font-bold hover:text-rose-600") VS Code
+                li - 
+                    span(class="font-bold hover:text-rose-600") MS Project
         div(id="tenneco" class="tabcontent  md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9")
-            p(class="text-3xl font-bold mb-4")  Tenneco
             p(class="mb-4") I have carried out multiple HVAC projects for air extraction in welding ops., including activities like:
             ul(class="ml-8")
                 li - Project Management
                 li - Indoor Surveys 
-                li - Metallic Structure Design
+                li - 
+                    span(class="font-bold hover:text-rose-600") Metallic Structure Design
                 li - Task tracking
             p(class="my-4 font-bold") The tools 
             ul(class="ml-8")
-                li - AutoCAD Mechanical
-                li - AutoDESK Inventor
-                li - VS Code
+                li - 
+                    span(class="font-bold hover:text-rose-600") AutoCAD Mechanical
+                li - 
+                    span(class="font-bold hover:text-rose-600") AutoDESK Inventor
+                li - 
+                    span(class="font-bold hover:text-rose-600") VS Code
 
         div(id="mitsubishi" class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9")
-            p(class="text-3xl font-bold mb-4")  Mitsubishi
             p Supervision of maintenance activities in combined cycle plant
             ul(class="ml-8") 
                 li - Supervision 
@@ -48,25 +59,65 @@ section(class="flex justify-center md:justify-center items-center w-full")
                 li - plans
             p(class="my-4 font-bold") The tools 
             ul(class="ml-8")
-                li - AutoCAD Mechanical
-                li - AutoDESK Inventor
-                li - VS Code
+                li - 
+                    span(class="font-bold hover:text-rose-600") AutoCAD Mechanical
+                li - 
+                    span(class="font-bold hover:text-rose-600") AutoDESK Inventor
+                li - 
+                    span(class="font-bold hover:text-rose-600") VS Code
         
         div(id="ptb" class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9")
-            p(class="text-3xl font-bold mb-4")  PTB
             p I have made multiple projects for geographical database maintenance for oil & gas area
             ul(class="ml-8")
                 li - Drone surveys
                 li - Terrain 3D models
                 li - Topographic information
-                li - Geospatial Info loaded to Database
+                li - 
+                    span(class="font-bold hover:text-rose-600") Geospatial 
+                    span Info loaded to Database
             p(class="my-4 font-bold") The tools 
             ul(class="ml-8") 
-                li - AutoCAD Map 3D
-                li - GeoMEDIA 
-                li - ERDAS Imagine 
-                li - Plex Earth 
-                li - Pix 4D Map
+                li - 
+                    span(class="font-bold hover:text-rose-600") AutoCAD Map 3D
+                li - 
+                    span(class="font-bold hover:text-rose-600") GeoMEDIA 
+                li - 
+                    span(class="font-bold hover:text-rose-600") ERDAS Imagine 
+                li - 
+                    span(class="font-bold hover:text-rose-600") Plex Earth 
+                li - 
+                    span(class="font-bold hover:text-rose-600") Pix 4D Map
+        div(id="personal" class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9")
+            p Also, I've made small projects that helped me to improve daily tasks
+            ul(class="ml-8")
+                li - 
+                    span(class="font-bold hover:text-rose-600") LIPS 
+                    span Routines for fast drawings
+                li - 
+                    span(class="font-bold hover:text-rose-600") Python 
+                    span routines to find files and create 
+                    span(class="font-bold hover:text-rose-600") CSV 
+                li - Small Apps with 
+                    span Javascript: 
+                    span Unit Conversors, Calculate Mechanical components
+                li - This 
+                    span(class="font-bold hover:text-rose-600") Web Site
+            p(class="my-4 font-bold") The tools 
+            ul(class="ml-8") 
+                li - 
+                    span(class="font-bold hover:text-rose-600") VS Code
+                li - 
+                    span(class="font-bold hover:text-rose-600") Python
+                li - 
+                    span(class="font-bold hover:text-rose-600") JavaScript
+                li - 
+                    span(class="font-bold hover:text-rose-600") HTML 
+                    span & 
+                    span(class="font-bold hover:text-rose-600") CSS
+                li - 
+                    span(class="font-bold hover:text-rose-600") Tailwind CSS
+    +ctabtn("See more projects","../projects/")
+        
 
 
 
