@@ -11,7 +11,7 @@ mixin toolIcon(link,alt,name)
         p.toolName(class="text-xs mt-1")=name
 
 mixin blogCard(title,date,description,image,altimage)
-    div.card(class="w-72 h-auto rounded-3xl p-3 hover:bg-slate-100 ease-in-out duration-200 hover:scale-110 hover:shadow-xl")
+    div.card(class="w-72 h-auto rounded-3xl p-3 hover:bg-slate-800 ease-in-out duration-200  hover:scale-110 hover:shadow-xl")
         .image
             img(class="rounded-2xl" src=image, alt=altimage, srcset="")
         .content
@@ -19,12 +19,12 @@ mixin blogCard(title,date,description,image,altimage)
             p(class="text-sm text-red-400 mb-4")=date
             p(class="mb-4")=description
         .div(class="flex justify-end")
-            button(type="button" class="text-white bg-neutral-900 hover:bg-rose-600 focus:ring-4 focus:ring-red-200  rounded-lg text-sm px-8 py-1 mr-2 mb-2 focus:outline-none") Leer
+            button(type="button" class="text-white bg-transparent  hover:bg-rose-600 focus:ring-4 focus:ring-red-200  rounded-lg text-sm px-8 py-1 mr-2 mb-2 focus:outline-none") Read
 
 mixin heroSection(image,title)
-    section(class="h-48 md:h-72 w-full flex items-center justify-start mt-[-64px] md:mt-0 " style=image class="bg-center bg-no-repeat bg-cover")
+    section(class="h-48 md:h-72 w-full flex items-center justify-start mt-[-64px] md:mt-0 " style=image class="bg-center bg-no-repeat bg-cover shadow-2xl")
         div(class="w-auto  h-auto mx-16 ")
-            p(class="w-auto text-4xl md:text-5xl font-bold uppercase text-rose-600 mt-4 mb-2 bg-[rgba(252,252,252,0.4)]")=title
+            p(class="w-auto text-4xl md:text-5xl font-bold text-rose-600 mt-4 mb-2")=title
 
 mixin jsScripts()
     script(src="../assets/js/scroll.js")
@@ -43,8 +43,11 @@ mixin head(pagetitle)
     link(rel="preconnect" href="https://fonts.googleapis.com")
     link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
     link(href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;600;700;800&display=swap" rel="stylesheet")
-    link(rel="shortcut icon", href="https://drive.google.com/uc?export=view&id=1S5Dfb4ER5X1faqUdnRqa1qwsqWTvLRPp", type="image/x-icon")
+    
     title=pagetitle
 
-mixin ctabtn(text,link)
-    a(href=link class="ease-in-out duration-500 mb-8 text-rose-600 font-bold hover:text-white text-lg border-solid border-2 border-rose-600 ease-in-out duration-200 hover:bg-rose-600 focus:ring-4 focus:ring-rose-200  rounded-lg text-sm px-12 py-2 mr-2 mb-2 ")=text
+mixin ctabtn(text,link,class1,ids)
+    a(href=link class="ease-in-out duration-500 mb-8 text-rose-600 font-bold hover:text-white text-lg border-solid border-2 border-rose-600 ease-in-out duration-200 hover:bg-rose-600 focus:ring-4 focus:ring-rose-200  rounded-lg text-sm py-2 mr-2 mb-2 " class=class1 id=ids)=text
+
+mixin htmls()
+    html(lang="en" class="bg-[#141E30] scroll-smooth font-karla font-light text-[rgba(255,255,255,0.5)]")

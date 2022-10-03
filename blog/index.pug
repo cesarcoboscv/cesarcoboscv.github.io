@@ -1,6 +1,6 @@
 include ../components/_mixins
 doctype html
-html(lang="en" class="scroll-smooth font-karla font-thin")
+include ../components/_head.pug
     head
         +head("Blog")
     body
@@ -8,7 +8,7 @@ html(lang="en" class="scroll-smooth font-karla font-thin")
             include ../components/_header.pug
 
         main(class="pt-16")
-            +heroSection("background-image: url('https://drive.google.com/uc?export=view&id=1HQBs05TYQDDjXiQvF3ZPqO8UVUC7wGkq')","Blog")
+            +heroSection("background-image: url('https://drive.google.com/uc?export=view&id=13Z5W9VAQnD_4N0D5kFIgfVxfsHwIL8Jl')","Blog")
             include ./components/_itemsBlog.pug
 
         footer

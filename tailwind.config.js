@@ -6,6 +6,7 @@ module.exports = {
     './projects/*.{html,js}',
     './portfolio/*.{html,js}',
     './cv/*.{html,js}',
+    './contact/{*.html,js}'
     
   ],
   theme: {

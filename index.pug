@@ -1,6 +1,6 @@
 include ./components/_mixins
 doctype html
-html(lang="en" class="scroll-smooth font-karla font-thin")
+include ./components/_head.pug
     head
         +head("Home")
         //-Script
@@ -9,7 +9,7 @@ html(lang="en" class="scroll-smooth font-karla font-thin")
                 color:transparent;
             }
             .toolIcon:hover {
-                color:black;
+                color:rgba(255,255,255,0.5);
             }
             .carousel:hover .controls {
                 opacity: 1;
@@ -34,7 +34,7 @@ html(lang="en" class="scroll-smooth font-karla font-thin")
         main
             include ./components/_heroSection.pug
             include ./components/_aboutSection.pug
-            include ./components/_projectSection.pug
+            //- include ./components/_projectSection.pug
             include ./components/_myToolssection.pug
             include ./components/_blogEntriesSection.pug
 
