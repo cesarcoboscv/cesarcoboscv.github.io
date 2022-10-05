@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html class=" scroll-smooth font-karla font-light text-lg text-[#1e293b]" lang="en">
-  <link rel="shortcut icon" href="https://drive.google.com/uc?export=view&amp;id=1S5Dfb4ER5X1faqUdnRqa1qwsqWTvLRPp" type="image/x-icon">
   <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="../assets/css/style.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <script src="https://kit.fontawesome.com/32dce108fb.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;600;700;800&amp;display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://drive.google.com/uc?export=view&amp;id=1S5Dfb4ER5X1faqUdnRqa1qwsqWTvLRPp" type="image/x-icon">
     <title>Home</title>
     <style>
       .toolIcon {
@@ -39,258 +39,256 @@
           width: 160px;
           font-weight: 600;
       }
-      .outl{
-          text-shadow:
-          -1px -1px 0 #fda4af,
-          1px -1px 0 #fda4af,
-          -1px 1px 0 #fda4af,
-          1px 1px 0 #fda4af; 
-      }
+      //- .outliner{
+      //-     text-shadow:
+      //-     -1px -1px 0 #fda4af,
+      //-     1px -1px 0 #fda4af,
+      //-     -1px 1px 0 #fda4af,
+      //-     1px 1px 0 #fda4af; 
+      //- }
       
     </style>
-    <title>César Cobos </title>
+    <body>
+      <header class="w-full fixed bottom-0 z-20" id="header">
+        <nav class="w-full h-16 bg-white flex items-center justify-center ease-in-out duration-[2000ms] z-3" id="navbar">
+          <div class="mobileBar  flex lg:hidden w-10/12 justify-center md:justify-start " id="mobileBar">
+            <div class="overlay w-0 fixed h-full z-4 left-0 top-0 overflow-hidden bg-[rgba(0,0,0,0.9)] ease-in-out duration-300" id="myNav"><a href="javascript:void(0)" class="closebtn  text-5xl absolute bottom-4 text-center w-full text-white" onclick="closeNav()">&times;</a>
+              <div class="overlay-content relative top-1/4 w-full mt-1/3 text-5xl text-rose-200 px-4 "><a class="hover:text-rose-600 hover:underline decoration-rose-600 decoration-2 underline-offset-4 block py-2" href="../" rel="noreferrer" target="_self" title="Ir al Inicio">Home</a><a class=" text-slate-400 cursor-default block py-2" href="../portfolio" rel="noreferrer" target="_self" title="Portfolio" onclick="return false">Portfolio</a><a class=" text-slate-400 cursor-default block py-2" href="../projects" rel="noreferrer" target="_self" title="Projects" onclick="return false">Projects</a><a class="hover:text-rose-600 hover:underline decoration-rose-600 decoration-2 underline-offset-4 block py-2" href="../blog" rel="noreferrer" target="_self" title="Blog">Blog</a>
+              </div>
+            </div>
+            <div class="span fa-solid fa-bars text-3xl" id="openbtn" onClick="openNav()"></div>
+          </div>
+          <div class="menuBar z-3 hidden w-10/12 max-w-screen-lg" id="menuBar">
+            <div class="menuItems flex justify-end w-full">
+              <div class="ul flex justify-end space-x-6">
+                <div class="li"> <a class="hover:text-rose-600 hover:underline decoration-rose-600 decoration-2 underline-offset-4" href="../" rel="noreferrer" target="_self" title="Home">Home</a>
+                </div>
+                <div class="li"> <a class=" text-slate-400 cursor-default" href="../portfolio" rel="noreferrer" target="_self" title="Portfolio" onclick="return false">Portfolio</a>
+                </div>
+                <div class="li"><a class=" text-slate-400 cursor-default" href="../projects" rel="noreferrer" target="_self" title="Projects" onclick="return false">Projects</a>
+                </div>
+                <div class="li"> <a class=" text-slate-400 cursor-default" href="../blog" rel="noreferrer" target="_self" title="Blog" onclick="return false">Blog</a>
+                </div>
+                <div class="Li"> <a class="active:border-rose-600 ease-in-out duration-300  text-rose-600  hover:text-white  border-solid border-2 border-rose-600  hover:bg-rose-600 focus:ring-4 focus:ring-rose-200  rounded-lg py-2 px-4  px-6" href="https://drive.google.com/file/d/12VcNT3hCMh66BBBfCs5uea6m_VDQnAD4/view?usp=sharing" id="resumebtn">Resume</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="hero w-full h-screen flex justify-center items-center">
+          <div class="w-10/12 md:6/12 h-auto text-xl">
+            <p class="w-28 text-2xl">Hello!! I'm </p>
+            <p class="w-full text-6xl md:text-7xl font-extrabold text-rose-600 mt-4 mb-2">César Cobos</p>
+            <p class="w-full text-4xl pb-8 font-extrabold text-rose-300">I build things for the web and the real world!</p>
+            <p class="w-full md:max-w-[650px] text-lg"> I'm Civil Engineer. I build metallic structures for the real world, tools with code and FrondEnd Dev.</p>
+          </div>
+        </section>
+        <section class="flex w-full h-full py-8 justify-center items-center">
+          <div class="flex flex-col justify-center w-10/12 lg:w-8/12 max-w-5xl">
+            <p class="mb-4 text-4xl font-extrabold text-rose-400">This is me</p>
+            <div class="grid  md:w-full  grid-cols-1 md:grid-cols-6 items-center justify-center ">
+              <div class="description w-full md:w-full md:px-8 text-justify text-lg md:col-start-1 md:col-end-5"> 
+                <p>Hi! My name is <span class="font-bold hover:text-rose-600">César</span><span>, I like to create things for </span><span class="font-bold hover:text-rose-600">real world </span><span>and things for </span><span class="font-bold hover:text-rose-600">internet</span><span>.  I graduated as a </span><span class="font-bold hover:text-rose-600">Civil Engineer </span><span>in 2013 and I have worked in </span><span class="font-bold hover:text-rose-600">Geospatial</span><span>,</span><span class="font-bold hover:text-rose-600"> Mechanical Design</span><span>, </span><span class="font-bold hover:text-rose-600">HVAC</span><span> and </span><span class="font-bold hover:text-rose-600">Project Management</span><span>. </span></p>
+                <p class="py-4">Currently, I <span class="font-bold hover:text-rose-600">design  </span>
+                  <dpan>from small </dpan><span class="font-bold hover:text-rose-600">mechanical components </span><span>to bigger </span><span class="font-bold hover:text-rose-600">metallic structures</span><span>, starting from sketch to its manufacture.</span>
+                </p>
+                <p>Since a time ago I've dive into <span class="font-bold hover:text-rose-600">Dev </span>
+                  <apsn>world with languages like: </apsn><span class="font-bold hover:text-rose-600">Python</span><span>, </span><span class="font-bold hover:text-rose-600">JavaScript</span><span>, </span><span class="font-bold hover:text-rose-600">HTML</span><span>, </span><span class="font-bold hover:text-rose-600">CSS </span><span>and </span><span class="font-bold hover:text-rose-600">LISP </span><span>with which I've made tools to </span><span class="font-bold hover:text-rose-600">get things done faster.</span>
+                </p>
+              </div>
+              <div class="md:col-start-5 md:col-end-7 my-12 md:py-0 w-full lg:w-96 h-80 md:h-[450px] lg:h-[550px] shadow-2xl ease-in-out duration-300 md:rounded-3xl grayscale hover:grayscale-0 bg-center bg-no-repeat bg-cover" style="background-image:url('https://drive.google.com/uc?export=view&amp;id=1L53_CZabgZu_STkWj7VgUBXheLQNjGfJ')"> </div>
+            </div>
+          </div>
+        </section>
+        <section class="mytools flex h-auto min-h-[650px] justify-center items-center flex-col pb-12">
+          <div class="flex justify-center items-center w-full h-16 mt-4 mb-12">
+            <p class="text-4xl font-extrabold text-rose-400">My tools</p>
+          </div>
+          <div class="h-auto place-items-center grid grid-flow-row gap-6 grid-cols-3 md:grid-cols-6 lg:grid-cols-10">
+            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1qj7Go9vFA_WYrs3Py2iaTtCUwSxRR9tf" alt="Revit Logo"/>
+              <p class="toolName text-xs mt-1"> Revit</p>
+            </div>
+            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1zL1jlRoqzln7iB_SYEwW1TNt2JVcRRwi" alt="Inventor Logo"/>
+              <p class="toolName text-xs mt-1"> Inventor</p>
+            </div>
+            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1W22upnb3BY0-QIn2TUBTFC-7Y44N5aO6" alt="AutoCAD Logo"/>
+              <p class="toolName text-xs mt-1"> AutoCAD</p>
+            </div>
+            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1oQocKv1MWezeMU6ECi8CVLO7vRWc-Dkz" alt="SolidWorks Logo"/>
+              <p class="toolName text-xs mt-1">SolidWorks</p>
+            </div>
+            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1WSBCEu3ikzugJVJdX9tat208aH2uCkWP" alt="Python Logo"/>
+              <p class="toolName text-xs mt-1">Python</p>
+            </div>
+            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=17R07kHo3igxYyBaCbwM49eByvfFvNoAj" alt="Javascript Logo"/>
+              <p class="toolName text-xs mt-1">Javascript</p>
+            </div>
+            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1fiRQdoiQNSmQGNyv8YhVCaCcQBWLP9Fr" alt="HTML 5 Logo"/>
+              <p class="toolName text-xs mt-1">HTML 5</p>
+            </div>
+            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1sCE9opP0dtTNdKlGHWJJSHjyUifLULtG" alt="CSS 3 Logo"/>
+              <p class="toolName text-xs mt-1">CSS 3</p>
+            </div>
+            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1Sed5M9pki00_OjsYAX1Iq653MrbckbXm" alt="Tailwind CSS Logo"/>
+              <p class="toolName text-xs mt-1">Tailwind</p>
+            </div>
+            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1TdBjhyC661RMDDTnrGKxa9E8fvgGutjR" alt="Sass Logo"/>
+              <p class="toolName text-xs mt-1">Sass</p>
+            </div>
+            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1uzDkVHTElBgotG-No709re0yHevUDb91" alt="Git Logo"/>
+              <p class="toolName text-xs mt-1">Git</p>
+            </div>
+            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1NX-lyl7FoUynvlA4ZxTT23ZskzTShRPn" alt="GitHub Logo"/>
+              <p class="toolName text-xs mt-1">GitHub</p>
+            </div>
+            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1OUnPV_9Gxa--zXLjYtObU_2Lck4IMDs4" alt="Visual Studio Code Logo"/>
+              <p class="toolName text-xs mt-1">VS Code</p>
+            </div>
+            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1oHDIvVewakJD6LmZKjBAItqlm7fx1cN-" alt="Google Logo"/>
+              <p class="toolName text-xs mt-1">Google</p>
+            </div>
+            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1dbpiZFP2yFnDwARTlI5B__PNipRoX1PN" alt="Microsoft Project Logo"/>
+              <p class="toolName text-xs mt-1">MS Project</p>
+            </div>
+            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1Qa4E26b3VN0Bav_HZujjGdSXQTpKhaE_" alt="Photoshop Logo"/>
+              <p class="toolName text-xs mt-1">Photoshop</p>
+            </div>
+            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=12ZSISqVOHFzZe9SZj6ujk05P5NxV2WQ1" alt="Notion Logo"/>
+              <p class="toolName text-xs mt-1">Notion</p>
+            </div>
+            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1k0ufripom9X6CgmrSaqv7NJvRi8cmbxK" alt="Adobe Illustrator Logo"/>
+              <p class="toolName text-xs mt-1">Illustrator</p>
+            </div>
+            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1P7TsOmeo188wQDbAmiFMiRst19Rr8kP_" alt="Google Colab Logo"/>
+              <p class="toolName text-xs mt-1">Colab</p>
+            </div>
+            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1XewZ9TkdKyC-1h7yJhdtkpQT8UF8giuO" alt="Adobe XD Logo"/>
+              <p class="toolName text-xs mt-1">Adobe XD</p>
+            </div>
+            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1U6lZ6q0v-Alk2EigoBtlyPVhZktdBVPm" alt="Corel DRAW Logo"/>
+              <p class="toolName text-xs mt-1">Corel DRAW</p>
+            </div>
+          </div>
+        </section>
+        <p class="text-center text-4xl font-extrabold pt-12 pb-16 text-rose-400">Who I worked with</p>
+        <section class="flex justify-center flex-col md:justify-center items-center w-full">
+          <p class="w-10/12 max-w-5xl my-16 text-lg">During my experience, some places where I've worked led me to develop projects for large companies in different areas: Oil & gas, Automotive, Energy, even personal projects.</p>
+          <div class="grid grid-cols-1 md:grid-cols-8 h-[800px] md:h-[500px] w-11/12 md:w-[600px] lg:w-[900px]">
+            <div class="tab gap-4 h-48 md:max-h-96 grid grid-cols-2 md:grid-cols-1 md:col-start-1 md:col-end-4 lg:col-end-3">
+              <button class="tablinks cursor-pointer block w-32 h-12 border-solid  hover:border-rose-600 border-[rgba(255,255,255,0.5)] border-2 rounded-3xl bg-transparent ease-in-put duration-300 py-2 px-4 text-center md:text-center" onclick="openTab(event, 'benteler')" id="defaultOpen">Benteler</button>
+              <button class="tablinks cursor-pointer block w-32 h-12 border-solid  hover:border-rose-600 border-[rgba(255,255,255,0.5)] border-2 rounded-3xl bg-transparent ease-in-put duration-300 py-2 px-4 text-center md:text-center" onclick="openTab(event, 'tenneco')" id="">Tenneco</button>
+              <button class="tablinks cursor-pointer block w-32 h-12 border-solid  hover:border-rose-600 border-[rgba(255,255,255,0.5)] border-2 rounded-3xl bg-transparent ease-in-put duration-300 py-2 px-4 text-center md:text-center" onclick="openTab(event, 'mitsubishi')" id="">Mitsubishi</button>
+              <button class="tablinks cursor-pointer block w-32 h-12 border-solid  hover:border-rose-600 border-[rgba(255,255,255,0.5)] border-2 rounded-3xl bg-transparent ease-in-put duration-300 py-2 px-4 text-center md:text-center" onclick="openTab(event, 'ptb')" id="">PTB</button>
+              <button class="tablinks cursor-pointer block w-32 h-12 border-solid  hover:border-rose-600 border-[rgba(255,255,255,0.5)] border-2 rounded-3xl bg-transparent ease-in-put duration-300 py-2 px-4 text-center md:text-center" onclick="openTab(event, 'personal')" id="">Personal</button>
+            </div>
+            <div class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9" id="benteler">
+              <p class="mb-4">I have carried out multiple HVAC projects for air extraction in welding ops., including activities like:</p>
+              <ul class="ml-8">
+                <li>- Project Management</li>
+                <li>- Indoor Surveys </li>
+                <li>- Metallic Structure Design</li>
+                <li>- Task tracking</li>
+                <li>- <span class="font-bold hover:text-rose-600">LISP </span><span>Routines for drawing</span></li>
+                <li>. <span class="font-bold hover:text-rose-600">Python </span><span>Routines for files administration</span></li>
+                <li>- <span class="font-bold hover:text-rose-600">MS Project</span></li>
+              </ul>
+              <p class="my-4 font-bold">The tools </p>
+              <ul class="ml-8">
+                <li>- <span class="font-bold hover:text-rose-600">AutoCAD Mechanical</span></li>
+                <li>- <span class="font-bold hover:text-rose-600">AutoDESK Inventor</span></li>
+                <li>- <span class="font-bold hover:text-rose-600">VS Code</span></li>
+                <li>- <span class="font-bold hover:text-rose-600">MS Project</span></li>
+              </ul>
+            </div>
+            <div class="tabcontent  md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9" id="tenneco">
+              <p class="mb-4">I have carried out multiple HVAC projects for air extraction in welding ops., including activities like:</p>
+              <ul class="ml-8">
+                <li>- Project Management</li>
+                <li>- Indoor Surveys </li>
+                <li>- <span class="font-bold hover:text-rose-600">Metallic Structure Design</span></li>
+                <li>- Task tracking</li>
+              </ul>
+              <p class="my-4 font-bold">The tools </p>
+              <ul class="ml-8">
+                <li>- <span class="font-bold hover:text-rose-600">AutoCAD Mechanical</span></li>
+                <li>- <span class="font-bold hover:text-rose-600">AutoDESK Inventor</span></li>
+                <li>- <span class="font-bold hover:text-rose-600">VS Code</span></li>
+              </ul>
+            </div>
+            <div class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9" id="mitsubishi">
+              <p>Supervision of maintenance activities in combined cycle plant</p>
+              <ul class="ml-8"> 
+                <li>- Supervision </li>
+                <li>- Task tracking</li>
+                <li>- plans</li>
+              </ul>
+              <p class="my-4 font-bold">The tools </p>
+              <ul class="ml-8">
+                <li>- <span class="font-bold hover:text-rose-600">AutoCAD Mechanical</span></li>
+                <li>- <span class="font-bold hover:text-rose-600">AutoDESK Inventor</span></li>
+                <li>- <span class="font-bold hover:text-rose-600">VS Code</span></li>
+              </ul>
+            </div>
+            <div class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9" id="ptb">
+              <p>I have made multiple projects for geographical database maintenance for oil & gas area</p>
+              <ul class="ml-8">
+                <li>- Drone surveys</li>
+                <li>- Terrain 3D models</li>
+                <li>- Topographic information</li>
+                <li>- <span class="font-bold hover:text-rose-600">Geospatial </span><span>Info loaded to Database</span></li>
+              </ul>
+              <p class="my-4 font-bold">The tools </p>
+              <ul class="ml-8"> 
+                <li>- <span class="font-bold hover:text-rose-600">AutoCAD Map 3D</span></li>
+                <li>- <span class="font-bold hover:text-rose-600">GeoMEDIA </span></li>
+                <li>- <span class="font-bold hover:text-rose-600">ERDAS Imagine </span></li>
+                <li>- <span class="font-bold hover:text-rose-600">Plex Earth </span></li>
+                <li>- <span class="font-bold hover:text-rose-600">Pix 4D Map</span></li>
+              </ul>
+            </div>
+            <div class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9" id="personal">
+              <p>Also, I've made small projects that helped me to improve daily tasks</p>
+              <ul class="ml-8">
+                <li>- <span class="font-bold hover:text-rose-600">LIPS </span><span>Routines for fast drawings</span></li>
+                <li>- <span class="font-bold hover:text-rose-600">Python </span><span>routines to find files and create </span><span class="font-bold hover:text-rose-600">CSV </span></li>
+                <li>- Small Apps with <span class="font-bold hover:text-rose-600">Javascript </span><span>: Unit Conversors, Calculate Mechanical components</span></li>
+                <li>- This <span class="font-bold hover:text-rose-600">Web Site</span></li>
+              </ul>
+              <p class="my-4 font-bold">The tools </p>
+              <ul class="ml-8"> 
+                <li>- <span class="font-bold hover:text-rose-600">VS Code</span></li>
+                <li>- <span class="font-bold hover:text-rose-600">Python</span></li>
+                <li>- <span class="font-bold hover:text-rose-600">JavaScript</span></li>
+                <li>- <span class="font-bold hover:text-rose-600">HTML </span><span>& </span><span class="font-bold hover:text-rose-600">CSS</span></li>
+                <li>- <span class="font-bold hover:text-rose-600">Tailwind CSS</span></li>
+              </ul>
+            </div>
+          </div><a class="cursor-default  text-slate-300   border-solid border-2 border-slate-300  rounded-lg py-2 px-4 " href="../projects/" onclick="return false">See more projects</a>
+        </section>
+        <section class="w-full h-auto flex flex-col justify-center items-center py-12">
+          <div class="my-6">
+            <p class="text-4xl font-extrabold mb-8 text-rose-400">Sometimes I write</p>
+          </div>
+          <div class=" visible justify-center items-center grid grid-flow-row  gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-auto"></div>
+          <p class="text-2xl font-bold">Nothing is written yet</p>
+        </section>
+      </main>
+      <footer>
+        <section class="w-full h-auto flex justify-center items-center md:mb-0 py-12 mb-16">
+          <div class="flex flex-col justify-center items-center ">
+            <p class="mb-4">Let's get in touch </p><a class="active:border-rose-600 ease-in-out duration-300  text-rose-600  hover:text-white  border-solid border-2 border-rose-600  hover:bg-rose-600 focus:ring-4 focus:ring-rose-200  rounded-lg py-2 px-4  px-8 mt-8 mb-16" href="../contact/">Hello</a>
+            <div class="social-buttons w-8/12 md:4/12 h-16 text-3xl flex space-x-12 items-center justify-center "><a class="hover:scale-150 hover:text-rose-600 ease-in-out duration-300" href="https://github.com/cesarcoboscv" rel="noreferrer" target="_blank" title="Mira mis proyectos"><span class="fa-brands fa-github"></span></a><a class="hover:scale-150 hover:text-rose-600 ease-in-out duration-300" href="https://twitter.com/cesarcoboscv" rel="noreferrer" target="_blank" title="Sigamos la plática"><span class="fa-brands fa-twitter"></span></a><a class="hover:scale-150 hover:text-rose-600 ease-in-out duration-300" href="https://linkedin.com/in/cesarcoboscv" rel="noreferrer" target="_blank" title="Mira mi perfil"><span class="fa-brands fa-linkedin"></span></a>
+            </div>
+            <p class="text-xs mt-4">César Cobos 202x</p>
+          </div>
+        </section>
+      </footer>
+      <script src="../assets/js/scroll.js"></script>
+      <script src="../assets/js/device.js"></script>
+      <script src="../assets/js/nav.js"></script>
+      <script src="./assets/js/tabs.js"> </script>
+    </body>
   </head>
-  <body>
-    <header class="w-full fixed bottom-0 z-20" id="header">
-      <nav class="w-full h-16 bg-white flex items-center justify-center ease-in-out duration-1000 text-lg z-3" id="navbar">
-        <div class="mobileBar  flex lg:hidden w-10/12 justify-center md:justify-start " id="mobileBar">
-          <div class="overlay w-0 fixed h-full z-4 left-0 top-0 overflow-hidden bg-[rgba(0,0,0,0.9)] ease-in-out duration-300" id="myNav"><a href="javascript:void(0)" class="closebtn  text-5xl absolute bottom-4 text-center w-full text-white" onclick="closeNav()">&times;</a>
-            <div class="overlay-content relative top-1/4 w-full mt-1/3 text-5xl text-rose-200 px-4 "><a class="hover:text-rose-600 hover:underline decoration-rose-600 decoration-2 underline-offset-4 block py-2" href="../" rel="noreferrer" target="_self" title="Ir al Inicio">Home</a><a class="hover:text-rose-600 hover:underline decoration-rose-600 decoration-2 underline-offset-4 block py-2" href="../portfolio" rel="noreferrer" target="_self" title="Portfolio">Portfolio</a><a class="hover:text-rose-600 hover:underline decoration-rose-600 decoration-2 underline-offset-4 block py-2" href="../projects" rel="noreferrer" target="_self" title="Projects">Projects</a><a class="hover:text-rose-600 hover:underline decoration-rose-600 decoration-2 underline-offset-4 block py-2" href="../blog" rel="noreferrer" target="_self" title="Blog">Blog</a>
-            </div>
-          </div>
-          <div class="span fa-solid fa-bars text-3xl" id="openbtn" onClick="openNav()"></div>
-        </div>
-        <div class="menuBar z-3 hidden w-10/12 max-w-screen-lg" id="menuBar">
-          <div class="menuItems flex justify-end w-full">
-            <div class="ul flex justify-end space-x-6">
-              <div class="li"> <a class="hover:text-rose-600 hover:underline decoration-rose-600 decoration-2 underline-offset-4" href="../" rel="noreferrer" target="_self" title="Home">Home</a>
-              </div>
-              <div class="li"> <a class="hover:text-rose-600 hover:underline decoration-rose-600 decoration-2 underline-offset-4" href="../portfolio" rel="noreferrer" target="_self" title="Portfolio">Portfolio</a>
-              </div>
-              <div class="li"><a class="hover:text-rose-600 hover:underline decoration-rose-600 decoration-2 underline-offset-4" href="../projects" rel="noreferrer" target="_self" title="Projects">Projects</a>
-              </div>
-              <div class="li"> <a class="hover:text-rose-600 hover:underline decoration-rose-600 decoration-2 underline-offset-4" href="../blog" rel="noreferrer" target="_self" title="Blog">Blog</a>
-              </div>
-              <div class="Li"> <a class="active:border-rose-600 ease-in-out duration-500  text-rose-600  hover:text-white  border-solid border-2 border-rose-600 ease-in-out duration-200 hover:bg-rose-600 focus:ring-4 focus:ring-rose-200  rounded-lg py-2 px-4  px-6" href="https://drive.google.com/file/d/12VcNT3hCMh66BBBfCs5uea6m_VDQnAD4/view?usp=sharing" id="resumebtn">Resume</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section class="hero w-full h-screen flex justify-center items-center">
-        <div class="w-10/12 md:6/12 h-auto text-xl">
-          <p class="w-28 text-2xl">Hello!! I'm </p>
-          <p class="w-full text-6xl md:text-7xl font-extrabold text-rose-600 mt-4 mb-2">César Cobos</p>
-          <p class="w-full text-4xl pb-8 font-extrabold text-rose-300">I build things for the web and the real world!</p>
-          <p class="w-full md:max-w-[650px] text-lg"> I'm Civil Engineer. I build metallic structures for the real world, tools with code and FrondEnd Dev.</p>
-        </div>
-      </section>
-      <section class="flex w-full h-full py-8 justify-center items-center">
-        <div class="flex flex-col justify-center w-10/12 lg:w-8/12 max-w-5xl">
-          <p class="mb-4 text-4xl font-extrabold text-rose-400">This is me</p>
-          <div class="grid  md:w-full  grid-cols-1 md:grid-cols-6 items-center justify-center ">
-            <div class="description w-full md:w-full md:px-8 text-justify text-lg md:col-start-1 md:col-end-5"> 
-              <p>Hi! My name is <span class="font-bold hover:text-rose-600">César</span><span>, I like to create things for </span><span class="font-bold hover:text-rose-600">real world </span><span>and things for </span><span class="font-bold hover:text-rose-600">internet</span><span>.  I graduated as a </span><span class="font-bold hover:text-rose-600">Civil Engineer </span><span>in 2013 and I have worked in </span><span class="font-bold hover:text-rose-600">Geospatial</span><span>,</span><span class="font-bold hover:text-rose-600"> Mechanical Design</span><span>, </span><span class="font-bold hover:text-rose-600">HVAC</span><span> and </span><span class="font-bold hover:text-rose-600">Project Management</span><span>. </span></p>
-              <p class="py-4">Currently, I <span class="font-bold hover:text-rose-600">design  </span>
-                <dpan>from small </dpan><span class="font-bold hover:text-rose-600">mechanical components </span><span>to bigger </span><span class="font-bold hover:text-rose-600">metallic structures</span><span>, starting from sketch to its manufacture.</span>
-              </p>
-              <p>Since a time ago I've dive into <span class="font-bold hover:text-rose-600">Dev </span>
-                <apsn>world with languages like: </apsn><span class="font-bold hover:text-rose-600">Python</span><span>, </span><span class="font-bold hover:text-rose-600">JavaScript</span><span>, </span><span class="font-bold hover:text-rose-600">HTML</span><span>, </span><span class="font-bold hover:text-rose-600">CSS </span><span>and </span><span class="font-bold hover:text-rose-600">LISP </span><span>with which I've made tools to </span><span class="font-bold hover:text-rose-600">get things done faster.</span>
-              </p>
-            </div>
-            <div class="md:col-start-5 md:col-end-7 my-12 md:py-0 w-full lg:w-96 h-80 md:h-[450px] lg:h-[550px] shadow-2xl ease-in-out duration-300 md:rounded-3xl grayscale hover:grayscale-0 bg-center bg-no-repeat bg-cover" style="background-image:url('https://drive.google.com/uc?export=view&amp;id=1L53_CZabgZu_STkWj7VgUBXheLQNjGfJ')"> </div>
-          </div>
-        </div>
-      </section>
-      <section class="mytools flex h-auto min-h-[650px] justify-center items-center flex-col pb-12">
-        <div class="flex justify-center items-center w-full h-16 mt-4 mb-12">
-          <p class="text-4xl font-extrabold text-rose-400">My tools</p>
-        </div>
-        <div class="h-auto place-items-center grid grid-flow-row gap-6 grid-cols-3 md:grid-cols-6 lg:grid-cols-10">
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1qj7Go9vFA_WYrs3Py2iaTtCUwSxRR9tf" alt="Revit Logo"/>
-            <p class="toolName text-xs mt-1"> Revit</p>
-          </div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1zL1jlRoqzln7iB_SYEwW1TNt2JVcRRwi" alt="Inventor Logo"/>
-            <p class="toolName text-xs mt-1"> Inventor</p>
-          </div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1W22upnb3BY0-QIn2TUBTFC-7Y44N5aO6" alt="AutoCAD Logo"/>
-            <p class="toolName text-xs mt-1"> AutoCAD</p>
-          </div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1oQocKv1MWezeMU6ECi8CVLO7vRWc-Dkz" alt="SolidWorks Logo"/>
-            <p class="toolName text-xs mt-1">SolidWorks</p>
-          </div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1WSBCEu3ikzugJVJdX9tat208aH2uCkWP" alt="Python Logo"/>
-            <p class="toolName text-xs mt-1">Python</p>
-          </div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=17R07kHo3igxYyBaCbwM49eByvfFvNoAj" alt="Javascript Logo"/>
-            <p class="toolName text-xs mt-1">Javascript</p>
-          </div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1fiRQdoiQNSmQGNyv8YhVCaCcQBWLP9Fr" alt="HTML 5 Logo"/>
-            <p class="toolName text-xs mt-1">HTML 5</p>
-          </div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1sCE9opP0dtTNdKlGHWJJSHjyUifLULtG" alt="CSS 3 Logo"/>
-            <p class="toolName text-xs mt-1">CSS 3</p>
-          </div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1Sed5M9pki00_OjsYAX1Iq653MrbckbXm" alt="Tailwind CSS Logo"/>
-            <p class="toolName text-xs mt-1">Tailwind</p>
-          </div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1TdBjhyC661RMDDTnrGKxa9E8fvgGutjR" alt="Sass Logo"/>
-            <p class="toolName text-xs mt-1">Sass</p>
-          </div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1uzDkVHTElBgotG-No709re0yHevUDb91" alt="Git Logo"/>
-            <p class="toolName text-xs mt-1">Git</p>
-          </div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1NX-lyl7FoUynvlA4ZxTT23ZskzTShRPn" alt="GitHub Logo"/>
-            <p class="toolName text-xs mt-1">GitHub</p>
-          </div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1OUnPV_9Gxa--zXLjYtObU_2Lck4IMDs4" alt="Visual Studio Code Logo"/>
-            <p class="toolName text-xs mt-1">VS Code</p>
-          </div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1oHDIvVewakJD6LmZKjBAItqlm7fx1cN-" alt="Google Logo"/>
-            <p class="toolName text-xs mt-1">Google</p>
-          </div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1dbpiZFP2yFnDwARTlI5B__PNipRoX1PN" alt="Microsoft Project Logo"/>
-            <p class="toolName text-xs mt-1">MS Project</p>
-          </div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1Qa4E26b3VN0Bav_HZujjGdSXQTpKhaE_" alt="Photoshop Logo"/>
-            <p class="toolName text-xs mt-1">Photoshop</p>
-          </div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=12ZSISqVOHFzZe9SZj6ujk05P5NxV2WQ1" alt="Notion Logo"/>
-            <p class="toolName text-xs mt-1">Notion</p>
-          </div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1k0ufripom9X6CgmrSaqv7NJvRi8cmbxK" alt="Adobe Illustrator Logo"/>
-            <p class="toolName text-xs mt-1">Illustrator</p>
-          </div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1P7TsOmeo188wQDbAmiFMiRst19Rr8kP_" alt="Google Colab Logo"/>
-            <p class="toolName text-xs mt-1">Colab</p>
-          </div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1XewZ9TkdKyC-1h7yJhdtkpQT8UF8giuO" alt="Adobe XD Logo"/>
-            <p class="toolName text-xs mt-1">Adobe XD</p>
-          </div>
-          <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1U6lZ6q0v-Alk2EigoBtlyPVhZktdBVPm" alt="Corel DRAW Logo"/>
-            <p class="toolName text-xs mt-1">Corel DRAW</p>
-          </div>
-        </div>
-      </section>
-      <p class="text-center text-4xl font-extrabold pt-12 pb-16 text-rose-400">Who I worked with</p>
-      <section class="flex justify-center flex-col md:justify-center items-center w-full">
-        <p class="w-10/12 max-w-5xl my-16 text-lg">During my experience, some places where I've worked led me to develop projects for large companies in different areas: Oil & gas, Automotive, Energy, even personal projects.</p>
-        <div class="grid grid-cols-1 md:grid-cols-8 h-[800px] md:h-[500px] w-11/12 md:w-[600px] lg:w-[900px]">
-          <div class="tab gap-4 h-48 md:max-h-96 grid grid-cols-2 md:grid-cols-1 md:col-start-1 md:col-end-4 lg:col-end-3">
-            <button class="tablinks cursor-pointer block w-32 h-12 border-solid  hover:border-rose-600 border-[rgba(255,255,255,0.5)] border-2 rounded-3xl bg-transparent ease-in-put duration-300 py-2 px-4 text-center md:text-center" onclick="openTab(event, 'benteler')" id="defaultOpen">Benteler</button>
-            <button class="tablinks cursor-pointer block w-32 h-12 border-solid  hover:border-rose-600 border-[rgba(255,255,255,0.5)] border-2 rounded-3xl bg-transparent ease-in-put duration-300 py-2 px-4 text-center md:text-center" onclick="openTab(event, 'tenneco')" id="">Tenneco</button>
-            <button class="tablinks cursor-pointer block w-32 h-12 border-solid  hover:border-rose-600 border-[rgba(255,255,255,0.5)] border-2 rounded-3xl bg-transparent ease-in-put duration-300 py-2 px-4 text-center md:text-center" onclick="openTab(event, 'mitsubishi')" id="">Mitsubishi</button>
-            <button class="tablinks cursor-pointer block w-32 h-12 border-solid  hover:border-rose-600 border-[rgba(255,255,255,0.5)] border-2 rounded-3xl bg-transparent ease-in-put duration-300 py-2 px-4 text-center md:text-center" onclick="openTab(event, 'ptb')" id="">PTB</button>
-            <button class="tablinks cursor-pointer block w-32 h-12 border-solid  hover:border-rose-600 border-[rgba(255,255,255,0.5)] border-2 rounded-3xl bg-transparent ease-in-put duration-300 py-2 px-4 text-center md:text-center" onclick="openTab(event, 'personal')" id="">Personal</button>
-          </div>
-          <div class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9" id="benteler">
-            <p class="mb-4">I have carried out multiple HVAC projects for air extraction in welding ops., including activities like:</p>
-            <ul class="ml-8">
-              <li>- Project Management</li>
-              <li>- Indoor Surveys </li>
-              <li>- Metallic Structure Design</li>
-              <li>- Task tracking</li>
-              <li>- <span class="font-bold hover:text-rose-600">LISP </span><span>Routines for drawing</span></li>
-              <li>. <span class="font-bold hover:text-rose-600">Python </span><span>Routines for files administration</span></li>
-              <li>- <span class="font-bold hover:text-rose-600">MS Project</span></li>
-            </ul>
-            <p class="my-4 font-bold">The tools </p>
-            <ul class="ml-8">
-              <li>- <span class="font-bold hover:text-rose-600">AutoCAD Mechanical</span></li>
-              <li>- <span class="font-bold hover:text-rose-600">AutoDESK Inventor</span></li>
-              <li>- <span class="font-bold hover:text-rose-600">VS Code</span></li>
-              <li>- <span class="font-bold hover:text-rose-600">MS Project</span></li>
-            </ul>
-          </div>
-          <div class="tabcontent  md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9" id="tenneco">
-            <p class="mb-4">I have carried out multiple HVAC projects for air extraction in welding ops., including activities like:</p>
-            <ul class="ml-8">
-              <li>- Project Management</li>
-              <li>- Indoor Surveys </li>
-              <li>- <span class="font-bold hover:text-rose-600">Metallic Structure Design</span></li>
-              <li>- Task tracking</li>
-            </ul>
-            <p class="my-4 font-bold">The tools </p>
-            <ul class="ml-8">
-              <li>- <span class="font-bold hover:text-rose-600">AutoCAD Mechanical</span></li>
-              <li>- <span class="font-bold hover:text-rose-600">AutoDESK Inventor</span></li>
-              <li>- <span class="font-bold hover:text-rose-600">VS Code</span></li>
-            </ul>
-          </div>
-          <div class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9" id="mitsubishi">
-            <p>Supervision of maintenance activities in combined cycle plant</p>
-            <ul class="ml-8"> 
-              <li>- Supervision </li>
-              <li>- Task tracking</li>
-              <li>- plans</li>
-            </ul>
-            <p class="my-4 font-bold">The tools </p>
-            <ul class="ml-8">
-              <li>- <span class="font-bold hover:text-rose-600">AutoCAD Mechanical</span></li>
-              <li>- <span class="font-bold hover:text-rose-600">AutoDESK Inventor</span></li>
-              <li>- <span class="font-bold hover:text-rose-600">VS Code</span></li>
-            </ul>
-          </div>
-          <div class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9" id="ptb">
-            <p>I have made multiple projects for geographical database maintenance for oil & gas area</p>
-            <ul class="ml-8">
-              <li>- Drone surveys</li>
-              <li>- Terrain 3D models</li>
-              <li>- Topographic information</li>
-              <li>- <span class="font-bold hover:text-rose-600">Geospatial </span><span>Info loaded to Database</span></li>
-            </ul>
-            <p class="my-4 font-bold">The tools </p>
-            <ul class="ml-8"> 
-              <li>- <span class="font-bold hover:text-rose-600">AutoCAD Map 3D</span></li>
-              <li>- <span class="font-bold hover:text-rose-600">GeoMEDIA </span></li>
-              <li>- <span class="font-bold hover:text-rose-600">ERDAS Imagine </span></li>
-              <li>- <span class="font-bold hover:text-rose-600">Plex Earth </span></li>
-              <li>- <span class="font-bold hover:text-rose-600">Pix 4D Map</span></li>
-            </ul>
-          </div>
-          <div class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9" id="personal">
-            <p>Also, I've made small projects that helped me to improve daily tasks</p>
-            <ul class="ml-8">
-              <li>- <span class="font-bold hover:text-rose-600">LIPS </span><span>Routines for fast drawings</span></li>
-              <li>- <span class="font-bold hover:text-rose-600">Python </span><span>routines to find files and create </span><span class="font-bold hover:text-rose-600">CSV </span></li>
-              <li>- Small Apps with <span class="font-bold hover:text-rose-600">Javascript </span><span>: Unit Conversors, Calculate Mechanical components</span></li>
-              <li>- This <span class="font-bold hover:text-rose-600">Web Site</span></li>
-            </ul>
-            <p class="my-4 font-bold">The tools </p>
-            <ul class="ml-8"> 
-              <li>- <span class="font-bold hover:text-rose-600">VS Code</span></li>
-              <li>- <span class="font-bold hover:text-rose-600">Python</span></li>
-              <li>- <span class="font-bold hover:text-rose-600">JavaScript</span></li>
-              <li>- <span class="font-bold hover:text-rose-600">HTML </span><span>& </span><span class="font-bold hover:text-rose-600">CSS</span></li>
-              <li>- <span class="font-bold hover:text-rose-600">Tailwind CSS</span></li>
-            </ul>
-          </div>
-        </div><a class="active:border-rose-600 ease-in-out duration-500  text-rose-600  hover:text-white  border-solid border-2 border-rose-600 ease-in-out duration-200 hover:bg-rose-600 focus:ring-4 focus:ring-rose-200  rounded-lg py-2 px-4 " href="../projects/">See more projects</a>
-      </section>
-      <section class="w-full h-auto flex flex-col justify-center items-center py-12">
-        <div class="my-6">
-          <p class="text-4xl font-extrabold mb-8 text-rose-400">Sometimes I write</p>
-        </div>
-        <div class=" visible justify-center items-center grid grid-flow-row  gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-auto"></div>
-        <p class="text-2xl font-bold">Nothing is written yet</p>
-      </section>
-    </main>
-    <footer>
-      <section class="w-full h-auto flex justify-center items-center md:mb-0 py-12 mb-16">
-        <div class="flex flex-col justify-center items-center ">
-          <p class="mb-4">Let's get in touch </p><a class="active:border-rose-600 ease-in-out duration-500  text-rose-600  hover:text-white  border-solid border-2 border-rose-600 ease-in-out duration-200 hover:bg-rose-600 focus:ring-4 focus:ring-rose-200  rounded-lg py-2 px-4  px-8 mt-8 mb-16" href="../contact/">Hello</a>
-          <div class="social-buttons w-8/12 md:4/12 h-16 text-3xl flex space-x-12 items-center justify-center "><a class="hover:scale-150 hover:text-rose-600 ease-in-out duration-300" href="https://github.com/cesarcoboscv" rel="noreferrer" target="_blank" title="Mira mis proyectos"><span class="fa-brands fa-github"></span></a><a class="hover:scale-150 hover:text-rose-600 ease-in-out duration-300" href="https://twitter.com/cesarcoboscv" rel="noreferrer" target="_blank" title="Sigamos la plática"><span class="fa-brands fa-twitter"></span></a><a class="hover:scale-150 hover:text-rose-600 ease-in-out duration-300" href="https://linkedin.com/in/cesarcoboscv" rel="noreferrer" target="_blank" title="Mira mi perfil"><span class="fa-brands fa-linkedin"></span></a>
-          </div>
-          <p class="text-xs mt-4">César Cobos 202x</p>
-        </div>
-      </section>
-    </footer>
-    <script src="../assets/js/scroll.js"></script>
-    <script src="../assets/js/device.js"></script>
-    <script src="../assets/js/nav.js"></script>
-    <script src="./assets/js/tabs.js"> </script>
-    <link rel="stylesheet" href="./assets/css/tabs.css">
-  </body>
 </html>

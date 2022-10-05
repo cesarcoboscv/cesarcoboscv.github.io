@@ -1,49 +1,46 @@
 include ./components/_mixins
 doctype html
 include ./components/_head.pug
-    head
-        +head("Home")
+    +pageTitle("Home")
         //-Script
-        style. 
-            .toolIcon {
-                color:transparent;
-            }
-            .toolIcon:hover {
-                color: #1e293b;
-                font-weight:600;
-            }
-            .carousel:hover .controls {
-                opacity: 1;
-            }
-            .controls{
-                justify-content: space-between;
-            }
-            .slides {
-                transform: translateY(-50%);
-                transition: 1s ease-in-out all;
-            }
-            .slide {
-                min-width: 100%;     
-                height: auto;
-            }
-            .tab button.active {
-                border: 4px solid #e11d48;
-                color: #e11d48;
-                width: 160px;
-                font-weight: 600;
-            }
-            .outl{
-                text-shadow:
-                -1px -1px 0 #fda4af,
-                1px -1px 0 #fda4af,
-                -1px 1px 0 #fda4af,
-                1px 1px 0 #fda4af; 
-            }
-    
-        title César Cobos 
+    style. 
+        .toolIcon {
+            color:transparent;
+        }
+        .toolIcon:hover {
+            color: #1e293b;
+            font-weight:600;
+        }
+        .carousel:hover .controls {
+            opacity: 1;
+        }
+        .controls{
+            justify-content: space-between;
+        }
+        .slides {
+            transform: translateY(-50%);
+            transition: 1s ease-in-out all;
+        }
+        .slide {
+            min-width: 100%;     
+            height: auto;
+        }
+        .tab button.active {
+            border: 4px solid #e11d48;
+            color: #e11d48;
+            width: 160px;
+            font-weight: 600;
+        }
+        //- .outliner{
+        //-     text-shadow:
+        //-     -1px -1px 0 #fda4af,
+        //-     1px -1px 0 #fda4af,
+        //-     -1px 1px 0 #fda4af,
+        //-     1px 1px 0 #fda4af; 
+        //- }
+
     body
-        header#header(class="w-full fixed bottom-0 z-20")
-            include ./components/_header.pug
+        include ./components/_header.pug
 
         main
             include ./components/_heroSection.pug
@@ -53,9 +50,7 @@ include ./components/_head.pug
             include ./components/_workedSection.pug
             include ./components/_blogEntriesSection.pug
 
-        footer
-            include ./components/_footer.pug
+        include ./components/_footer.pug
 
         +jsScripts()
         script(src="./assets/js/tabs.js") 
-        link(rel="stylesheet", href="./assets/css/tabs.css")

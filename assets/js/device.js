@@ -37,4 +37,4 @@ if(deviceType() == "mobile" ){
         console.log("Esto es una computadora")
         
 }
-console.log("You're not alone in all this, you're not alone, I promise.")
+console.log("Meow")

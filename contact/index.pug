@@ -1,19 +1,15 @@
 include ../components/_mixins
-doctype html
+
 include ../components/_head.pug
-    head
-        +head("Let's get in touch")
-        script(charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js")
+    +pageTitle("Let's get in touch")
+    script(charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js")
         
     body
-        header#header(class=" w-full fixed bottom-0 z-20")
-            include ../components/_header.pug
+        include ../components/_header.pug
 
         main(class="pt-16 flex flex-col justify-center items-center")
             p(class="text-4xl mt-16 mb-12 font-bold") Let's talk
             div(class="forms md:w-[450px] h-5/6")
                 script(src="./form.js" class="text-2xl") 
-        footer
-            //- include ../components/_footer.pug
 
         +jsScripts()
