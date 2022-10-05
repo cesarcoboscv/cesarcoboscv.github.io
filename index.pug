@@ -31,6 +31,10 @@ include ./components/_head.pug
             width: 160px;
             font-weight: 600;
         }
+        .back{
+            z-index: -3;
+            transform:scale(-1);
+        }
         //- .outliner{
         //-     text-shadow:
         //-     -1px -1px 0 #fda4af,
@@ -40,6 +44,8 @@ include ./components/_head.pug
         //- }
 
     body
+        .back#back(class="bg-no-repeat bg-cover h-full w-[1200px] md:w-[2400px] fixed" style="background-image: url('https://drive.google.com/uc?export=view&id=18W8szmspLib9voDR41IyFPNp9R7RluWT')")
+        //- .back#back(class="bg-no-repeat bg-cover h-full w-[2400px] fixed" style="background-image: url('https://images.unsplash.com/photo-1560276036-9546721ff5d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=766&q=80')")
         include ./components/_header.pug
 
         main

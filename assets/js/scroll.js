@@ -7,7 +7,7 @@ window.onscroll = function () {
         navBar.style.opacity=".95";
         navBar.classList.add("text-white");
     } else {
-        navBar.style.backgroundColor="white";
+        navBar.style.backgroundColor="transparent";
         navBar.classList.remove("text-white");
     }
 }
