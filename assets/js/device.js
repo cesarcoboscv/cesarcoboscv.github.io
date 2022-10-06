@@ -48,7 +48,7 @@ if(deviceType() == "mobile" ){
         // and move the menu bar to top 
         header.classList.remove("bottom-0")
         // set a new value for blur and opacity background filter
-        bg.style.filter="blur(12px) opacity(.4)";
+        bg.style.filter="blur(4px) opacity(.15) grayscale(1)";
         // and a mouse movemente is applied to backgroound
         document.addEventListener('mousemove', mouse_position)
         function mouse_position()
@@ -58,9 +58,8 @@ if(deviceType() == "mobile" ){
             posX = e.clientX;
             posY = e.clientY;
             // converting mouse position to background movement
-            bg.style.backgroundPosition= (posX * .1) + 'px ' + (posY*.1) + 'px';
-        }
-        
-}
+            bg.style.backgroundPosition= (posX * .05) + 'px ' + (posY*.05) + 'px';
+        }  
+    }
 // hidden message
-positionYsole.log("Meow")
+console.log("Meow")

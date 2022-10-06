@@ -16,7 +16,7 @@
         <nav class="w-full h-16 bg-transparent flex items-center justify-center ease-in-out duration-[2000ms] z-3" id="navbar">
           <div class="mobileBar  flex lg:hidden w-10/12 justify-center md:justify-start " id="mobileBar">
             <div class="overlay w-0 fixed h-full z-4 left-0 top-0 overflow-hidden bg-[rgba(0,0,0,0.9)] ease-in-out duration-300" id="myNav"><a href="javascript:void(0)" class="closebtn  text-5xl absolute bottom-4 text-center w-full text-white" onclick="closeNav()">&times;</a>
-              <div class="overlay-content relative top-1/4 w-full mt-1/3 text-5xl text-rose-200 px-4 "><a class="hover:text-rose-600 hover:underline decoration-rose-600 decoration-2 underline-offset-4 block py-2" href="../" rel="noreferrer" target="_self" title="Ir al Inicio">Home</a><a class=" text-slate-400 cursor-default block py-2" href="../portfolio" rel="noreferrer" target="_self" title="Portfolio" onclick="return false">Portfolio</a><a class=" text-slate-400 cursor-default block py-2" href="../projects" rel="noreferrer" target="_self" title="Projects" onclick="return false">Projects</a><a class="hover:text-rose-600 hover:underline decoration-rose-600 decoration-2 underline-offset-4 block py-2" href="../blog" rel="noreferrer" target="_self" title="Blog">Blog</a>
+              <div class="overlay-content relative top-1/4 w-full mt-1/3 text-5xl px-4 text-white"><a class="hoverSpan block py-2" href="../" rel="noreferrer" target="_self" title="Ir al Inicio"><span>Home</span></a><a class=" text-slate-400 cursor-default block py-2" href="../portfolio" rel="noreferrer" target="_self" title="Portfolio" onclick="return false"><span>Portfolio</span></a><a class=" text-slate-400 cursor-default block py-2" href="../projects" rel="noreferrer" target="_self" title="Projects" onclick="return false"><span>Projects</span></a><a class="hoverSpan block py-2" href="../blog" rel="noreferrer" target="_self" title="Blog"><span>Blog</span></a>
               </div>
             </div>
             <div class="span fa-solid fa-bars text-3xl" id="openbtn" onClick="openNav()"></div>
@@ -24,15 +24,15 @@
           <div class="menuBar z-3 hidden w-10/12 max-w-screen-lg" id="menuBar">
             <div class="menuItems flex justify-end w-full">
               <div class="ul flex justify-end space-x-6">
-                <div class="li"> <a class="hover:text-rose-600 hover:underline decoration-rose-600 decoration-2 underline-offset-4" href="../" rel="noreferrer" target="_self" title="Home">Home</a>
+                <div class="li"> <a class="hoverSpan" href="../" rel="noreferrer" target="_self" title="Home"><span>Home</span></a>
                 </div>
-                <div class="li"> <a class=" text-slate-400 cursor-default" href="../portfolio" rel="noreferrer" target="_self" title="Portfolio" onclick="return false">Portfolio</a>
+                <div class="li"> <a class=" text-slate-400 cursor-default" href="../portfolio" rel="noreferrer" target="_self" title="Portfolio" onclick="return false"><span>Portfolio</span></a>
                 </div>
-                <div class="li"><a class=" text-slate-400 cursor-default" href="../projects" rel="noreferrer" target="_self" title="Projects" onclick="return false">Projects</a>
+                <div class="li"><a class=" text-slate-400 cursor-default" href="../projects" rel="noreferrer" target="_self" title="Projects" onclick="return false"><span>Projects</span></a>
                 </div>
-                <div class="li"> <a class=" text-slate-400 cursor-default" href="../blog" rel="noreferrer" target="_self" title="Blog" onclick="return false">Blog</a>
+                <div class="li"> <a class=" text-slate-400 cursor-default" href="../blog" rel="noreferrer" target="_self" title="Blog" onclick="return false"><span>Blog</span></a>
                 </div>
-                <div class="Li"> <a class="active:border-rose-600 ease-in-out duration-300  text-rose-600  hover:text-white  border-solid border-2 border-rose-600  hover:bg-rose-600 focus:ring-4 focus:ring-rose-200  rounded-lg py-2 px-4  px-6" href="https://drive.google.com/file/d/12VcNT3hCMh66BBBfCs5uea6m_VDQnAD4/view?usp=sharing" id="resumebtn">Resume</a>
+                <div class="Li"> <a class="rBtnColor ease-in-out duration-300  rounded-lg py-2 px-4  px-6" href="https://drive.google.com/file/d/12VcNT3hCMh66BBBfCs5uea6m_VDQnAD4/view?usp=sharing" id="resumebtn"><span>Resume</span></a>
                 </div>
               </div>
             </div>
@@ -50,11 +50,9 @@
       </main>
       <footer>
         <section class="w-full h-auto flex justify-center items-center md:mb-0 py-12 mb-16">
-          <div class="flex flex-col justify-center items-center ">
-            <p class="mb-4">Let's get in touch </p><a class="active:border-rose-600 ease-in-out duration-300  text-rose-600  hover:text-white  border-solid border-2 border-rose-600  hover:bg-rose-600 focus:ring-4 focus:ring-rose-200  rounded-lg py-2 px-4  px-8 mt-8 mb-16" href="../contact/">Hello</a>
-            <div class="social-buttons w-8/12 md:4/12 h-16 text-3xl flex space-x-12 items-center justify-center "><a class="hover:scale-150 hover:text-rose-600 ease-in-out duration-300" href="https://github.com/cesarcoboscv" rel="noreferrer" target="_blank" title="Mira mis proyectos"><span class="fa-brands fa-github"></span></a><a class="hover:scale-150 hover:text-rose-600 ease-in-out duration-300" href="https://twitter.com/cesarcoboscv" rel="noreferrer" target="_blank" title="Sigamos la plática"><span class="fa-brands fa-twitter"></span></a><a class="hover:scale-150 hover:text-rose-600 ease-in-out duration-300" href="https://linkedin.com/in/cesarcoboscv" rel="noreferrer" target="_blank" title="Mira mi perfil"><span class="fa-brands fa-linkedin"></span></a>
-            </div>
-            <p class="text-xs mt-4">César Cobos 202x</p>
+          <div class="flex flex-col justify-center items-center "><span class="flex justify-center items-center mb-4">Let's get in touch </span><a class="rBtnColor ease-in-out duration-300  rounded-lg py-2 px-4  px-8 mt-8 mb-16" href="../contact/"><span>Hello</span></a>
+            <div class="social-buttons w-8/12 md:4/12 h-16 text-3xl flex space-x-12 items-center justify-center "><a class="hover:scale-150 hoverSpan ease-in-out duration-300" href="https://github.com/cesarcoboscv" rel="noreferrer" target="_blank" title="Mira mis proyectos"><span class="fa-brands fa-github"></span></a><a class="hover:scale-150 hoverSpan ease-in-out duration-300" href="https://twitter.com/cesarcoboscv" rel="noreferrer" target="_blank" title="Sigamos la plática"><span class="fa-brands fa-twitter"></span></a><a class="hover:scale-150 hoverSpan ease-in-out duration-300" href="https://linkedin.com/in/cesarcoboscv" rel="noreferrer" target="_blank" title="Mira mi perfil"><span class="fa-brands fa-linkedin"></span></a>
+            </div><span class="flex justify-center items-center text-xs mt-4">César Cobos 202x</span>
           </div>
         </section>
       </footer>
