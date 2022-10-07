@@ -3,16 +3,16 @@ mixin socialLink(link,icon,title)
         span( class="fa-brands" class=icon)
         
 mixin navLink(link,name,title,class1)
-    a(href=link rel="noreferrer" target="_self" class="hoverSpan" title=title class=class1)
+    a(href=link rel="noreferrer" target="_self" class="hover:underline hover:decoration-2 underline-offset-2" title=title class=class1)
         span=name
 mixin navLinkDisabled(link,name,title,class1,value)
     a(href=link rel="noreferrer" target="_self" class=" text-slate-400 cursor-default" title=title class=class1 onclick="return false")
         span=name
 
 mixin toolIcon(link,alt,name)
-    div.toolIcon(class="w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center")
+    div.toolIcon(class="w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center")
         img(width=40 height=40 src=link alt=alt)
-        span.toolName(class="text-xs mt-1")=name
+        span.toolName(translate="no" class="text-xs mt-1 text-center")=name
 
 mixin blogCard(title,date,description,image,altimage)
     div.card(class="w-72 h-auto rounded-3xl p-3 hover:bg-slate-800 ease-in-out duration-200  hover:scale-110 hover:shadow-xl")

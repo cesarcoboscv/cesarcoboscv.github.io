@@ -19,20 +19,6 @@
           color: #1e293b;
           font-weight:600;
       }
-      //- .carousel:hover .controls {
-      //-     opacity: 1;
-      //- }
-      //- .controls{
-      //-     justify-content: space-between;
-      //- }
-      //- .slides {
-      //-     transform: translateY(-50%);
-      //-     transition: 1s ease-in-out all;
-      //- }
-      //- .slide {
-      //-     min-width: 100%;     
-      //-     height: auto;
-      //- }
       .tab button.active1 {
           border: 4px solid #e11d48;
           color: #e11d48;
@@ -75,7 +61,6 @@
           width: 160px;
           font-weight: 600;
       }
-      
       .back{
           z-index: -3;
           transform:scale(-1);
@@ -83,7 +68,9 @@
       .rBtnColor:hover a {
           color:white;
       }
-      
+      body{
+          text-underline-offset:.4rem;
+      }
       .selection1 span::selection{
           //- background:#fda4af;
           color:#e11d48;
@@ -117,10 +104,8 @@
       .selection7 span::selection{
           //- background:#d8b4fe;
           color:#9333ea2;
-          text-decoration: underline #d8b4fe 2px;
+          text-decoration:underline #d8b4fe 2px;
           }
-      
-      
       //- .outliner{
       //-     text-shadow:
       //-     -1px -1px 0 #fda4af,
@@ -136,7 +121,7 @@
         <nav class="w-full h-16 bg-transparent flex items-center justify-center ease-in-out duration-[2000ms] z-3" id="navbar">
           <div class="mobileBar  flex lg:hidden w-10/12 justify-center md:justify-start " id="mobileBar">
             <div class="overlay w-0 fixed h-full z-4 left-0 top-0 overflow-hidden bg-[rgba(0,0,0,0.9)] ease-in-out duration-300" id="myNav"><a href="javascript:void(0)" class="closebtn  text-5xl absolute bottom-4 text-center w-full text-white" onclick="closeNav()">&times;</a>
-              <div class="overlay-content relative top-1/4 w-full mt-1/3 text-5xl px-4 text-white"><a class="hoverSpan block py-2" href="../" rel="noreferrer" target="_self" title="Ir al Inicio"><span>Home</span></a><a class=" text-slate-400 cursor-default block py-2" href="../portfolio" rel="noreferrer" target="_self" title="Portfolio" onclick="return false"><span>Portfolio</span></a><a class=" text-slate-400 cursor-default block py-2" href="../projects" rel="noreferrer" target="_self" title="Projects" onclick="return false"><span>Projects</span></a><a class="hoverSpan block py-2" href="../blog" rel="noreferrer" target="_self" title="Blog"><span>Blog</span></a>
+              <div class="overlay-content relative top-1/4 w-full mt-1/3 text-5xl px-4 text-white"><a class="hover:underline hover:decoration-2 underline-offset-2 block py-2" href="../" rel="noreferrer" target="_self" title="Ir al Inicio"><span>Home</span></a><a class=" text-slate-400 cursor-default block py-2" href="../portfolio" rel="noreferrer" target="_self" title="Portfolio" onclick="return false"><span>Portfolio</span></a><a class=" text-slate-400 cursor-default block py-2" href="../projects" rel="noreferrer" target="_self" title="Projects" onclick="return false"><span>Projects</span></a><a class=" text-slate-400 cursor-default block py-2" href="../blog" rel="noreferrer" target="_self" title="Blog" onclick="return false"><span>Blog</span></a>
               </div>
             </div>
             <div class="span fa-solid fa-bars text-3xl" id="openbtn" onClick="openNav()"></div>
@@ -144,7 +129,7 @@
           <div class="menuBar z-3 hidden w-10/12 max-w-screen-lg" id="menuBar">
             <div class="menuItems flex justify-end w-full">
               <div class="ul flex justify-end space-x-6">
-                <div class="li"> <a class="hoverSpan" href="../" rel="noreferrer" target="_self" title="Home"><span>Home</span></a>
+                <div class="li"> <a class="hover:underline hover:decoration-2 underline-offset-2" href="../" rel="noreferrer" target="_self" title="Home"><span>Home</span></a>
                 </div>
                 <div class="li"> <a class=" text-slate-400 cursor-default" href="../portfolio" rel="noreferrer" target="_self" title="Portfolio" onclick="return false"><span>Portfolio</span></a>
                 </div>
@@ -173,28 +158,28 @@
         </section>
         <section class="mytools flex h-auto min-h-[650px] justify-center items-center flex-col pb-12">
           <div class="flex justify-center items-center w-full h-16 mt-4 mb-12"><span class="rSubtitle text-4xl font-extrabold">My tools</span></div>
-          <div class="h-auto place-items-center grid grid-flow-row gap-6 grid-cols-3 md:grid-cols-6 lg:grid-cols-10">
-            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1qj7Go9vFA_WYrs3Py2iaTtCUwSxRR9tf" alt="Revit Logo"/><span class="toolName text-xs mt-1"> Revit</span></div>
-            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1zL1jlRoqzln7iB_SYEwW1TNt2JVcRRwi" alt="Inventor Logo"/><span class="toolName text-xs mt-1"> Inventor</span></div>
-            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1W22upnb3BY0-QIn2TUBTFC-7Y44N5aO6" alt="AutoCAD Logo"/><span class="toolName text-xs mt-1"> AutoCAD</span></div>
-            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1oQocKv1MWezeMU6ECi8CVLO7vRWc-Dkz" alt="SolidWorks Logo"/><span class="toolName text-xs mt-1">SolidWorks</span></div>
-            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1WSBCEu3ikzugJVJdX9tat208aH2uCkWP" alt="Python Logo"/><span class="toolName text-xs mt-1">Python</span></div>
-            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=17R07kHo3igxYyBaCbwM49eByvfFvNoAj" alt="Javascript Logo"/><span class="toolName text-xs mt-1">Javascript</span></div>
-            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1fiRQdoiQNSmQGNyv8YhVCaCcQBWLP9Fr" alt="HTML 5 Logo"/><span class="toolName text-xs mt-1">HTML 5</span></div>
-            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1sCE9opP0dtTNdKlGHWJJSHjyUifLULtG" alt="CSS 3 Logo"/><span class="toolName text-xs mt-1">CSS 3</span></div>
-            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1Sed5M9pki00_OjsYAX1Iq653MrbckbXm" alt="Tailwind CSS Logo"/><span class="toolName text-xs mt-1">Tailwind</span></div>
-            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1TdBjhyC661RMDDTnrGKxa9E8fvgGutjR" alt="Sass Logo"/><span class="toolName text-xs mt-1">Sass</span></div>
-            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1uzDkVHTElBgotG-No709re0yHevUDb91" alt="Git Logo"/><span class="toolName text-xs mt-1">Git</span></div>
-            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1NX-lyl7FoUynvlA4ZxTT23ZskzTShRPn" alt="GitHub Logo"/><span class="toolName text-xs mt-1">GitHub</span></div>
-            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1OUnPV_9Gxa--zXLjYtObU_2Lck4IMDs4" alt="Visual Studio Code Logo"/><span class="toolName text-xs mt-1">VS Code</span></div>
-            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1oHDIvVewakJD6LmZKjBAItqlm7fx1cN-" alt="Google Logo"/><span class="toolName text-xs mt-1">Google</span></div>
-            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1dbpiZFP2yFnDwARTlI5B__PNipRoX1PN" alt="Microsoft Project Logo"/><span class="toolName text-xs mt-1">MS Project</span></div>
-            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1Qa4E26b3VN0Bav_HZujjGdSXQTpKhaE_" alt="Photoshop Logo"/><span class="toolName text-xs mt-1">Photoshop</span></div>
-            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=12ZSISqVOHFzZe9SZj6ujk05P5NxV2WQ1" alt="Notion Logo"/><span class="toolName text-xs mt-1">Notion</span></div>
-            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1k0ufripom9X6CgmrSaqv7NJvRi8cmbxK" alt="Adobe Illustrator Logo"/><span class="toolName text-xs mt-1">Illustrator</span></div>
-            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1P7TsOmeo188wQDbAmiFMiRst19Rr8kP_" alt="Google Colab Logo"/><span class="toolName text-xs mt-1">Colab</span></div>
-            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1XewZ9TkdKyC-1h7yJhdtkpQT8UF8giuO" alt="Adobe XD Logo"/><span class="toolName text-xs mt-1">Adobe XD</span></div>
-            <div class="toolIcon w-16 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1U6lZ6q0v-Alk2EigoBtlyPVhZktdBVPm" alt="Corel DRAW Logo"/><span class="toolName text-xs mt-1">Corel DRAW</span></div>
+          <div class="h-auto place-items-center grid grid-flow-row gap-4 grid-cols-3 md:grid-cols-6 lg:grid-cols-10">
+            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1qj7Go9vFA_WYrs3Py2iaTtCUwSxRR9tf" alt="Revit Logo"/><span class="toolName text-xs mt-1 text-center" translate="no"> Revit</span></div>
+            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1zL1jlRoqzln7iB_SYEwW1TNt2JVcRRwi" alt="Inventor Logo"/><span class="toolName text-xs mt-1 text-center" translate="no"> Inventor</span></div>
+            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1W22upnb3BY0-QIn2TUBTFC-7Y44N5aO6" alt="AutoCAD Logo"/><span class="toolName text-xs mt-1 text-center" translate="no"> AutoCAD</span></div>
+            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1oQocKv1MWezeMU6ECi8CVLO7vRWc-Dkz" alt="SolidWorks Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">SolidWorks</span></div>
+            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1WSBCEu3ikzugJVJdX9tat208aH2uCkWP" alt="Python Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">Python</span></div>
+            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=17R07kHo3igxYyBaCbwM49eByvfFvNoAj" alt="Javascript Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">Javascript</span></div>
+            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1fiRQdoiQNSmQGNyv8YhVCaCcQBWLP9Fr" alt="HTML 5 Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">HTML 5</span></div>
+            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1sCE9opP0dtTNdKlGHWJJSHjyUifLULtG" alt="CSS 3 Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">CSS 3</span></div>
+            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1Sed5M9pki00_OjsYAX1Iq653MrbckbXm" alt="Tailwind CSS Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">Tailwind</span></div>
+            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1TdBjhyC661RMDDTnrGKxa9E8fvgGutjR" alt="Sass Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">Sass</span></div>
+            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1uzDkVHTElBgotG-No709re0yHevUDb91" alt="Git Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">Git</span></div>
+            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1NX-lyl7FoUynvlA4ZxTT23ZskzTShRPn" alt="GitHub Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">GitHub</span></div>
+            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1OUnPV_9Gxa--zXLjYtObU_2Lck4IMDs4" alt="Visual Studio Code Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">VS Code</span></div>
+            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1oHDIvVewakJD6LmZKjBAItqlm7fx1cN-" alt="Google Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">Google</span></div>
+            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1dbpiZFP2yFnDwARTlI5B__PNipRoX1PN" alt="Microsoft Project Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">MS Project</span></div>
+            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1Qa4E26b3VN0Bav_HZujjGdSXQTpKhaE_" alt="Photoshop Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">Photoshop</span></div>
+            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=12ZSISqVOHFzZe9SZj6ujk05P5NxV2WQ1" alt="Notion Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">Notion</span></div>
+            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1k0ufripom9X6CgmrSaqv7NJvRi8cmbxK" alt="Adobe Illustrator Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">Illustrator</span></div>
+            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1P7TsOmeo188wQDbAmiFMiRst19Rr8kP_" alt="Google Colab Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">Colab</span></div>
+            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1XewZ9TkdKyC-1h7yJhdtkpQT8UF8giuO" alt="Adobe XD Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">Adobe XD</span></div>
+            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1U6lZ6q0v-Alk2EigoBtlyPVhZktdBVPm" alt="Corel DRAW Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">Corel DRAW</span></div>
           </div>
         </section><span class="rSubtitle flex justify-center items-center text-4xl font-extrabold pt-12 pb-16">Who I worked with</span>
         <section class="flex justify-center flex-col md:justify-center items-center w-full"><span class="w-10/12 max-w-5xl my-16 text-lg">During my experience, some places where I've worked led me to develop projects for large companies in different areas: Oil & gas, Automotive, Energy, even personal projects.</span>
@@ -209,18 +194,18 @@
             <div class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9" id="benteler"><span class="mb-4">I have carried out multiple HVAC projects for air extraction in welding ops., including activities like:</span>
               <ul class="ml-8">
                 <li><span>- Project Management</span></li>
-                <li><span>- Indoor Surveys </span></li>
+                <li><span translate="no">- Indoor Surveys </span></li>
                 <li><span>- Metallic Structure Design</span></li>
                 <li><span>- Task tracking</span></li>
                 <li><span>- </span><span class="font-bold hoverSpan">LISP </span><span>Routines for drawing</span></li>
-                <li> <span>. </span><span class="font-bold hoverSpan">Python </span><span>Routines for files administration</span></li>
-                <li><span>- </span><span class="font-bold hoverSpan">MS Project</span></li>
+                <li> <span>- </span><span class="font-bold hoverSpan">Python </span><span>Routines for files administration</span></li>
+                <li><span>- </span><span class="font-bold hoverSpan" translate="no">MS Project</span></li>
               </ul><span class="my-4 font-bold">The tools </span>
               <ul class="ml-8">
                 <li><span>- </span><span class="font-bold hoverSpan">AutoCAD Mechanical</span></li>
                 <li><span>- </span><span class="font-bold hoverSpan">AutoDESK Inventor</span></li>
                 <li><span>- </span><span class="font-bold hoverSpan">VS Code</span></li>
-                <li><span>- </span><span class="font-bold hoverSpan">MS Project</span></li>
+                <li><span>- </span><span class="font-bold hoverSpan" translate="no">MS Project</span></li>
               </ul>
             </div>
             <div class="tabcontent  md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9" id="tenneco"><span class="mb-4">I have carried out multiple HVAC projects for air extraction in welding ops., including activities like:</span>
@@ -231,9 +216,9 @@
                 <li><span>- Task tracking</span></li>
               </ul><span class="my-4 font-bold">The tools </span>
               <ul class="ml-8">
-                <li><span>- </span><span class="font-bold hoverSpan">AutoCAD Mechanical</span></li>
-                <li><span>- </span><span class="font-bold hoverSpan">AutoDESK Inventor</span></li>
-                <li><span>- </span><span class="font-bold hoverSpan">VS Code</span></li>
+                <li><span>- </span><span class="font-bold hoverSpan" translate="no">AutoCAD Mechanical</span></li>
+                <li><span>- </span><span class="font-bold hoverSpan" translate="no">AutoDESK Inventor</span></li>
+                <li><span>- </span><span class="font-bold hoverSpan" translate="no">VS Code</span></li>
               </ul>
             </div>
             <div class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9" id="mitsubishi"><span>Supervision of maintenance activities in combined cycle plant</span>
@@ -243,9 +228,9 @@
                 <li><span>- plans</span></li>
               </ul><span class="my-4 font-bold">The tools </span>
               <ul class="ml-8">
-                <li> <span>- </span><span class="font-bold hoverSpan">AutoCAD Mechanical</span></li>
-                <li> <span>- </span><span class="font-bold hoverSpan">AutoDESK Inventor</span></li>
-                <li><span>- </span><span class="font-bold hoverSpan">VS Code</span></li>
+                <li> <span>- </span><span class="font-bold hoverSpan" translate="no">AutoCAD Mechanical</span></li>
+                <li> <span>- </span><span class="font-bold hoverSpan" translate="no">AutoDESK Inventor</span></li>
+                <li><span>- </span><span class="font-bold hoverSpan" translate="no">VS Code</span></li>
               </ul>
             </div>
             <div class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9" id="ptb"><span>I have made multiple projects for geographical database maintenance for oil & gas area</span>
@@ -256,26 +241,26 @@
                 <li><span>- </span><span class="font-bold hoverSpan">Geospatial </span><span>Info loaded to Database</span></li>
               </ul><span class="my-4 font-bold">The tools </span>
               <ul class="ml-8"> 
-                <li><span>- </span><span class="font-bold hoverSpan">AutoCAD Map 3D</span></li>
-                <li><span>- </span><span class="font-bold hoverSpan">GeoMEDIA </span></li>
-                <li><span>- </span><span class="font-bold hoverSpan">ERDAS Imagine </span></li>
-                <li><span>- </span><span class="font-bold hoverSpan">Plex Earth </span></li>
-                <li><span>- </span><span class="font-bold hoverSpan">Pix 4D Map</span></li>
+                <li><span>- </span><span class="font-bold hoverSpan" translate="no">AutoCAD Map 3D</span></li>
+                <li><span>- </span><span class="font-bold hoverSpan" translate="no">GeoMEDIA </span></li>
+                <li><span>- </span><span class="font-bold hoverSpan" translate="no">ERDAS Imagine </span></li>
+                <li><span>- </span><span class="font-bold hoverSpan" translate="no">Plex Earth </span></li>
+                <li><span>- </span><span class="font-bold hoverSpan" translate="no">Pix 4D Map</span></li>
               </ul>
             </div>
             <div class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9" id="personal"><span>Also, I've made small projects that helped me to improve daily tasks</span>
               <ul class="ml-8">
-                <li><span>- </span><span class="font-bold hoverSpan">LIPS </span><span>Routines for fast drawings</span></li>
-                <li><span>- </span><span class="font-bold hoverSpan">Python </span><span>routines to find files and create </span><span class="font-bold hoverSpan">CSV </span></li>
-                <li><span>- Small Apps with </span><span class="font-bold hoverSpan">Javascript </span><span>: Unit Conversors, Calculate Mechanical components</span></li>
+                <li><span>- </span><span class="font-bold hoverSpan" translate="no">LISP </span><span>Routines for fast drawings</span></li>
+                <li><span>- </span><span class="font-bold hoverSpan" translate="no">Python </span><span>routines to find files and create </span><span class="font-bold hoverSpan">CSV </span></li>
+                <li><span>- Small Apps with </span><span class="font-bold hoverSpan" translate="no">Javascript </span><span>: Unit Conversors, Calculate Mechanical components</span></li>
                 <li><span>- This </span><span class="font-bold hoverSpan">Web Site</span></li>
               </ul><span class="my-4 font-bold">The tools </span>
               <ul class="ml-8"> 
-                <li><span>- </span><span class="font-bold hoverSpan">VS Code</span></li>
-                <li><span>- </span><span class="font-bold hoverSpan">Python</span></li>
-                <li><span>- </span><span class="font-bold hoverSpan">JavaScript</span></li>
-                <li><span>- </span><span class="font-bold hoverSpan">HTML </span><span>& </span><span class="font-bold hoverSpan">CSS</span></li>
-                <li><span>- </span><span class="font-bold hoverSpan">Tailwind CSS</span></li>
+                <li><span>- </span><span translate="no" lass="font-bold hoverSpan">VS Code</span></li>
+                <li><span>- </span><span translate="no" lass="font-bold hoverSpan">Python</span></li>
+                <li><span>- </span><span class="font-bold hoverSpan" translate="no">JavaScript</span></li>
+                <li><span>- </span><span class="font-bold hoverSpan" translate="no">HTML </span><span>& </span><span class="font-bold hoverSpan" translate="no">CSS</span></li>
+                <li><span>- </span><span class="font-bold hoverSpan" translate="no">Tailwind CSS</span></li>
               </ul>
             </div>
           </div><a class="cursor-default  text-slate-300   border-solid border-2 border-slate-300  rounded-lg py-2 px-4 " href="../projects/" onclick="return false"><span>See more projects</span></a>

@@ -34,10 +34,16 @@ if(deviceType() == "mobile" ){
     })
 
     }else if(deviceType() =="tablet"){
-        menuBar.classList.remove("hidden")
-        menuBar.classList.add("flex")
-        mobileBar.classList.add("hidden")
-        header.classList.remove("bottom-0")
+        menuBar.classList.remove("hidden");
+        menuBar.classList.add("flex");
+        mobileBar.classList.add("hidden");
+        header.classList.remove("bottom-0");
+        bg.style.filter="blur(8px) opacity(.6)";
+        window.addEventListener("scroll", function () { 
+            var positionY= window.scrollY;
+            // converting scroll value to background Y movement
+            bg.style.backgroundPosition=   ((positionY * .2 )  + 'px 0px');
+        })
     } else {
         // If a desktop is detected then show the menu bar
         menuBar.classList.remove("hidden")
