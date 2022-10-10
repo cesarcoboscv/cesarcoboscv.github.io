@@ -11,114 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;600;700;800&amp;display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://drive.google.com/uc?export=view&amp;id=1S5Dfb4ER5X1faqUdnRqa1qwsqWTvLRPp" type="image/x-icon">
     <title>Home</title>
-    <style>
-      .toolIcon {
-          color:transparent;
-      }
-      .toolIcon:hover {
-          color: #1e293b;
-          font-weight:600;
-      }
-      .tab button.active1 {
-          border: 4px solid #e11d48;
-          color: #e11d48;
-          width: 160px;
-          font-weight: 600;
-      }
-      .tab button.active2 {
-          border: 4px solid #4f46e5;
-          color: #4f46e5;
-          width: 160px;
-          font-weight: 600;
-      }
-      .tab button.active3 {
-          border: 4px solid #059669;
-          color: #059669;
-          width: 160px;
-          font-weight: 600;
-      }
-      .tab button.active4 {
-          border: 4px solid #d97706;
-          color: #d97706;
-          width: 160px;
-          font-weight: 600;
-      }
-      .tab button.active5 {
-          border: 4px solid #65a30d;
-          color: #65a30d;
-          width: 160px;
-          font-weight: 600;
-      }
-      .tab button.active6 {
-          border: 4px solid#0891b2;
-          color: #0891b2;
-          width: 160px;
-          font-weight: 600;
-      }
-      .tab button.active7 {
-          border: 4px solid #9333ea2;
-          color: #9333ea2;
-          width: 160px;
-          font-weight: 600;
-      }
-      .back{
-          z-index: -3;
-          transform:scale(-1);
-      }
-      .rBtnColor:hover a {
-          color:white;
-      }
-      body{
-          text-underline-offset:.4rem;
-      }
-      .selection1 span::selection{
-          //- background:#fda4af;
-          color:#e11d48;
-          text-decoration: underline #fda4af 2px;
-          }
-      .selection2 span::selection{
-          //- background:#a5b4fc;
-          color:#4f46e5;
-          text-decoration: underline #a5b4fc 2px;
-          }
-      .selection3 span::selection{
-          //- background:#6ee7b7;
-          color:#059669;
-          text-decoration: underline #6ee7b7 2px;
-          }
-      .selection4 span::selection{
-          //- background:#fcd34d;
-          color:#d97706;
-          text-decoration: underline #fcd34d 2px;
-          }
-      .selection5 span::selection{
-          //- background:#bef264;
-          color:#65a30d;
-          text-decoration: underline #bef264 2px;
-          }
-      .selection6 span::selection{
-          //- background:#67e8f9;
-          color:#0891b2;
-          text-decoration: underline #67e8f9 2px;
-          }
-      .selection7 span::selection{
-          //- background:#d8b4fe;
-          color:#9333ea2;
-          text-decoration:underline #d8b4fe 2px;
-          }
-      //- .outliner{
-      //-     text-shadow:
-      //-     -1px -1px 0 #fda4af,
-      //-     1px -1px 0 #fda4af,
-      //-     -1px 1px 0 #fda4af,
-      //-     1px 1px 0 #fda4af; 
-      //- }
-      
-    </style>
+    <style></style>
     <body id="bodySelect">
       <div class="back bg-no-repeat bg-cover w-[1500px] h-full lg:h-[1600px] md:w-[2400px] fixed" id="back" style="background-image: url('https://drive.google.com/uc?export=view&amp;id=1oAvNI2McpbrmDZXK2NfytrZcVrQBFzG0')"></div>
       <header class="w-full fixed bottom-0 z-20" id="header">
-        <nav class="w-full h-16 bg-transparent flex items-center justify-center ease-in-out duration-[2000ms] z-3" id="navbar">
+        <nav class="w-full h-16 flex items-center justify-center ease-in-out duration-[2000ms] z-3" id="navbar">
           <div class="mobileBar  flex lg:hidden w-10/12 justify-center md:justify-start " id="mobileBar">
             <div class="overlay w-0 fixed h-full z-4 left-0 top-0 overflow-hidden bg-[rgba(0,0,0,0.9)] ease-in-out duration-300" id="myNav"><a href="javascript:void(0)" class="closebtn  text-5xl absolute bottom-4 text-center w-full text-white" onclick="closeNav()">&times;</a>
               <div class="overlay-content relative top-1/4 w-full mt-1/3 text-5xl px-4 text-white"><a class="hover:underline hover:decoration-2 underline-offset-2 block py-2" href="../" rel="noreferrer" target="_self" title="Ir al Inicio"><span>Home</span></a><a class=" text-slate-400 cursor-default block py-2" href="../portfolio" rel="noreferrer" target="_self" title="Portfolio" onclick="return false"><span>Portfolio</span></a><a class=" text-slate-400 cursor-default block py-2" href="../projects" rel="noreferrer" target="_self" title="Projects" onclick="return false"><span>Projects</span></a><a class=" text-slate-400 cursor-default block py-2" href="../blog" rel="noreferrer" target="_self" title="Blog" onclick="return false"><span>Blog</span></a>
@@ -158,29 +55,7 @@
         </section>
         <section class="mytools flex h-auto min-h-[650px] justify-center items-center flex-col pb-12">
           <div class="flex justify-center items-center w-full h-16 mt-4 mb-12"><span class="rSubtitle text-4xl font-extrabold">My tools</span></div>
-          <div class="h-auto place-items-center grid grid-flow-row gap-4 grid-cols-3 md:grid-cols-6 lg:grid-cols-10">
-            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1qj7Go9vFA_WYrs3Py2iaTtCUwSxRR9tf" alt="Revit Logo"/><span class="toolName text-xs mt-1 text-center" translate="no"> Revit</span></div>
-            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1zL1jlRoqzln7iB_SYEwW1TNt2JVcRRwi" alt="Inventor Logo"/><span class="toolName text-xs mt-1 text-center" translate="no"> Inventor</span></div>
-            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1W22upnb3BY0-QIn2TUBTFC-7Y44N5aO6" alt="AutoCAD Logo"/><span class="toolName text-xs mt-1 text-center" translate="no"> AutoCAD</span></div>
-            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1oQocKv1MWezeMU6ECi8CVLO7vRWc-Dkz" alt="SolidWorks Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">SolidWorks</span></div>
-            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1WSBCEu3ikzugJVJdX9tat208aH2uCkWP" alt="Python Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">Python</span></div>
-            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=17R07kHo3igxYyBaCbwM49eByvfFvNoAj" alt="Javascript Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">Javascript</span></div>
-            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1fiRQdoiQNSmQGNyv8YhVCaCcQBWLP9Fr" alt="HTML 5 Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">HTML 5</span></div>
-            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1sCE9opP0dtTNdKlGHWJJSHjyUifLULtG" alt="CSS 3 Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">CSS 3</span></div>
-            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1Sed5M9pki00_OjsYAX1Iq653MrbckbXm" alt="Tailwind CSS Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">Tailwind</span></div>
-            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1TdBjhyC661RMDDTnrGKxa9E8fvgGutjR" alt="Sass Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">Sass</span></div>
-            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1uzDkVHTElBgotG-No709re0yHevUDb91" alt="Git Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">Git</span></div>
-            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1NX-lyl7FoUynvlA4ZxTT23ZskzTShRPn" alt="GitHub Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">GitHub</span></div>
-            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1OUnPV_9Gxa--zXLjYtObU_2Lck4IMDs4" alt="Visual Studio Code Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">VS Code</span></div>
-            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1oHDIvVewakJD6LmZKjBAItqlm7fx1cN-" alt="Google Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">Google</span></div>
-            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1dbpiZFP2yFnDwARTlI5B__PNipRoX1PN" alt="Microsoft Project Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">MS Project</span></div>
-            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1Qa4E26b3VN0Bav_HZujjGdSXQTpKhaE_" alt="Photoshop Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">Photoshop</span></div>
-            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=12ZSISqVOHFzZe9SZj6ujk05P5NxV2WQ1" alt="Notion Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">Notion</span></div>
-            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1k0ufripom9X6CgmrSaqv7NJvRi8cmbxK" alt="Adobe Illustrator Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">Illustrator</span></div>
-            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1P7TsOmeo188wQDbAmiFMiRst19Rr8kP_" alt="Google Colab Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">Colab</span></div>
-            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1XewZ9TkdKyC-1h7yJhdtkpQT8UF8giuO" alt="Adobe XD Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">Adobe XD</span></div>
-            <div class="toolIcon w-20 h-16 hover:scale-150 ease-in-out duration-200 flex flex-col justify-center items-center"><img width="40" height="40" src="https://drive.google.com/uc?export=view&amp;id=1U6lZ6q0v-Alk2EigoBtlyPVhZktdBVPm" alt="Corel DRAW Logo"/><span class="toolName text-xs mt-1 text-center" translate="no">Corel DRAW</span></div>
-          </div>
+          <div class="h-auto place-items-center grid grid-flow-row gap-4 grid-cols-3 md:grid-cols-6 lg:grid-cols-10" id="iconContainer"></div>
         </section><span class="rSubtitle flex justify-center items-center text-4xl font-extrabold pt-12 pb-16">Who I worked with</span>
         <section class="flex justify-center flex-col md:justify-center items-center w-full"><span class="w-10/12 max-w-5xl my-16 text-lg">During my experience, some places where I've worked led me to develop projects for large companies in different areas: Oil & gas, Automotive, Energy, even personal projects.</span>
           <div class="grid grid-cols-1 md:grid-cols-8 h-[800px] md:h-[500px] w-11/12 md:w-[600px] lg:w-[900px]">
@@ -282,6 +157,8 @@
       <script src="../assets/js/device.js"></script>
       <script src="../assets/js/nav.js"></script>
       <script src="./assets/js/randomColor.js"></script>
+      <script src="./assets/js/iconGrid.js"> </script>
+      <link rel="stylesheet" href="/assets/css/extraStyles.css">
     </body>
   </head>
 </html>

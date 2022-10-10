@@ -1,5 +1,4 @@
 const delay = 10000; //ms
-
 const slides = document.querySelector(".slides");
 const slidesCount = slides.childElementCount;
 const maxLeft = (slidesCount - 1) * 100 * -1;
@@ -12,7 +11,6 @@ function changeSlide(next = true) {
   } else {
     current = current < 0 ? current + 100 : maxLeft;
   }
-
   slides.style.left = current + "%";
 }
 

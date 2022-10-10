@@ -1,5 +1,4 @@
 var navBar = document.getElementById("navbar");
-var resumebtn = document.getElementById("resumebtn");
 
 window.onscroll = function () {
     if (document.documentElement.scrollTop >= 80) {
@@ -11,5 +10,3 @@ window.onscroll = function () {
         navBar.classList.remove("text-white");
     }
 }
-
-

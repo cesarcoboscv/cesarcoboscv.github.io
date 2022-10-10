@@ -5,6 +5,7 @@ include ../components/_head.pug
     script(charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js")
         
     body
+        .back#back(class="bg-no-repeat bg-cover w-[1500px] h-full lg:h-[1600px] md:w-[2400px] fixed" style="background-image: url('https://drive.google.com/uc?export=view&id=1oAvNI2McpbrmDZXK2NfytrZcVrQBFzG0')")
         include ../components/_header.pug
 
         main(class="pt-16 flex flex-col justify-center items-center")
@@ -13,3 +14,5 @@ include ../components/_head.pug
                 script(src="./form.js" class="text-2xl") 
 
         +jsScripts()
+        //- script(src="../assets/js/randomColor.js") 
+        link(rel="stylesheet", href="../assets/css/extraStyles.css")

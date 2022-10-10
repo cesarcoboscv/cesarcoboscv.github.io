@@ -8,7 +8,6 @@ window.addEventListener("scroll", function () {
     bg.style.backgroundPosition= '0px '+  ((con * -.1 )  + 'px');
 })
 
-
 // Background mouse movement efect
 document.addEventListener('mousemove', mouse_position, false)
 function mouse_position()
