@@ -4,8 +4,8 @@ include ../components/_head.pug
     +pageTitle("Let's get in touch")
     script(charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js")
         
-    body
-        .back#back(class="bg-no-repeat bg-cover w-[1500px] h-full lg:h-[1600px] md:w-[2400px] fixed" style="background-image: url('https://drive.google.com/uc?export=view&id=1oAvNI2McpbrmDZXK2NfytrZcVrQBFzG0')")
+    body#bodySelect
+        +bluredBackground
         include ../components/_header.pug
 
         main(class="pt-16 flex flex-col justify-center items-center")
@@ -13,6 +13,8 @@ include ../components/_head.pug
             div(class="forms md:w-[450px] h-5/6")
                 script(src="./form.js" class="text-2xl") 
 
-        +jsScripts()
-        //- script(src="../assets/js/randomColor.js") 
+        script(src="../assets/js/deviceDetection.js")
+        script(src="../assets/js/openNav.js")
+        script(src="../assets/js/navColorScroll.js")
+        script(src="../assets/js/colorSchema.js") 
         link(rel="stylesheet", href="../assets/css/extraStyles.css")

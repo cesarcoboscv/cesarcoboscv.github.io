@@ -2,14 +2,13 @@ span.rSubtitle(class="flex justify-center items-center text-4xl font-extrabold p
 section(class="flex justify-center flex-col md:justify-center items-center w-full")
     span(class="w-10/12 max-w-5xl my-16 text-lg") During my experience, some places where I've worked led me to develop projects for large companies in different areas: Oil & gas, Automotive, Energy, even personal projects.
     div(class="grid grid-cols-1 md:grid-cols-8 h-[800px] md:h-[500px] w-11/12 md:w-[600px] lg:w-[900px]")
-        div( class="tab gap-4 h-48 md:max-h-96 grid grid-cols-2 md:grid-cols-1 md:col-start-1 md:col-end-4 lg:col-end-3")
-            +tabWork("openTab(event, 'benteler')","defaultOpen","Benteler")
-            +tabWork("openTab(event, 'tenneco')","","Tenneco")
-            +tabWork("openTab(event, 'mitsubishi')","","Mitsubishi")
-            +tabWork("openTab(event, 'ptb')","","PTB")
-            +tabWork("openTab(event, 'personal')","","Personal")
-
-        div(id="benteler" class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9")
+        div( id="tab" class="tab gap-4 h-48 md:max-h-96 grid grid-cols-2 md:grid-cols-1 md:col-start-1 md:col-end-4 lg:col-end-3")
+            +tabWork("openTab('bentelerTab')","benteler","Benteler")
+            +tabWork("openTab('tennecoTab')","tenneco","Tenneco")
+            +tabWork("openTab('mitsubishiTab')","mitsubishi","Mitsubishi")
+            +tabWork("openTab('ptbTab')","ptb","PTB")
+            +tabWork("openTab('personalTab')","personal","Personal")
+        div(id="bentelerTab" class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9")
             span(class="mb-4") I have carried out multiple HVAC projects for air extraction in welding ops., including activities like:
             ul(class="ml-8")
                 li
@@ -45,7 +44,7 @@ section(class="flex justify-center flex-col md:justify-center items-center w-ful
                 li
                     span - 
                     span(translate="no" class="font-bold hoverSpan") MS Project
-        div(id="tenneco" class="tabcontent  md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9")
+        div(id="tennecoTab" class="tabcontent  md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9")
             span(class="mb-4") I have carried out multiple HVAC projects for air extraction in welding ops., including activities like:
             ul(class="ml-8")
                 li
@@ -69,7 +68,7 @@ section(class="flex justify-center flex-col md:justify-center items-center w-ful
                     span - 
                     span(translate="no" class="font-bold hoverSpan") VS Code
 
-        div(id="mitsubishi" class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9")
+        div(id="mitsubishiTab" class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9")
             span Supervision of maintenance activities in combined cycle plant
             ul(class="ml-8") 
                 li
@@ -90,7 +89,7 @@ section(class="flex justify-center flex-col md:justify-center items-center w-ful
                     span - 
                     span(translate="no" class="font-bold hoverSpan") VS Code
         
-        div(id="ptb" class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9")
+        div(id="ptbTab" class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9")
             span I have made multiple projects for geographical database maintenance for oil & gas area
             ul(class="ml-8")
                 li
@@ -120,7 +119,7 @@ section(class="flex justify-center flex-col md:justify-center items-center w-ful
                 li
                     span - 
                     span(translate="no" class="font-bold hoverSpan") Pix 4D Map
-        div(id="personal" class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9")
+        div(id="personalTab" class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9")
             span Also, I've made small projects that helped me to improve daily tasks
             ul(class="ml-8")
                 li

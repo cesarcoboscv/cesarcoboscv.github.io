@@ -9,7 +9,7 @@ include ./components/_head.pug
         
 
     body#bodySelect
-        .back#back(class="bg-no-repeat bg-cover w-[1500px] h-full lg:h-[1600px] md:w-[2400px] fixed" style="background-image: url('https://drive.google.com/uc?export=view&id=1oAvNI2McpbrmDZXK2NfytrZcVrQBFzG0')")
+        +bluredBackground
         include ./components/_header.pug
 
         main
@@ -18,10 +18,13 @@ include ./components/_head.pug
             include ./components/_myToolssection.pug
             include ./components/_workedSection.pug
             include ./components/_blogEntriesSection.pug
-
+        footer
         include ./components/_footer.pug
 
-        +jsScripts()
-        script(src="./assets/js/randomColor.js")
+        script(src="./assets/js/deviceDetection.js")
+        script(src="./assets/js/openNav.js")
+        script(src="./assets/js/navColorScroll.js")
+        script(src="./assets/js/colorSchema.js")
         script(src="./assets/js/iconGrid.js") 
+        script(src="./assets/js/workTabs.js")
         link(rel="stylesheet", href="/assets/css/extraStyles.css")

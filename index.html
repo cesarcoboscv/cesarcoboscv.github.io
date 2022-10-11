@@ -59,14 +59,14 @@
         </section><span class="rSubtitle flex justify-center items-center text-4xl font-extrabold pt-12 pb-16">Who I worked with</span>
         <section class="flex justify-center flex-col md:justify-center items-center w-full"><span class="w-10/12 max-w-5xl my-16 text-lg">During my experience, some places where I've worked led me to develop projects for large companies in different areas: Oil & gas, Automotive, Energy, even personal projects.</span>
           <div class="grid grid-cols-1 md:grid-cols-8 h-[800px] md:h-[500px] w-11/12 md:w-[600px] lg:w-[900px]">
-            <div class="tab gap-4 h-48 md:max-h-96 grid grid-cols-2 md:grid-cols-1 md:col-start-1 md:col-end-4 lg:col-end-3">
-              <button class="tablinks cursor-pointer block w-32 h-12  rounded-3xl  ease-in-put duration-300 py-2 px-4 text-center md:text-center " onclick="openTab(event, 'benteler')" id="defaultOpen"><span>Benteler</span></button>
-              <button class="tablinks cursor-pointer block w-32 h-12  rounded-3xl  ease-in-put duration-300 py-2 px-4 text-center md:text-center " onclick="openTab(event, 'tenneco')" id=""><span>Tenneco</span></button>
-              <button class="tablinks cursor-pointer block w-32 h-12  rounded-3xl  ease-in-put duration-300 py-2 px-4 text-center md:text-center " onclick="openTab(event, 'mitsubishi')" id=""><span>Mitsubishi</span></button>
-              <button class="tablinks cursor-pointer block w-32 h-12  rounded-3xl  ease-in-put duration-300 py-2 px-4 text-center md:text-center " onclick="openTab(event, 'ptb')" id=""><span>PTB</span></button>
-              <button class="tablinks cursor-pointer block w-32 h-12  rounded-3xl  ease-in-put duration-300 py-2 px-4 text-center md:text-center " onclick="openTab(event, 'personal')" id=""><span>Personal</span></button>
+            <div class="tab gap-4 h-48 md:max-h-96 grid grid-cols-2 md:grid-cols-1 md:col-start-1 md:col-end-4 lg:col-end-3" id="tab">
+              <button class="tablinks cursor-pointer block w-32 h-12  rounded-3xl  ease-in-put duration-300 py-2 px-4 text-center md:text-center " onclick="openTab('bentelerTab')" id="benteler"><span>Benteler</span></button>
+              <button class="tablinks cursor-pointer block w-32 h-12  rounded-3xl  ease-in-put duration-300 py-2 px-4 text-center md:text-center " onclick="openTab('tennecoTab')" id="tenneco"><span>Tenneco</span></button>
+              <button class="tablinks cursor-pointer block w-32 h-12  rounded-3xl  ease-in-put duration-300 py-2 px-4 text-center md:text-center " onclick="openTab('mitsubishiTab')" id="mitsubishi"><span>Mitsubishi</span></button>
+              <button class="tablinks cursor-pointer block w-32 h-12  rounded-3xl  ease-in-put duration-300 py-2 px-4 text-center md:text-center " onclick="openTab('ptbTab')" id="ptb"><span>PTB</span></button>
+              <button class="tablinks cursor-pointer block w-32 h-12  rounded-3xl  ease-in-put duration-300 py-2 px-4 text-center md:text-center " onclick="openTab('personalTab')" id="personal"><span>Personal</span></button>
             </div>
-            <div class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9" id="benteler"><span class="mb-4">I have carried out multiple HVAC projects for air extraction in welding ops., including activities like:</span>
+            <div class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9" id="bentelerTab"><span class="mb-4">I have carried out multiple HVAC projects for air extraction in welding ops., including activities like:</span>
               <ul class="ml-8">
                 <li><span>- Project Management</span></li>
                 <li><span translate="no">- Indoor Surveys </span></li>
@@ -83,7 +83,7 @@
                 <li><span>- </span><span class="font-bold hoverSpan" translate="no">MS Project</span></li>
               </ul>
             </div>
-            <div class="tabcontent  md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9" id="tenneco"><span class="mb-4">I have carried out multiple HVAC projects for air extraction in welding ops., including activities like:</span>
+            <div class="tabcontent  md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9" id="tennecoTab"><span class="mb-4">I have carried out multiple HVAC projects for air extraction in welding ops., including activities like:</span>
               <ul class="ml-8">
                 <li><span>- Project Management</span></li>
                 <li><span>- Indoor Surveys </span></li>
@@ -96,7 +96,7 @@
                 <li><span>- </span><span class="font-bold hoverSpan" translate="no">VS Code</span></li>
               </ul>
             </div>
-            <div class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9" id="mitsubishi"><span>Supervision of maintenance activities in combined cycle plant</span>
+            <div class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9" id="mitsubishiTab"><span>Supervision of maintenance activities in combined cycle plant</span>
               <ul class="ml-8"> 
                 <li><span>- Supervision </span></li>
                 <li><span>- Task tracking</span></li>
@@ -108,7 +108,7 @@
                 <li><span>- </span><span class="font-bold hoverSpan" translate="no">VS Code</span></li>
               </ul>
             </div>
-            <div class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9" id="ptb"><span>I have made multiple projects for geographical database maintenance for oil & gas area</span>
+            <div class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9" id="ptbTab"><span>I have made multiple projects for geographical database maintenance for oil & gas area</span>
               <ul class="ml-8">
                 <li><span>- Drone surveys</span></li>
                 <li><span>- Terrain 3D models</span></li>
@@ -123,7 +123,7 @@
                 <li><span>- </span><span class="font-bold hoverSpan" translate="no">Pix 4D Map</span></li>
               </ul>
             </div>
-            <div class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9" id="personal"><span>Also, I've made small projects that helped me to improve daily tasks</span>
+            <div class="tabcontent md:col-start-4 md:col-end-9 lg:col-start-3 md:col-end-9" id="personalTab"><span>Also, I've made small projects that helped me to improve daily tasks</span>
               <ul class="ml-8">
                 <li><span>- </span><span class="font-bold hoverSpan" translate="no">LISP </span><span>Routines for fast drawings</span></li>
                 <li><span>- </span><span class="font-bold hoverSpan" translate="no">Python </span><span>routines to find files and create </span><span class="font-bold hoverSpan">CSV </span></li>
@@ -145,19 +145,19 @@
           <div class=" visible justify-center items-center grid grid-flow-row  gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-auto"></div><span class="flex justify-center items-center text-2xl font-bold">Nothing is written yet</span>
         </section>
       </main>
-      <footer>
-        <section class="w-full h-auto flex justify-center items-center md:mb-0 py-12 mb-16">
-          <div class="flex flex-col justify-center items-center "><span class="flex justify-center items-center mb-4">Let's get in touch </span><a class="rBtnColor ease-in-out duration-300  rounded-lg py-2 px-4  px-8 mt-8 mb-16" href="../contact/"><span>Hello</span></a>
-            <div class="social-buttons w-8/12 md:4/12 h-16 text-3xl flex space-x-12 items-center justify-center "><a class="hover:scale-150 hoverSpan ease-in-out duration-300" href="https://github.com/cesarcoboscv" rel="noreferrer" target="_blank" title="Mira mis proyectos"><span class="fa-brands fa-github"></span></a><a class="hover:scale-150 hoverSpan ease-in-out duration-300" href="https://twitter.com/cesarcoboscv" rel="noreferrer" target="_blank" title="Sigamos la plática"><span class="fa-brands fa-twitter"></span></a><a class="hover:scale-150 hoverSpan ease-in-out duration-300" href="https://linkedin.com/in/cesarcoboscv" rel="noreferrer" target="_blank" title="Mira mi perfil"><span class="fa-brands fa-linkedin"></span></a>
-            </div><span class="flex justify-center items-center text-xs mt-4">César Cobos 202x</span>
-          </div>
-        </section>
-      </footer>
-      <script src="../assets/js/scroll.js"></script>
-      <script src="../assets/js/device.js"></script>
-      <script src="../assets/js/nav.js"></script>
-      <script src="./assets/js/randomColor.js"></script>
+      <footer></footer>
+      <section class="w-full h-auto flex justify-center items-center md:mb-0 py-12 mb-16">
+        <div class="flex flex-col justify-center items-center "><span class="flex justify-center items-center mb-4">Let's get in touch </span><a class="rBtnColor ease-in-out duration-300  rounded-lg py-2 px-4  px-8 mt-8 mb-16" href="../contact/"><span>Hello</span></a>
+          <div class="social-buttons w-8/12 md:4/12 h-16 text-3xl flex space-x-12 items-center justify-center "><a class="hover:scale-150 hoverSpan ease-in-out duration-300" href="https://github.com/cesarcoboscv" rel="noreferrer" target="_blank" title="Mira mis proyectos"><span class="fa-brands fa-github"></span></a><a class="hover:scale-150 hoverSpan ease-in-out duration-300" href="https://twitter.com/cesarcoboscv" rel="noreferrer" target="_blank" title="Sigamos la plática"><span class="fa-brands fa-twitter"></span></a><a class="hover:scale-150 hoverSpan ease-in-out duration-300" href="https://linkedin.com/in/cesarcoboscv" rel="noreferrer" target="_blank" title="Mira mi perfil"><span class="fa-brands fa-linkedin"></span></a>
+          </div><span class="flex justify-center items-center text-xs mt-4">César Cobos 202x</span>
+        </div>
+      </section>
+      <script src="./assets/js/deviceDetection.js"></script>
+      <script src="./assets/js/openNav.js"></script>
+      <script src="./assets/js/navColorScroll.js"></script>
+      <script src="./assets/js/colorSchema.js"></script>
       <script src="./assets/js/iconGrid.js"> </script>
+      <script src="./assets/js/workTabs.js"></script>
       <link rel="stylesheet" href="/assets/css/extraStyles.css">
     </body>
   </head>

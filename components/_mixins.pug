@@ -21,11 +21,8 @@ mixin blogCard(title,date,description,image,altimage)
             button(type="button" class="text-white bg-transparent  hover:bg-rose-600 focus:ring-4 focus:ring-red-200  rounded-lg text-sm px-8 py-1 mr-2 mb-2 focus:outline-none") 
             span Read
 
-mixin jsScripts()
-    script(src="../assets/js/scroll.js")
-    script(src="../assets/js/device.js")
-    script(src="../assets/js/nav.js")
-
+mixin bluredBackground()
+    .back#back(class="bg-no-repeat bg-cover w-[1500px] h-full lg:h-[1600px] md:w-[2400px] fixed" style="background-image: url('https://drive.google.com/uc?export=view&id=1oAvNI2McpbrmDZXK2NfytrZcVrQBFzG0')")
 mixin pageTitle(pagetitle)    
     title=pagetitle
 

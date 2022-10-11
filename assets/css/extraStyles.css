@@ -1,158 +1,158 @@
 .logoContainer {
-  width: 80px;
-  height: 80px;
-  -webkit-transition: ease-in-out 0.2s;
-  transition: ease-in-out 0.2s;
-  color: transparent;
+				width: 80px;
+				height: 80px;
+				-webkit-transition: ease-in-out 0.2s;
+				transition: ease-in-out 0.2s;
+				color: transparent;
 }
 .logoContainer span {
-  margin-top: 4px;
+				margin-top: 4px;
 }
 .logoContainer:hover {
-  scale: 150%;
-  color: #1e293b;
-  font-weight: 600;
+				scale: 150%;
+				color: #1e293b;
+				font-weight: 600;
 }
 
 .back {
-  z-index: -3;
-  -webkit-transform: scale(-1);
-          transform: scale(-1);
+				z-index: -3;
+				-webkit-transform: scale(-1);
+				        transform: scale(-1);
 }
 
 body {
-  text-underline-offset: 0.4rem;
+				text-underline-offset: 0.4rem;
 }
 
 .tab button {
-  width: 160px;
-  font-weight: 600;
+				width: 160px;
+				font-weight: 600;
 }
 
-.tab button.active1 {
-  border: 4px solid #e11d48;
-  color: #e11d48;
+.active1 button {
+				border: 4px solid #e11d48;
+				color: #e11d48;
 }
 
-.tab button.active2 {
-  border: 4px solid #4f46e5;
-  color: #4f46e5;
+.active2 button:focus {
+				border: 4px solid #4f46e5;
+				color: #4f46e5;
 }
 
-.tab button.active3 {
-  border: 4px solid #059669;
-  color: #059669;
+.active3 button:focus {
+				border: 4px solid #059669;
+				color: #059669;
 }
 
-.tab button.active4 {
-  border: 4px solid #d97706;
-  color: #d97706;
+.active4 button:focus {
+				border: 4px solid #d97706;
+				color: #d97706;
 }
 
-.tab button.active5 {
-  border: 4px solid #65a30d;
-  color: #65a30d;
+.active5 button:focus {
+				border: 4px solid #65a30d;
+				color: #65a30d;
 }
 
-.tab button.active6 {
-  border: 4px solid #0891b2;
-  color: #0891b2;
+.active6 button:focus {
+				border: 4px solid #0891b2;
+				color: #0891b2;
 }
 
-.tab button.active7 {
-  border: 4px solid #9333ea;
-  color: #9333ea;
+.active7 button:focus {
+				border: 4px solid #9333ea;
+				color: #9333ea;
 }
 
-.tab button.active8 {
-  border: 4px solid #475569;
-  color: #475569;
+.active8 button:focus {
+				border: 4px solid #475569;
+				color: #475569;
 }
 
-.selection1 span::-moz-selection {
-  color: #e11d48;
-  text-decoration: underline #fda4af 2px;
+.selection1 span::-moz-selection, .selection1 p::-moz-selection {
+				color: #e11d48;
+				text-decoration: underline #fda4af 2px;
 }
 
-.selection1 span::selection {
-  color: #e11d48;
-  -webkit-text-decoration: underline #fda4af 2px;
-          text-decoration: underline #fda4af 2px;
+.selection1 span::selection, .selection1 p::selection {
+				color: #e11d48;
+				-webkit-text-decoration: underline #fda4af 2px;
+				        text-decoration: underline #fda4af 2px;
 }
 
-.selection2 span::-moz-selection {
-  color: #4f46e5;
-  text-decoration: underline #a5b4fc 2px;
+.selection2 span::-moz-selection, .selection2 p::-moz-selection {
+				color: #4f46e5;
+				text-decoration: underline #a5b4fc 2px;
 }
 
-.selection2 span::selection {
-  color: #4f46e5;
-  -webkit-text-decoration: underline #a5b4fc 2px;
-          text-decoration: underline #a5b4fc 2px;
+.selection2 span::selection, .selection2 p::selection {
+				color: #4f46e5;
+				-webkit-text-decoration: underline #a5b4fc 2px;
+				        text-decoration: underline #a5b4fc 2px;
 }
 
-.selection3 span::-moz-selection {
-  color: #059669;
-  text-decoration: underline #6ee7b7 2px;
+.selection3 span::-moz-selection, .selection3 p::-moz-selection {
+				color: #059669;
+				text-decoration: underline #6ee7b7 2px;
 }
 
-.selection3 span::selection {
-  color: #059669;
-  -webkit-text-decoration: underline #6ee7b7 2px;
-          text-decoration: underline #6ee7b7 2px;
+.selection3 span::selection, .selection3 p::selection {
+				color: #059669;
+				-webkit-text-decoration: underline #6ee7b7 2px;
+				        text-decoration: underline #6ee7b7 2px;
 }
 
-.selection4 span::-moz-selection {
-  color: #d97706;
-  text-decoration: underline #fcd34d 2px;
+.selection4 span::-moz-selection, .selection4 p::-moz-selection {
+				color: #d97706;
+				text-decoration: underline #fcd34d 2px;
 }
 
-.selection4 span::selection {
-  color: #d97706;
-  -webkit-text-decoration: underline #fcd34d 2px;
-          text-decoration: underline #fcd34d 2px;
+.selection4 span::selection, .selection4 p::selection {
+				color: #d97706;
+				-webkit-text-decoration: underline #fcd34d 2px;
+				        text-decoration: underline #fcd34d 2px;
 }
 
-.selection5 span::-moz-selection {
-  color: #65a30d;
-  text-decoration: underline #bef264 2px;
+.selection5 span::-moz-selection, .selection5 p::-moz-selection {
+				color: #65a30d;
+				text-decoration: underline #bef264 2px;
 }
 
-.selection5 span::selection {
-  color: #65a30d;
-  -webkit-text-decoration: underline #bef264 2px;
-          text-decoration: underline #bef264 2px;
+.selection5 span::selection, .selection5 p::selection {
+				color: #65a30d;
+				-webkit-text-decoration: underline #bef264 2px;
+				        text-decoration: underline #bef264 2px;
 }
 
-.selection6 span::-moz-selection {
-  color: #0891b2;
-  text-decoration: underline #67e8f9 2px;
+.selection6 span::-moz-selection, .selection6 p::-moz-selection {
+				color: #0891b2;
+				text-decoration: underline #67e8f9 2px;
 }
 
-.selection6 span::selection {
-  color: #0891b2;
-  -webkit-text-decoration: underline #67e8f9 2px;
-          text-decoration: underline #67e8f9 2px;
+.selection6 span::selection, .selection6 p::selection {
+				color: #0891b2;
+				-webkit-text-decoration: underline #67e8f9 2px;
+				        text-decoration: underline #67e8f9 2px;
 }
 
-.selection7 span::-moz-selection {
-  color: #9333ea;
-  text-decoration: underline #d8b4fe 2px;
+.selection7 span::-moz-selection, .selection7 p::-moz-selection {
+				color: #9333ea;
+				text-decoration: underline #d8b4fe 2px;
 }
 
-.selection7 span::selection {
-  color: #9333ea;
-  -webkit-text-decoration: underline #d8b4fe 2px;
-          text-decoration: underline #d8b4fe 2px;
+.selection7 span::selection, .selection7 p::selection {
+				color: #9333ea;
+				-webkit-text-decoration: underline #d8b4fe 2px;
+				        text-decoration: underline #d8b4fe 2px;
 }
 
-.selection8 span::-moz-selection {
-  color: #475569;
-  text-decoration: underline #cbd5e1 2px;
+.selection8 span::-moz-selection, .selection8 p::-moz-selection {
+				color: #475569;
+				text-decoration: underline #cbd5e1 2px;
 }
 
-.selection8 span::selection {
-  color: #475569;
-  -webkit-text-decoration: underline #cbd5e1 2px;
-          text-decoration: underline #cbd5e1 2px;
+.selection8 span::selection, .selection8 p::selection {
+				color: #475569;
+				-webkit-text-decoration: underline #cbd5e1 2px;
+				        text-decoration: underline #cbd5e1 2px;
 }

@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;600;700;800&amp;display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://drive.google.com/uc?export=view&amp;id=1S5Dfb4ER5X1faqUdnRqa1qwsqWTvLRPp" type="image/x-icon">
-    <title>This page doesn't exist</title>
-    <body>
+    <title>You've found a secret page</title>
+    <body id="bodySelect">
       <header class="w-full fixed bottom-0 z-20" id="header">
         <nav class="w-full h-16 flex items-center justify-center ease-in-out duration-[2000ms] z-3" id="navbar">
           <div class="mobileBar  flex lg:hidden w-10/12 justify-center md:justify-start " id="mobileBar">
@@ -39,13 +39,14 @@
           </div>
         </nav>
       </header>
+      <div class="back bg-no-repeat bg-cover w-[1500px] h-full lg:h-[1600px] md:w-[2400px] fixed" id="back" style="background-image: url('https://drive.google.com/uc?export=view&amp;id=1oAvNI2McpbrmDZXK2NfytrZcVrQBFzG0')"></div>
       <main class="md:pt-16 w-full h-full flex justify-center">
         <div class="w-10/12 lg:w-full h-1/2 flex flex-col  text-center">
-          <p class="text-6xl md:text-8xl my-16 text-rose-600 font-bold scale-x-[-1] scale-y-[-1] ">Oh! no! </p>
-          <p class="text-4xl md:text-5xl my-8 text-rose-400">The page doesn't exist </p>
-          <P class="text-3xl md:text-4xl mb-16 text-rose-200">Don't worry, you can get back by clicking on menu up there</P>
-          <P class="text-3xl md:text-4xl mb-16 text-rose-200">or</P>
-          <P class="text-3xl md:text-4xl mb-16 text-rose-200">you can send me a message by clicking down here</P>
+          <p class="rTitle text-6xl md:text-8xl my-16 font-bold scale-x-[-1] scale-y-[-1] ">Oh! no! </p>
+          <p class="text-4xl md:text-5xl my-8">The page doesn't exist </p>
+          <P class="text-3xl md:text-4xl mb-16">Don't worry, you can get back by clicking on menu up there</P>
+          <P class="text-3xl md:text-4xl mb-16">or</P>
+          <P class="text-3xl md:text-4xl mb-16">you can send me a message by clicking down here</P>
         </div>
       </main>
       <footer>
@@ -56,9 +57,11 @@
           </div>
         </section>
       </footer>
-      <script src="../assets/js/scroll.js"></script>
-      <script src="../assets/js/device.js"></script>
-      <script src="../assets/js/nav.js"></script>
+      <script src="./assets/js/deviceDetection.js"></script>
+      <script src="./assets/js/openNav.js"></script>
+      <script src="./assets/js/navColorScroll.js"></script>
+      <script src="./assets/js/colorSchema.js"></script>
+      <link rel="stylesheet" href="./assets/css/extraStyles.css">
     </body>
   </head>
 </html>

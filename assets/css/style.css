@@ -724,12 +724,12 @@ video {
   width: 0px;
 }
 
-.w-8\/12 {
-  width: 66.666667%;
-}
-
 .w-\[1500px\] {
   width: 1500px;
+}
+
+.w-8\/12 {
+  width: 66.666667%;
 }
 
 .w-28 {
@@ -1003,21 +1003,6 @@ video {
 .text-slate-400 {
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
-}
-
-.text-rose-600 {
-  --tw-text-opacity: 1;
-  color: rgb(225 29 72 / var(--tw-text-opacity));
-}
-
-.text-rose-400 {
-  --tw-text-opacity: 1;
-  color: rgb(251 113 133 / var(--tw-text-opacity));
-}
-
-.text-rose-200 {
-  --tw-text-opacity: 1;
-  color: rgb(254 205 211 / var(--tw-text-opacity));
 }
 
 .text-slate-300 {

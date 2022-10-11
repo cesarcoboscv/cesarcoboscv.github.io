@@ -49,68 +49,85 @@ body{
 .tab button{
     width: 160px;
     font-weight: 600;
+
 }
-.tab button.active1 {
+.active1 {
+    button{
     border: 4px solid $active1Primary;
     color: $active1Primary;
+    }
 }
-.tab button.active2 {
+.active2 {
+    button:focus{
     border: 4px solid $active2Primary;
     color: $active2Primary;
+    }
 }
-.tab button.active3 {
+.active3 {
+    button:focus{
     border: 4px solid $active3Primary;
     color: $active3Primary;
+    }
 }
-.tab button.active4 {
+.active4 {
+    button:focus{
     border: 4px solid $active4Primary;
     color: $active4Primary;
+    }
 }
-.tab button.active5 {
+.active5 {
+    button:focus{
     border: 4px solid $active5Primary;
     color: $active5Primary;
+    }
 }
-.tab button.active6 {
+.active6 {
+    button:focus{
     border: 4px solid $active6Primary;
     color: $active6Primary;
+    }
 }
-.tab button.active7 {
+.active7 {
+    button:focus{
     border: 4px solid $active7Primary;
     color: $active7Primary;
+    }
 }
-.tab button.active8 {
+.active8 {
+    button:focus{
     border: 4px solid $active8Primary;
     color: $active8Primary;
+    }
 }
-.selection1 span::selection{
+.selection1 span::selection, .selection1 p::selection{
     color:$active1Primary;
     text-decoration: underline $active1Secondary 2px;
     }
-.selection2 span::selection{
+.selection2 span::selection, .selection2 p::selection{
     color:$active2Primary;
     text-decoration: underline $active2Secondary 2px;
     }
-.selection3 span::selection{
+.selection3 span::selection, .selection3 p::selection{
     color:$active3Primary;
     text-decoration: underline $active3Secondary 2px;
     }
-.selection4 span::selection{
+.selection4 span::selection, .selection4 p::selection{
     color:$active4Primary;
     text-decoration: underline $active4Secondary 2px;
     }
-.selection5 span::selection{
+.selection5 span::selection, .selection5 p::selection{
     color:$active5Primary;
     text-decoration: underline $active5Secondary 2px;
     }
-.selection6 span::selection{
+.selection6 span::selection, .selection6 p::selection{
     color:$active6Primary;
     text-decoration: underline $active6Secondary 2px;
     }
-.selection7 span::selection{
+.selection7 span::selection, .selection7 p::selection{
     color:$active7Primary;
     text-decoration:underline $active7Secondary 2px;
     }
-.selection8 span::selection{
+.selection8 span::selection, .selection8 p::selection{
     color:$active8Primary;
     text-decoration:underline $active8Secondary 2px;
     }

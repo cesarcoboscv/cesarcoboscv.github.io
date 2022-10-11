@@ -1,18 +1,26 @@
 include ./components/_mixins
 doctype html
 include ./components/_head.pug
-    +pageTitle("This page doesn't exist")
-    body
+    +pageTitle("You've found a secret page")
+    
+    body#bodySelect
         include ./components/_header.pug
+
+        +bluredBackground
 
         main(class="md:pt-16 w-full h-full flex justify-center")
             div(class="w-10/12 lg:w-full h-1/2 flex flex-col  text-center")
-                p(class="text-6xl md:text-8xl my-16 text-rose-600 font-bold scale-x-[-1] scale-y-[-1] ") Oh! no! 
-                p(class="text-4xl md:text-5xl my-8 text-rose-400") The page doesn't exist 
-                P(class="text-3xl md:text-4xl mb-16 text-rose-200") Don't worry, you can get back by clicking on menu up there
-                P(class="text-3xl md:text-4xl mb-16 text-rose-200") or
-                P(class="text-3xl md:text-4xl mb-16 text-rose-200") you can send me a message by clicking down here
-                
-        include ./components/_footer.pug
+                p(class="rTitle text-6xl md:text-8xl my-16 font-bold scale-x-[-1] scale-y-[-1] ") Oh! no! 
+                p(class="text-4xl md:text-5xl my-8") The page doesn't exist 
+                P(class="text-3xl md:text-4xl mb-16") Don't worry, you can get back by clicking on menu up there
+                P(class="text-3xl md:text-4xl mb-16") or
+                P(class="text-3xl md:text-4xl mb-16") you can send me a message by clicking down here
+        footer
+            include ./components/_footer.pug
 
-        +jsScripts()
+        script(src="./assets/js/deviceDetection.js")
+        script(src="./assets/js/openNav.js")
+        script(src="./assets/js/navColorScroll.js")
+        script(src="./assets/js/colorSchema.js")
+        link(rel="stylesheet", href="./assets/css/extraStyles.css")
+    
