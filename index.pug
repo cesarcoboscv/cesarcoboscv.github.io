@@ -1,0 +1,53 @@
+doctype html
+html(lang="es" class="font-karla font-light scroll-smooth")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./assets/css/styles.css")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet")
+        link(rel="shortcut icon", href="https://drive.google.com/uc?export=view&id=1S5Dfb4ER5X1faqUdnRqa1qwsqWTvLRPp", type="image/x-icon")
+        script(harset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js")
+        
+        style.
+            .hid{
+                position:relative;
+                top:-60px;
+            }
+            .repos{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+                gap:20px;
+                align-items: center;
+                justify-content: center
+            }
+
+        title César Cobos Home
+    body 
+        include ./components/_header.pug
+
+        include ./components/_hero.pug
+
+        main
+            include ./components/_github.pug
+
+            +title-section("Contáctame")
+            section(class="w-full h-auto flex")
+                div(class="w-full max-w-[500px] relative md:left-[calc(50vw-250px)] px-4")
+                    script(src="./assets/js/form.js") 
+            div(class="hid w-full h-12 bg-white")
+
+        include ./components/_footer.pug
+
+        
+
+        script(src="./assets/js/main.js")
+        script(src="https://kit.fontawesome.com/32dce108fb.js" crossorigin="anonymous")
+        
+        
+
+
+
+
