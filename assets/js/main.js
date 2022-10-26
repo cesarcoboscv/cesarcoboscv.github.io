@@ -18,16 +18,20 @@ if(deviceType() == "mobile"){
 
 
 //nav Color Scroll
+navBar.style.height ="96px";
 window.onscroll = function(){
     if (document.documentElement.scrollTop >= 80){
         navBar.style.backgroundColor = "#000000e0";
+        navBar.style.height ="64px";
     } else{
-        navBar.style.backgroundColor ="transparent"
+        navBar.style.backgroundColor ="transparent";
+        navBar.style.height ="96px";
     }
 }
 
 
 // Background Parallax effect
+
 window.addEventListener("scroll", function () { 
     let con= window.scrollY
     herobg.style.backgroundPosition= '50% '+  ((con * -.5 )  + 'px');
