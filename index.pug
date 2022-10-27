@@ -12,9 +12,22 @@ html(lang="es" class="font-karla font-thin scroll-smooth")
         script(harset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js")
         
         style.
+            p::selection, a::selection, span::selection, img::selection, iframe::selection{
+                background:#e11d48;
+            }
+            .langs .compact img{
+                width:100vw;
+                max-width:350px;
+            }
+            .langs .full-lang img{
+                width:100vw
+            }
             .hid{
                 position:relative;
                 top:-60px;
+            }
+            .hero p{
+                background-color:#0000002e;
             }
             .repos{
                 display: grid;
@@ -33,7 +46,7 @@ html(lang="es" class="font-karla font-thin scroll-smooth")
         main
             include ./components/_github.pug
 
-            +title-section("Contáctame","contact")
+            +title-section("Déjame un mensaje","contact")
             section( class="w-full h-auto flex")
                 div(class="w-full max-w-[500px] relative md:left-[calc(50vw-250px)] px-4")
                     script(src="./assets/js/form.js") 
