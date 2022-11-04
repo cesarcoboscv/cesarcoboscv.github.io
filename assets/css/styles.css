@@ -565,8 +565,24 @@ html::-webkit-scrollbar{
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .z-10 {
   z-index: 10;
+}
+
+.z-\[2\] {
+  z-index: 2;
+}
+
+.z-\[5\] {
+  z-index: 5;
 }
 
 .mx-4 {
@@ -578,28 +594,8 @@ html::-webkit-scrollbar{
   margin-top: -80px;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
 .mt-\[-156px\] {
   margin-top: -156px;
-}
-
-.ml-6 {
-  margin-left: 1.5rem;
-}
-
-.ml-20 {
-  margin-left: 5rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
 }
 
 .flex {
@@ -626,6 +622,18 @@ html::-webkit-scrollbar{
   height: 8rem;
 }
 
+.h-\[calc\(100vh\+100px\)\] {
+  height: calc(100vh + 100px);
+}
+
+.h-\[calc\(100vh\+200px\)\] {
+  height: calc(100vh + 200px);
+}
+
+.h-\[calc\(100vh\+500px\)\] {
+  height: calc(100vh + 500px);
+}
+
 .min-h-\[50vh\] {
   min-height: 50vh;
 }
@@ -646,20 +654,8 @@ html::-webkit-scrollbar{
   max-width: 1200px;
 }
 
-.max-w-\[120px\] {
-  max-width: 120px;
-}
-
-.max-w-\[550px\] {
-  max-width: 550px;
-}
-
 .max-w-\[600px\] {
   max-width: 600px;
-}
-
-.max-w-\[0px\] {
-  max-width: 0px;
 }
 
 .flex-col {
@@ -691,6 +687,11 @@ html::-webkit-scrollbar{
   background-color: rgb(225 29 72 / var(--tw-bg-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-red-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 202 202 / var(--tw-bg-opacity));
@@ -706,10 +707,6 @@ html::-webkit-scrollbar{
 
 .bg-no-repeat {
   background-repeat: no-repeat;
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .px-4 {
@@ -761,10 +758,6 @@ html::-webkit-scrollbar{
   padding-top: 1.5rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -778,13 +771,8 @@ html::-webkit-scrollbar{
   line-height: 1.75rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
+.text-5xl {
+  font-size: 3rem;
   line-height: 1;
 }
 
@@ -796,16 +784,6 @@ html::-webkit-scrollbar{
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .font-thin {
@@ -820,24 +798,12 @@ html::-webkit-scrollbar{
   font-weight: 800;
 }
 
-.font-light {
-  font-weight: 300;
-}
-
 .font-normal {
   font-weight: 400;
 }
 
 .uppercase {
   text-transform: uppercase;
-}
-
-.leading-4 {
-  line-height: 1rem;
-}
-
-.leading-10 {
-  line-height: 2.5rem;
 }
 
 .leading-relaxed {
@@ -856,6 +822,56 @@ html::-webkit-scrollbar{
 .text-zinc-50 {
   --tw-text-opacity: 1;
   color: rgb(250 250 250 / var(--tw-text-opacity));
+}
+
+.opacity-\[\.7\] {
+  opacity: .7;
+}
+
+.opacity-\[1\] {
+  opacity: 1;
+}
+
+.opacity-\[\.9\] {
+  opacity: .9;
+}
+
+.opacity-\[0\] {
+  opacity: 0;
+}
+
+.opacity-\[0\.1\] {
+  opacity: 0.1;
+}
+
+.opacity-\[0\.8\] {
+  opacity: 0.8;
+}
+
+.opacity-\[0\.6\] {
+  opacity: 0.6;
+}
+
+.opacity-\[0\.4\] {
+  opacity: 0.4;
+}
+
+.opacity-\[0\.2\] {
+  opacity: 0.2;
+}
+
+.opacity-\[0\.\] {
+  opacity: 0.;
+}
+
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.backdrop-filter {
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .duration-1000 {
@@ -913,12 +929,5 @@ html::-webkit-scrollbar{
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
   }
 }
