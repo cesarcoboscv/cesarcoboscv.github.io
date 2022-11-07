@@ -19,7 +19,7 @@ if(deviceType() == "mobile"){
 
 
 //nav Color Scroll
-navBar.style.height ="96px";
+navBar.style.height ="128px";
 window.onscroll = function(){
     if (document.documentElement.scrollTop >= 80){
         navBar.style.backgroundColor = "#000000e0";
@@ -52,14 +52,14 @@ class bgImage{
 let hero01 = new bgImage("https://drive.google.com/uc?export=view&id=134jjzLe4vuQAymL8MNZARW7ABFtPORmw")
 let hero02 = new bgImage("https://drive.google.com/uc?export=view&id=1LNBWkmDbz-SS4DCX-gAhVbPV_1rqM2vF")
 let hero03 = new bgImage("https://drive.google.com/uc?export=view&id=1v9lzPnWZ8gguzP6FOtYQEm17znUveCuz")
-let hero04 = new bgImage("https://drive.google.com/uc?export=view&id=1PRrJl8y9u9rElpXV7XmYi8pK86-kev84")
-let hero05 = new bgImage("https://drive.google.com/uc?export=view&id=1CDXToGqqCJN7K2jwm8JH7pD58c6lQT4x")
-let hero06 = new bgImage("https://drive.google.com/uc?export=view&id=1wP3cZOfbyLJjywGDI3gkRxSRgAlkssSx")
-let hero07 = new bgImage("https://drive.google.com/uc?export=view&id=1oAvNI2McpbrmDZXK2NfytrZcVrQBFzG0")
-let hero08 = new bgImage("https://drive.google.com/uc?export=view&id=1f1Gmj2J6tlVUNXvU7TkhdgU3ZpIMJk8N")
+// let hero04 = new bgImage("https://drive.google.com/uc?export=view&id=1PRrJl8y9u9rElpXV7XmYi8pK86-kev84")
+// let hero05 = new bgImage("https://drive.google.com/uc?export=view&id=1CDXToGqqCJN7K2jwm8JH7pD58c6lQT4x")
+// let hero06 = new bgImage("https://drive.google.com/uc?export=view&id=1wP3cZOfbyLJjywGDI3gkRxSRgAlkssSx")
+// let hero07 = new bgImage("https://drive.google.com/uc?export=view&id=1oAvNI2McpbrmDZXK2NfytrZcVrQBFzG0")
+// let hero08 = new bgImage("https://drive.google.com/uc?export=view&id=1f1Gmj2J6tlVUNXvU7TkhdgU3ZpIMJk8N")
 
 
-bgimages.push(hero01,hero02,hero03,hero04,hero05,hero06,hero07,hero08);
+bgimages.push(hero01,hero02,hero03);
 
 function randomImage(){
     let randomImage = randomNumber(0, bgimages.length -1);
