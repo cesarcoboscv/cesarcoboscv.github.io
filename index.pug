@@ -30,11 +30,42 @@ html(lang="es" class="font-karla font-thin scroll-smooth")
             //-     bacbackground-color:#0000002e;
             //- }
             .repos{
-                display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(350px, auto));
                 gap:20px;
+            }
+            .grid-temp{
+                display: grid;
+            }
+            .tool-grid{
+                grid-template-columns: repeat(auto-fit, minmax(40px, auto));
+                gap:48px;
+            }
+            .icon-container span{
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size:contain;
+                width: 54px;
+                height:54px;
+            }
+            .icon-container p{
+                visibility:hidden;
+            }
+            .icon-container:hover p{
+                    visibility:visible;
+            }
+            .icon-container{
+                transition: ease-in-out .2s;
+            }
+            .icon-container:hover{
+                    transform:scale(1.2);
+                    transition: ease-in-out .2s;
+            }
+
+            .icon-container{
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
                 align-items: center;
-                justify-content: center
             }
 
         title César Cobos Home
@@ -46,7 +77,9 @@ html(lang="es" class="font-karla font-thin scroll-smooth")
         main
             //- include ./components/_about.pug
             //- include ./components/_projects.pug
+            include ./components/_tools.pug
             include ./components/_github.pug
+            
 
             +title-section("Déjame un mensaje","contact")
             section( class="w-full h-auto flex")

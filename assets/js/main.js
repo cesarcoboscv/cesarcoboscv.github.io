@@ -67,3 +67,72 @@ function randomImage(){
 }
 randomImage()
 herobg.style.backgroundImage = `url("${bgRandom.url}")`;
+
+
+let toolIcon;
+let engineeringIcons = [];
+let devIcons = [];
+class toolBg{
+    constructor(id,url,name){
+        this.id = id;
+        this.url = url;
+        this.name = name;
+    }
+}
+let autoCAD = new toolBg("autocadIcon","https://drive.google.com/uc?export=view&id=1W22upnb3BY0-QIn2TUBTFC-7Y44N5aO6","AutoCAD")
+let inventor = new toolBg("inventorIcon","https://drive.google.com/uc?export=view&id=1zL1jlRoqzln7iB_SYEwW1TNt2JVcRRwi","Inventor")
+let solidworks = new toolBg("solidworksIcon","https://drive.google.com/uc?export=view&id=1oQocKv1MWezeMU6ECi8CVLO7vRWc-Dkz","SolidWorks")
+let revit = new toolBg("revitIcon","https://drive.google.com/uc?export=view&id=1qj7Go9vFA_WYrs3Py2iaTtCUwSxRR9tf","Revit")
+let project = new toolBg("projectIcon","https://drive.google.com/uc?export=view&id=1dbpiZFP2yFnDwARTlI5B__PNipRoX1PN","Project")
+let microsoft = new toolBg("microsoftIcon","https://drive.google.com/uc?export=view&id=12PyqzFC_SJOLoY6Rk-WnI0rYuWu9jhsQ","Microsoft")
+let google = new toolBg("googleIcon","https://drive.google.com/uc?export=view&id=1oHDIvVewakJD6LmZKjBAItqlm7fx1cN-","Google")
+
+let vscode = new toolBg("vscodeIcon","https://drive.google.com/uc?export=view&id=1OUnPV_9Gxa--zXLjYtObU_2Lck4IMDs4","VS Code")
+let tailwind = new toolBg("tailwindIcon","https://drive.google.com/uc?export=view&id=1Sed5M9pki00_OjsYAX1Iq653MrbckbXm","TailwindCSS")
+let sass = new toolBg("sassIcon","https://drive.google.com/uc?export=view&id=1TdBjhyC661RMDDTnrGKxa9E8fvgGutjR","Sass")
+let python = new toolBg("pyhtonIcon","https://drive.google.com/uc?export=view&id=1WSBCEu3ikzugJVJdX9tat208aH2uCkWP","Python")
+let javascript = new toolBg("javascriptIcon","https://drive.google.com/uc?export=view&id=17R07kHo3igxYyBaCbwM49eByvfFvNoAj","JavaScript")
+let autolisp = new toolBg("autolispIcon","https://drive.google.com/uc?export=view&id=1o_M1U90dEwEGcTtXN4g5ml4ayAJ5vFnu","AutoLISP")
+let git = new toolBg("gitIcon","https://drive.google.com/uc?export=view&id=1uzDkVHTElBgotG-No709re0yHevUDb91","Git")
+let github = new toolBg("githubIcon","https://drive.google.com/uc?export=view&id=1NX-lyl7FoUynvlA4ZxTT23ZskzTShRPn","GitHub")
+// let sass = new toolBg("sassIcon","https://drive.google.com/uc?export=view&id=1TdBjhyC661RMDDTnrGKxa9E8fvgGutjR","Sass")
+// let sass = new toolBg("sassIcon","https://drive.google.com/uc?export=view&id=1TdBjhyC661RMDDTnrGKxa9E8fvgGutjR","Sass")
+// let sass = new toolBg("sassIcon","https://drive.google.com/uc?export=view&id=1TdBjhyC661RMDDTnrGKxa9E8fvgGutjR","Sass")
+
+
+engineeringIcons.push(autoCAD,inventor,revit,autolisp,solidworks,project,microsoft,google)
+devIcons.push(python,javascript,vscode,tailwind,sass,git,github)
+
+const engineeringGrid = document.getElementById("engineering-tools")
+for (let i = 0; i < engineeringIcons.length; i++) {
+    const gridTool =`
+        <div class="icon-container">
+            <span id="${engineeringIcons[i].id}" class="${engineeringIcons[i].name}"></span>
+            <p> ${engineeringIcons[i].name}</p>
+        </div>
+        `
+        engineeringGrid.innerHTML += gridTool
+        const icon = document.getElementById(`${engineeringIcons[i].id}`)
+        icon.style.backgroundImage = `url("${engineeringIcons[i].url}")`
+}
+const devGrid = document.getElementById("dev-tools")
+for (let i = 0; i < devIcons.length; i++) {
+    const devGridTool =`
+        <div class="icon-container ">
+            <span id="${devIcons[i].id}" class="${devIcons[i].name}"></span>
+            <p> ${devIcons[i].name}</p>
+        </div>
+        `
+        devGrid.innerHTML += devGridTool
+        const icon = document.getElementById(`${devIcons[i].id}`)
+        icon.style.backgroundImage = `url("${devIcons[i].url}")`
+}
+
+
+// engineeringIcons.forEach((toolBg)=>{
+//     const gridTool =`
+//         <span class="${toolBg.name}"> Hola
+//     `
+//     toolGrid.innerHTML += gridTool
+// })
+
