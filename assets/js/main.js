@@ -49,9 +49,9 @@ class bgImage{
     constructor(url){
         this.url = url;}
 }
-let hero01 = new bgImage("https://drive.google.com/uc?export=view&id=1v9lzPnWZ8gguzP6FOtYQEm17znUveCuz")
-let hero02 = new bgImage("https://onedrive.live.com/embed?resid=55A8F5F6F40759DA%21105054&authkey=%21AOox2otNH-jVKUQ&width=1024")
-let hero03 = new bgImage("https://onedrive.live.com/embed?resid=55A8F5F6F40759DA%21105055&authkey=%21APdogih1gB8mj50&width=1024")
+let hero01 = new bgImage("https://onedrive.live.com/embed?resid=55A8F5F6F40759DA%21105053&authkey=%21ANr42jbolue-f6g&width=800")
+let hero02 = new bgImage("https://onedrive.live.com/embed?resid=55A8F5F6F40759DA%21105054&authkey=%21AOox2otNH-jVKUQ&width=800")
+let hero03 = new bgImage("https://onedrive.live.com/embed?resid=55A8F5F6F40759DA%21105055&authkey=%21APdogih1gB8mj50&width=800")
 // let hero04 = new bgImage("https://drive.google.com/uc?export=view&id=1PRrJl8y9u9rElpXV7XmYi8pK86-kev84")
 // let hero05 = new bgImage("https://drive.google.com/uc?export=view&id=1CDXToGqqCJN7K2jwm8JH7pD58c6lQT4x")
 // let hero06 = new bgImage("https://drive.google.com/uc?export=view&id=1wP3cZOfbyLJjywGDI3gkRxSRgAlkssSx")
@@ -59,7 +59,7 @@ let hero03 = new bgImage("https://onedrive.live.com/embed?resid=55A8F5F6F40759DA
 // let hero08 = new bgImage("https://drive.google.com/uc?export=view&id=1f1Gmj2J6tlVUNXvU7TkhdgU3ZpIMJk8N")
 
 
-bgimages.push(hero01,hero02,hero03);
+bgimages.push(hero02,hero03);
 
 function randomImage(){
     let randomImage = randomNumber(0, bgimages.length -1);
@@ -79,22 +79,22 @@ class toolBg{
         this.name = name;
     }
 }
-let autoCAD = new toolBg("autocadIcon","https://drive.google.com/uc?export=view&id=1W22upnb3BY0-QIn2TUBTFC-7Y44N5aO6","AutoCAD")
-let inventor = new toolBg("inventorIcon","https://drive.google.com/uc?export=view&id=1zL1jlRoqzln7iB_SYEwW1TNt2JVcRRwi","Inventor")
-let solidworks = new toolBg("solidworksIcon","https://drive.google.com/uc?export=view&id=1oQocKv1MWezeMU6ECi8CVLO7vRWc-Dkz","SolidWorks")
-let revit = new toolBg("revitIcon","https://drive.google.com/uc?export=view&id=1qj7Go9vFA_WYrs3Py2iaTtCUwSxRR9tf","Revit")
-let project = new toolBg("projectIcon","https://drive.google.com/uc?export=view&id=1dbpiZFP2yFnDwARTlI5B__PNipRoX1PN","Project")
-let microsoft = new toolBg("microsoftIcon","https://drive.google.com/uc?export=view&id=12PyqzFC_SJOLoY6Rk-WnI0rYuWu9jhsQ","Microsoft")
-let google = new toolBg("googleIcon","https://drive.google.com/uc?export=view&id=1oHDIvVewakJD6LmZKjBAItqlm7fx1cN-","Google")
+let autoCAD = new toolBg("autocadIcon","https://drive.google.com/thumbnail?id=1W22upnb3BY0-QIn2TUBTFC-7Y44N5aO6","AutoCAD")
+let inventor = new toolBg("inventorIcon","https://drive.google.com/thumbnail?id=1zL1jlRoqzln7iB_SYEwW1TNt2JVcRRwi","Inventor")
+let solidworks = new toolBg("solidworksIcon","https://drive.google.com/thumbnail?id=1oQocKv1MWezeMU6ECi8CVLO7vRWc-Dkz","SolidWorks")
+let revit = new toolBg("revitIcon","https://drive.google.com/thumbnail?id=1qj7Go9vFA_WYrs3Py2iaTtCUwSxRR9tf","Revit")
+let project = new toolBg("projectIcon","https://drive.google.com/thumbnail?id=1dbpiZFP2yFnDwARTlI5B__PNipRoX1PN","Project")
+let microsoft = new toolBg("microsoftIcon","https://drive.google.com/thumbnail?id=12PyqzFC_SJOLoY6Rk-WnI0rYuWu9jhsQ","Microsoft")
+let google = new toolBg("googleIcon","https://drive.google.com/thumbnail?id=1oHDIvVewakJD6LmZKjBAItqlm7fx1cN-","Google")
 
-let vscode = new toolBg("vscodeIcon","https://drive.google.com/uc?export=view&id=1OUnPV_9Gxa--zXLjYtObU_2Lck4IMDs4","VS Code")
-let tailwind = new toolBg("tailwindIcon","https://drive.google.com/uc?export=view&id=1Sed5M9pki00_OjsYAX1Iq653MrbckbXm","TailwindCSS")
-let sass = new toolBg("sassIcon","https://drive.google.com/uc?export=view&id=1TdBjhyC661RMDDTnrGKxa9E8fvgGutjR","Sass")
-let python = new toolBg("pyhtonIcon","https://drive.google.com/uc?export=view&id=1WSBCEu3ikzugJVJdX9tat208aH2uCkWP","Python")
-let javascript = new toolBg("javascriptIcon","https://drive.google.com/uc?export=view&id=17R07kHo3igxYyBaCbwM49eByvfFvNoAj","JavaScript")
-let autolisp = new toolBg("autolispIcon","https://drive.google.com/uc?export=view&id=1o_M1U90dEwEGcTtXN4g5ml4ayAJ5vFnu","AutoLISP")
-let git = new toolBg("gitIcon","https://drive.google.com/uc?export=view&id=1uzDkVHTElBgotG-No709re0yHevUDb91","Git")
-let github = new toolBg("githubIcon","https://drive.google.com/uc?export=view&id=1NX-lyl7FoUynvlA4ZxTT23ZskzTShRPn","GitHub")
+let vscode = new toolBg("vscodeIcon","https://drive.google.com/thumbnail?id=1OUnPV_9Gxa--zXLjYtObU_2Lck4IMDs4","VS Code")
+let tailwind = new toolBg("tailwindIcon","https://drive.google.com/thumbnail?id=1Sed5M9pki00_OjsYAX1Iq653MrbckbXm","TailwindCSS")
+let sass = new toolBg("sassIcon","https://drive.google.com/thumbnail?id=1TdBjhyC661RMDDTnrGKxa9E8fvgGutjR","Sass")
+let python = new toolBg("pyhtonIcon","https://drive.google.com/thumbnail?id=1WSBCEu3ikzugJVJdX9tat208aH2uCkWP","Python")
+let javascript = new toolBg("javascriptIcon","https://drive.google.com/thumbnail?id=17R07kHo3igxYyBaCbwM49eByvfFvNoAj","JavaScript")
+let autolisp = new toolBg("autolispIcon","https://drive.google.com/thumbnail?id=1o_M1U90dEwEGcTtXN4g5ml4ayAJ5vFnu","AutoLISP")
+let git = new toolBg("gitIcon","https://drive.google.com/thumbnail?id=1uzDkVHTElBgotG-No709re0yHevUDb91","Git")
+let github = new toolBg("githubIcon","https://drive.google.com/thumbnail?id=1NX-lyl7FoUynvlA4ZxTT23ZskzTShRPn","GitHub")
 // let sass = new toolBg("sassIcon","https://drive.google.com/uc?export=view&id=1TdBjhyC661RMDDTnrGKxa9E8fvgGutjR","Sass")
 // let sass = new toolBg("sassIcon","https://drive.google.com/uc?export=view&id=1TdBjhyC661RMDDTnrGKxa9E8fvgGutjR","Sass")
 // let sass = new toolBg("sassIcon","https://drive.google.com/uc?export=view&id=1TdBjhyC661RMDDTnrGKxa9E8fvgGutjR","Sass")
