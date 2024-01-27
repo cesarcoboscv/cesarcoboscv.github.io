@@ -59,7 +59,7 @@ let hero03 = new bgImage("https://onedrive.live.com/embed?resid=55A8F5F6F40759DA
 // let hero08 = new bgImage("https://drive.google.com/uc?export=view&id=1f1Gmj2J6tlVUNXvU7TkhdgU3ZpIMJk8N")
 
 
-bgimages.push(hero02,hero03);
+bgimages.push(hero01,hero02,hero03);
 
 function randomImage(){
     let randomImage = randomNumber(0, bgimages.length -1);
