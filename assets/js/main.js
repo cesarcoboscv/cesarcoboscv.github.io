@@ -49,9 +49,9 @@ class bgImage{
     constructor(url){
         this.url = url;}
 }
-let hero01 = new bgImage("https://drive.google.com/uc?export=view&id=134jjzLe4vuQAymL8MNZARW7ABFtPORmw")
-let hero02 = new bgImage("https://drive.google.com/uc?export=view&id=1LNBWkmDbz-SS4DCX-gAhVbPV_1rqM2vF")
-let hero03 = new bgImage("https://drive.google.com/uc?export=view&id=1v9lzPnWZ8gguzP6FOtYQEm17znUveCuz")
+let hero01 = new bgImage("https://onedrive.live.com/embed?resid=55A8F5F6F40759DA%21105053&authkey=%21ANr42jbolue-f6g&width=1024")
+let hero02 = new bgImage("https://onedrive.live.com/embed?resid=55A8F5F6F40759DA%21105054&authkey=%21AOox2otNH-jVKUQ&width=1024")
+let hero03 = new bgImage("https://onedrive.live.com/embed?resid=55A8F5F6F40759DA%21105055&authkey=%21APdogih1gB8mj50&width=1024")
 // let hero04 = new bgImage("https://drive.google.com/uc?export=view&id=1PRrJl8y9u9rElpXV7XmYi8pK86-kev84")
 // let hero05 = new bgImage("https://drive.google.com/uc?export=view&id=1CDXToGqqCJN7K2jwm8JH7pD58c6lQT4x")
 // let hero06 = new bgImage("https://drive.google.com/uc?export=view&id=1wP3cZOfbyLJjywGDI3gkRxSRgAlkssSx")
@@ -79,7 +79,7 @@ class toolBg{
         this.name = name;
     }
 }
-let autoCAD = new toolBg("autocadIcon","https://drive.google.com/uc?export=view&id=1W22upnb3BY0-QIn2TUBTFC-7Y44N5aO6","AutoCAD")
+let autoCAD = new toolBg("autocadIcon","https://onedrive.live.com/embed?resid=55A8F5F6F40759DA%21104971&authkey=!AOHi0TVST-q20Oo","AutoCAD")
 let inventor = new toolBg("inventorIcon","https://drive.google.com/uc?export=view&id=1zL1jlRoqzln7iB_SYEwW1TNt2JVcRRwi","Inventor")
 let solidworks = new toolBg("solidworksIcon","https://drive.google.com/uc?export=view&id=1oQocKv1MWezeMU6ECi8CVLO7vRWc-Dkz","SolidWorks")
 let revit = new toolBg("revitIcon","https://drive.google.com/uc?export=view&id=1qj7Go9vFA_WYrs3Py2iaTtCUwSxRR9tf","Revit")
