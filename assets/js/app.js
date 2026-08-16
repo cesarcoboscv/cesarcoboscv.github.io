@@ -242,6 +242,72 @@ function setupDragAndDrop() {
     });
   });
 }
+// Lógica Drag and Drop mejorada para Mouse y Pantallas Táctiles
+document.querySelectorAll('.window').forEach(win => {
+  const header = win.querySelector('.window-header');
+  let isDragging = false;
+  let startX, startY, initialLeft, initialTop;
+
+  win.addEventListener('mousedown', () => bringToFront(win));
+  win.addEventListener('touchstart', () => bringToFront(win), { passive: true });
+
+  function startDrag(clientX, clientY) {
+    isDragging = true;
+    startX = clientX;
+    startY = clientY;
+    initialLeft = win.offsetLeft;
+    initialTop = win.offsetTop;
+    bringToFront(win);
+  }
+
+  function onMove(clientX, clientY) {
+    if (!isDragging) return;
+    const dx = clientX - startX;
+    const dy = clientY - startY;
+    win.style.left = `${Math.max(10, initialLeft + dx)}px`;
+    win.style.top = `${Math.max(10, initialTop + dy)}px`;
+  }
+
+  function endDrag() {
+    isDragging = false;
+  }
+
+  // --- Eventos de Mouse ---
+  header.addEventListener('mousedown', (e) => {
+    if (e.target.tagName === 'BUTTON') return;
+    startDrag(e.clientX, e.clientY);
+
+    function mouseMoveHandler(e) { onMove(e.clientX, e.clientY); }
+    function mouseUpHandler() {
+      endDrag();
+      window.removeEventListener('mousemove', mouseMoveHandler);
+      window.removeEventListener('mouseup', mouseUpHandler);
+    }
+
+    window.addEventListener('mousemove', mouseMoveHandler);
+    window.addEventListener('mouseup', mouseUpHandler);
+  });
+
+  // --- Eventos Táctiles (Tablets / Celulares) ---
+  header.addEventListener('touchstart', (e) => {
+    if (e.target.tagName === 'BUTTON') return;
+    const touch = e.touches[0];
+    startDrag(touch.clientX, touch.clientY);
+
+    function touchMoveHandler(e) {
+      const touchMove = e.touches[0];
+      onMove(touchMove.clientX, touchMove.clientY);
+    }
+    function touchEndHandler() {
+      endDrag();
+      window.removeEventListener('touchmove', touchMoveHandler);
+      window.removeEventListener('touchend', touchEndHandler);
+    }
+
+    window.addEventListener('touchmove', touchMoveHandler, { passive: false });
+    window.addEventListener('touchend', touchEndHandler);
+  }, { passive: false });
+});
 
 // ================= INICIALIZACIÓN =================
 window.addEventListener('DOMContentLoaded', () => {
@@ -249,7 +315,7 @@ window.addEventListener('DOMContentLoaded', () => {
   openWindow('win-perfil');
 });
 
-// ================= CORREO =================
+
 
 const form = document.getElementById("contactForm");
     

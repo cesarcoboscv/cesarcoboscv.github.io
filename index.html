@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="overflow-hidden" lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" corssorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <style>
+      HTML {
+          font-size:110%;
+      }
+      
+    </style>
   </head>
   <body class="h-[100vh] bg-bgc text-textc font-sans overflow-hidden flex flex-col justify-between relative bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:24px_24px]"></body>
 </html><!-- Barra Superior -->
-<header class="h-8 bg-os-panel/90 backdrop-blur border-b border-borderc px-4 flex items-center justify-between text-xs font-mono z-40 shadow-sm">
+<header class="h-8 bg-panel/90 backdrop-blur border-b border-borderc px-4 flex items-center justify-between text-xs font-mono z-40 shadow-sm">
   <div class="flex items-center gap-4">
     <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 bg-accentc rounded-sm"></span><span class="font-bold text-textc tracking-wider">COBOSCV</span><span class="text-muted font-normal">v2026.08</span></div>
     <div class="hidden sm:flex items-center gap-2 text-muted pl-4 border-l border-borderc"><span>Host:</span><span class="text-emerald-600 font-medium">cesar@workstation</span></div>
@@ -48,7 +54,7 @@
     </button>
   </div>
 </main><!-- Terminal / Perfil -->
-<div class="window absolute w-[90vw] sm:w-[460px] bg-window rounded-lg shadow-window border border-borderDark flex flex-col hidden" id="win-perfil" style="top:60px; left:180px; z-index:10">
+<div class="window absolute w-[90vw] sm:w-[660px] bg-window rounded-lg shadow-window border border-borderDark flex flex-col hidden" id="win-perfil" style="top:60px; left:180px; z-index:10">
   <div class="window-header h-9 bg-headerc rounded-t-lg px-4 flex items-center justify-between cursor-move border-b border-borderc"><span class="font-mono text-xs font-bold text-textc flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-500 flex items-center"> </span><span>cesar@worskstation: ~/perfil.sh</span></span>
     <button class="w-3.5 h-3.5 rounded-full bg-accentc hover:bg-accentHover flex items-center justify-center text-[10px] text-white font-bold leading-none" onclick="closeWindow('win-perfil')">✕</button>
   </div>
@@ -152,7 +158,7 @@
     </form>
   </div>
 </div><!-- Barra de Tareas Inferior / Taskbar Claro -->
-<footer class="h-10 bg-panel/95 backdrop-blur border-t border-borderc px-4 flex items-center justify-between text-xs font-mono z-40 shadow-sm">
+<footer class=" fixed bottom-0 w-[100vw] h-10 bg-panel/95 backdrop-blur border-t border-borderc px-4 flex items-center justify-between text-xs font-mono z-40 shadow-sm">
   <div class="flex items-center gap-2">
     <div class="flex items-center gap-2 px-2.5 py-1 rounded bg-accentc text-white font-bold text-xs shadow-sm"><span>⚙</span><span>OS-Apps</span></div>
     <div class="flex items-center gap-2 pl-3 border-l border-os-border" id="taskbarItems"></div>

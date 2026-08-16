@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="en" class="overflow-hidden")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
@@ -11,13 +11,15 @@ html(lang="en")
         link(rel="preconnect" href="https://fonts.gstatic.com" corssorigin)
         link(href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet")
 
-
-
+        style.
+            HTML {
+                font-size:110%;
+            }
 
     body(class="h-[100vh] bg-bgc text-textc font-sans overflow-hidden flex flex-col justify-between relative bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:24px_24px]")
    
 <!-- Barra Superior -->
-        header(class="h-8 bg-os-panel/90 backdrop-blur border-b border-borderc px-4 flex items-center justify-between text-xs font-mono z-40 shadow-sm")
+        header(class="h-8 bg-panel/90 backdrop-blur border-b border-borderc px-4 flex items-center justify-between text-xs font-mono z-40 shadow-sm")
             div(class="flex items-center gap-4")
                 div(class="flex items-center gap-2")
                     span(class="w-2.5 h-2.5 bg-accentc rounded-sm")
@@ -55,7 +57,7 @@ html(lang="en")
                     span(class="font-mono text-xs text-os-text group-hover:font-bold leading-tight") contacto.json
 
 <!-- Terminal / Perfil -->
-            div(id="win-perfil" class="window absolute w-[90vw] sm:w-[460px] bg-window rounded-lg shadow-window border border-borderDark flex flex-col hidden" style="top:60px; left:180px; z-index:10")
+            div(id="win-perfil" class="window absolute w-[90vw] sm:w-[660px] bg-window rounded-lg shadow-window border border-borderDark flex flex-col hidden" style="top:60px; left:180px; z-index:10")
                 div(class="window-header h-9 bg-headerc rounded-t-lg px-4 flex items-center justify-between cursor-move border-b border-borderc")
                     span(class="font-mono text-xs font-bold text-textc flex items-center gap-2")
                         span(class="w-2 h-2 rounded-full bg-emerald-500 flex items-center") 
@@ -181,7 +183,7 @@ html(lang="en")
 
 
 <!-- Barra de Tareas Inferior / Taskbar Claro -->
-        footer(class="h-10 bg-panel/95 backdrop-blur border-t border-borderc px-4 flex items-center justify-between text-xs font-mono z-40 shadow-sm")
+        footer(class=" fixed bottom-0 w-[100vw] h-10 bg-panel/95 backdrop-blur border-t border-borderc px-4 flex items-center justify-between text-xs font-mono z-40 shadow-sm")
             div(class="flex items-center gap-2")
                 div(class="flex items-center gap-2 px-2.5 py-1 rounded bg-accentc text-white font-bold text-xs shadow-sm")
                     span ⚙
