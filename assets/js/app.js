@@ -272,21 +272,21 @@ document.querySelectorAll('.window').forEach(win => {
     isDragging = false;
   }
 
-  // --- Eventos de Mouse ---
-  header.addEventListener('mousedown', (e) => {
-    if (e.target.tagName === 'BUTTON') return;
-    startDrag(e.clientX, e.clientY);
+  // // --- Eventos de Mouse ---
+  // header.addEventListener('mousedown', (e) => {
+  //   if (e.target.tagName === 'BUTTON') return;
+  //   startDrag(e.clientX, e.clientY);
 
-    function mouseMoveHandler(e) { onMove(e.clientX, e.clientY); }
-    function mouseUpHandler() {
-      endDrag();
-      window.removeEventListener('mousemove', mouseMoveHandler);
-      window.removeEventListener('mouseup', mouseUpHandler);
-    }
+  //   function mouseMoveHandler(e) { onMove(e.clientX, e.clientY); }
+  //   function mouseUpHandler() {
+  //     endDrag();
+  //     window.removeEventListener('mousemove', mouseMoveHandler);
+  //     window.removeEventListener('mouseup', mouseUpHandler);
+  //   }
 
-    window.addEventListener('mousemove', mouseMoveHandler);
-    window.addEventListener('mouseup', mouseUpHandler);
-  });
+  //   window.addEventListener('mousemove', mouseMoveHandler);
+  //   window.addEventListener('mouseup', mouseUpHandler);
+  // });
 
   // --- Eventos Táctiles (Tablets / Celulares) ---
   header.addEventListener('touchstart', (e) => {
