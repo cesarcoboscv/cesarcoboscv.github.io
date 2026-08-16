@@ -8,12 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" corssorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet">
-    <style>
-      HTML {
-          font-size:110%;
-      }
-      
-    </style>
+    <link rel="shortcut icon" href="./assets/img/letter-c.png" type="image/x-icon">
   </head>
   <body class="h-[100vh] bg-bgc text-textc font-sans overflow-hidden flex flex-col justify-between relative bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:24px_24px]"></body>
 </html><!-- Barra Superior -->
@@ -30,6 +25,13 @@
   <div class="grid grid-flow-row auto-rows-max gap-6 w-24">
     <button class="flex flex-col items-center gap-2 p-2 rounded hover:bg-white/80 border border-transparent hover:border-borderc transition group text-center shadow-sm hover:shadow" onclick="openWindow('win-perfil')">
       <div class="w-12 h-12 rounded bg-white border border-borderc flex items-center justify-center text-emerald-600 shadow group-hover:border-emerald-500 transition"><span class="font-mono text-base font-bold">&gt;_</span></div><span class="font-mono text-xs text-os-text group-hover:font-bold leading-tight">perfil.sh</span>
+    </button>
+    <button class="flex flex-col items-center gap-2 p-2 rounded hover:bg-white/80 border border-transparent hover:border-borderc transition group text-center shadow-sm hover:shadow" onclick="openWindow('win-skills')">
+      <div class="w-12 h-12 rounded bg-white border border-borderc flex items-center justify-center text-sky-600 shadow group-hover:border-sky-500 transition">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+        </svg>
+      </div><span class="font-mono text-xs text-textc group-hover:font-bold leading-tight">skills.config</span>
     </button>
     <button class="flex flex-col items-center gap-2 p-2 rounded hover:bg-white/80 border border-transparent hover:border-borderc transition group text-center shadow-sm hover:shadow" onclick="openWindow('win-browser')">
       <div class="w-12 h-12 rounded bg-white border border-borderc flex items-center justify-center text-accentc shadow group-hover:border-accentc transition">
@@ -67,18 +69,37 @@
       <p class="text-slate-700 text-xs leading-relaxed mt-1">Soy ingeniero civil con más de 7 años de experiencia en el área HVAC, metal-mecánica, y conocimientos en diseño estructural. Pasión por la ingeniería, la administración de proyectos y habilidades en programación con Python, C#, JS. La combinación de todas estas áreas me permiten un desarrollo de soluciones eficientes y creativas.</p>
     </div>
     <div><span class="text-emerald-700 font-bold ">cesar@workstation:~$ </span><span>neofetch --specs</span>
-      <div class="bg-white p-3 rounded border border-borderc text-xs space-y-1 text-slate-700 mt-1 shadow-inner pt-4"> 
+      <div class="bg-white p-3 rounded border border-borderc text-xs space-y-1 text-slate-700 mt-1 shadow-inner "> 
         <p> <span class="text-accentc font-bold">Grado: </span><span>Maestría en Ingeniería Administrativa </span></p>
         <p> <span class="text-accentc font-bold">Idiomas: </span><span>inglés B2 </span></p>
-        <p> <span class="text-accentc font-bold">Core CAD: </span><span>Autodesk AutoCAD, Mechanical, Map, Revit, Inventor, Solidworks, Microstation, </span></p>
-        <p> <span class="text-accentc font-bold">Dev Stack : </span><span>Python, C, C#, Javascript, AutoLISP</span></p>
-        <p> <span class="text-accentc font-bold">Design Stack : </span><span>Corel DRAW, Affinity</span></p>
+        <p class="pt-4"> <span class="text-accentc font-bold">Core CAD: </span><span>Autodesk AutoCAD Mechanical, AutoDESK Inventor, Microstation</span></p>
+        <p> <span class="text-accentc font-bold">Dev Stack : </span><span>Python, Javascript, AutoLISP</span></p>
+        <p> <span class="text-accentc font-bold">Design Stack : </span><span>Affinity</span></p>
       </div>
+    </div>
+  </div>
+</div><!-- SKills -->
+<div class="window absolute w-[94vw] sm:w-[650px] bg-window rounded-lg shadow-window border border-borderDark flex flex-col " id="win-skills" style="top: 100px; left: 200px; z-index: 12;">
+  <div class="window-header h-9 bg-headerc rounded-t-lg px-4 flex items-center justify-between cursor-move border-b border-borderc"><span class="font-mono text-xs font-bold text-textc flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-sky-500"></span><span>/etc/skills.conf</span></span>
+    <button class="w-3.5 h-3.5 rounded-full bg-accentc hover:bg-accentHover flex items-center justify-center text-[10px] text-white font-bold leading-none" onclick="closeWindow('win-skills')">✕</button>
+  </div>
+  <div class="p-6 space-y-6 overflow-y-auto max-h-[75vh] custom-scroll text-sm">
+    <div>
+      <h3 class="font-mono text-xs font-bold uppercase tracking-wider text-sky-600 mb-3">Software &amp; Herramientas CAD/BIM</h3>
+      <div class="flex flex-wrap gap-2 font-mono text-xs"><span class="bg-slate-100 border border-borderc px-2.5 py-1 rounded">AutoCAD</span><span class="bg-slate-100 border border-borderc px-2.5 py-1 rounded">AutoCAD Mechanical </span><span class="bg-slate-100 border border-borderc px-2.5 py-1 rounded">AutoCAD MAP </span><span class="bg-slate-100 border border-borderc px-2.5 py-1 rounded">Revit</span><span class="bg-slate-100 border border-borderc px-2.5 py-1 rounded">AutoDESK Inventor</span><span class="bg-slate-100 border border-borderc px-2.5 py-1 rounded">Microstation </span><span class="bg-slate-100 border border-borderc px-2.5 py-1 rounded">SolidWORKS </span><span class="bg-slate-100 border border-borderc px-2.5 py-1 rounded">Sap2000</span></div>
+    </div>
+    <div>
+      <h3 class="font-mono text-xs font-bold uppercase tracking-wider text-sky-600 mb-3">Programación &amp; Desarrollo</h3>
+      <div class="flex flex-wrap gap-2 font-mono text-xs"><span class="bg-slate-100 border border-borderc px-2.5 py-1 rounded">Python</span><span class="bg-slate-100 border border-borderc px-2.5 py-1 rounded">C</span><span class="bg-slate-100 border border-borderc px-2.5 py-1 rounded">C#</span><span class="bg-slate-100 border border-borderc px-2.5 py-1 rounded">Javascript</span><span class="bg-slate-100 border border-borderc px-2.5 py-1 rounded">HTML</span><span class="bg-slate-100 border border-borderc px-2.5 py-1 rounded">CSS</span><span class="bg-slate-100 border border-borderc px-2.5 py-1 rounded">Tailwindcss</span><span class="bg-slate-100 border border-borderc px-2.5 py-1 rounded">MySQL </span><span class="bg-slate-100 border border-borderc px-2.5 py-1 rounded">Git / Github </span></div>
+    </div>
+    <div>
+      <h3 class="font-mono text-xs font-bold uppercase tracking-wider text-sky-600 mb-3">Diseño Gráfico</h3>
+      <div class="flex flex-wrap gap-2 font-mono text-xs"><span class="bg-slate-100 border border-borderc px-2.5 py-1 rounded">Photoshop</span><span class="bg-slate-100 border border-borderc px-2.5 py-1 rounded">Illustrator </span><span class="bg-slate-100 border border-borderc px-2.5 py-1 rounded">Corel DRAW</span><span class="bg-slate-100 border border-borderc px-2.5 py-1 rounded">Affinity</span></div>
     </div>
   </div>
 </div><!-- Proyectos --> 
 <div class="window absolute w-[96vw] sm:w-[860px] bg-window rounded-lg shadow-window border border-borderDark flex flex-col hidden" id="win-browser" style="top: 35px; left: 140px; z-index: 15;">
-  <div class="window-header h-9 bg-headerc rounded-t-lg px-4 flex items-center justify-between cursor-move border-b border-os-border"><span class="font-mono text-xs font-bold text-textc flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-accentc"> </span><span>Explorador // Proyectos</span></span>
+  <div class="window-header h-9 bg-headerc rounded-t-lg px-4 flex items-center justify-between cursor-move border-b border-borderc"><span class="font-mono text-xs font-bold text-textc flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-accentc"> </span><span>Explorador // Proyectos</span></span>
     <button class="w-3.5 h-3.5 rounded-full bg-accentc hover:bg-accentHover flex items-center justify-center text-[10px] text-white font-bold leading-none" onclick="closeWindow('win-browser')">✕</button>
   </div>
   <div class="bg-slate-100 border-b border-borderc px-3 pt-2 flex items-center gap-1.5 overflow-x-auto custom-scroll" id="browserTabsHeader">
@@ -157,6 +178,10 @@
       <button class="w-full bg-accentc hover:bg-accentHover text-white font-semibold py-2.5 rounded-lg transition duration-200 text-sm shadow-md" type="submit" id="submitBtn">Enviar</button>
       <p class="text-xs text-center font-medium mt-2 hidden" id="formStatus"></p>
     </form>
+    <div>
+      <p class="text-muted text-xs py-4">//Medios adicionales</p>
+      <div class="w-full flex flex-row justify-center"><span class="w-8 mx-4"><a href="https://github.com/cesarcoboscv" target="_blank" rel="noopener noreferrer"> <img class="w-12 mx-2" src="./assets/img/github.svg"></a></span><span class="w-8 mx-4"><a href="https://linkedin.com/in/cesarcoboscv" target="_blank" rel="noopener noreferrer"> <img class="w-12 mx-2" src="./assets/img/linkedin.svg"></a></span></div>
+    </div>
   </div>
 </div><!-- Barra de Tareas Inferior / Taskbar Claro -->
 <footer class=" fixed bottom-0 w-[100vw] h-10 bg-panel/95 backdrop-blur border-t border-borderc px-4 flex items-center justify-between text-xs font-mono z-40 shadow-sm">
@@ -164,6 +189,6 @@
     <div class="flex items-center gap-2 px-2.5 py-1 rounded bg-accentc text-white font-bold text-xs shadow-sm"><span>⚙</span><span>OS-Apps</span></div>
     <div class="flex items-center gap-2 pl-3 border-l border-os-border" id="taskbarItems"></div>
   </div>
-  <div class="text-[11px] text-os-muted hidden sm:block">Escritorio Activo: 1920x1080 (Multi-Tab Engine)</div>
+  <div class="text-[11px] text-os-muted hidden sm:block">Escritorio Activo: HTML,CSS,JS,TAILWINDCSS (Multi-Tab Engine)</div>
 </footer>
 <script src="./assets/js/app.js"> </script>

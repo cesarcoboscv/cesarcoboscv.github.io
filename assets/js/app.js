@@ -11,152 +11,6 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 
-// // ================= METADATOS Y PESTAÑAS: PROYECTOS =================
-// const projectMetadata = {
-//   'p1': { title: 'ENG-01: HVAC Proceso', url: 'https://portfolio.local/proyectos/hvac-proceso' },
-//   'p2': { title: 'ENG-02: Mezzanine LRFD', url: 'https://portfolio.local/proyectos/mezzanine-industrial' },
-//   'p3': { title: 'DEV-01: coboscv.com', url: 'https://portfolio.local/proyectos/coboscv-web' },
-//   'p4': { title: 'DEV-02: Python CLI', url: 'https://portfolio.local/proyectos/python-cli-engine' },
-//   'p5': { title: 'ENG-03: Plant Layout', url: 'https://portfolio.local/proyectos/plant-layout-cad' },
-//   'p6': { title: 'DEV-03: AutoLISP Tool', url: 'https://portfolio.local/proyectos/autolisp-batch-extractor' }
-// };
-
-// function openProjectTab(pId) {
-//   openWindow('win-browser');
-//   const tabId = `tab-${pId}`;
-//   const meta = projectMetadata[pId];
-
-//   if (!document.getElementById(`btn-${tabId}`)) {
-//     const header = document.getElementById('browserTabsHeader');
-//     const btn = document.createElement('div');
-//     btn.id = `btn-${tabId}`;
-//     btn.className = "browser-tab-btn px-3 py-1.5 rounded-t text-xs font-mono font-bold bg-slate-200 border-t border-x border-borderc text-slate-600 flex items-center gap-2 cursor-pointer shadow-sm";
-//     btn.innerHTML = `
-//       <span onclick="switchBrowserTab('${tabId}')">${meta.title}</span>
-//       <button onclick="closeBrowserTab('${pId}', event)" class="hover:text-accentc font-bold ml-1 text-slate-400">✕</button>
-//     `;
-//     header.appendChild(btn);
-//   }
-
-//   switchBrowserTab(tabId);
-// }
-
-// function switchBrowserTab(tabId) {
-//   document.querySelectorAll('#win-browser .browser-tab-view').forEach(el => el.classList.add('hidden'));
-//   const target = document.getElementById(tabId);
-//   if (target) target.classList.remove('hidden');
-
-//   document.querySelectorAll('#win-browser .browser-tab-btn').forEach(btn => {
-//     btn.classList.remove('bg-white', 'text-textc');
-//     btn.classList.add('bg-slate-200', 'text-slate-600');
-//   });
-
-//   const activeBtn = document.getElementById(`btn-${tabId}`);
-//   if (activeBtn) {
-//     activeBtn.classList.remove('bg-slate-200', 'text-slate-600');
-//     activeBtn.classList.add('bg-white', 'text-textc');
-//   }
-
-//   const urlText = document.getElementById('browserUrlText');
-//   if (urlText) {
-//     if (tabId === 'tab-home') {
-//       urlText.innerText = 'https://portfolio.local/proyectos';
-//     } else {
-//       const pId = tabId.replace('tab-', '');
-//       urlText.innerText = projectMetadata[pId]?.url || 'https://portfolio.local/proyectos';
-//     }
-//   }
-// }
-
-// function closeBrowserTab(pId, event) {
-//   if (event) event.stopPropagation();
-//   const tabId = `tab-${pId}`;
-//   const btn = document.getElementById(`btn-${tabId}`);
-//   if (btn) btn.remove();
-
-//   const view = document.getElementById(tabId);
-//   if (view) view.classList.add('hidden');
-
-//   switchBrowserTab('tab-home');
-// }
-
-// function filterCatalog(category) {
-//   document.querySelectorAll('.project-card').forEach(card => {
-//     if (category === 'all' || card.getAttribute('data-category') === category) {
-//       card.classList.remove('hidden');
-//     } else {
-//       card.classList.add('hidden');
-//     }
-//   });
-// }
-
-// // ================= METADATOS Y PESTAÑAS: BLOG =================
-// const blogMetadata = {
-//   'b1': { title: 'Ductería SMACNA', url: 'https://portfolio.local/blog/smacna-duct-sizing' },
-//   'b2': { title: 'Placas Base AISC', url: 'https://portfolio.local/blog/aisc-base-plates' },
-//   'b3': { title: 'Python Memorias', url: 'https://portfolio.local/blog/python-report-automation' },
-//   'b4': { title: 'Capas CAD Planta', url: 'https://portfolio.local/blog/cad-automotive-standards' }
-// };
-
-// function openBlogTab(bId) {
-//   openWindow('win-blog-browser');
-//   const tabId = `blog-tab-${bId}`;
-//   const meta = blogMetadata[bId];
-
-//   if (!document.getElementById(`btn-${tabId}`)) {
-//     const header = document.getElementById('blogTabsHeader');
-//     const btn = document.createElement('div');
-//     btn.id = `btn-${tabId}`;
-//     btn.className = "blog-tab-btn px-3 py-1.5 rounded-t text-xs font-mono font-bold bg-slate-200 border-t border-x border-borderc text-slate-600 flex items-center gap-2 cursor-pointer shadow-sm";
-//     btn.innerHTML = `
-//       <span onclick="switchBlogTab('${tabId}')">${meta.title}</span>
-//       <button onclick="closeBlogTab('${bId}', event)" class="hover:text-amber-700 font-bold ml-1 text-slate-400">✕</button>
-//     `;
-//     header.appendChild(btn);
-//   }
-
-//   switchBlogTab(tabId);
-// }
-
-// function switchBlogTab(tabId) {
-//   document.querySelectorAll('#win-blog-browser .blog-tab-view').forEach(el => el.classList.add('hidden'));
-//   const target = document.getElementById(tabId);
-//   if (target) target.classList.remove('hidden');
-
-//   document.querySelectorAll('#win-blog-browser .blog-tab-btn').forEach(btn => {
-//     btn.classList.remove('bg-white', 'text-textc');
-//     btn.classList.add('bg-slate-200', 'text-slate-600');
-//   });
-
-//   const activeBtn = document.getElementById(`btn-${tabId}`);
-//   if (activeBtn) {
-//     activeBtn.classList.remove('bg-slate-200', 'text-slate-600');
-//     activeBtn.classList.add('bg-white', 'text-textc');
-//   }
-
-//   const urlText = document.getElementById('blogUrlText');
-//   if (urlText) {
-//     if (tabId === 'blog-tab-index') {
-//       urlText.innerText = 'https://portfolio.local/blog';
-//     } else {
-//       const bId = tabId.replace('blog-tab-', '');
-//       urlText.innerText = blogMetadata[bId]?.url || 'https://portfolio.local/blog';
-//     }
-//   }
-// }
-
-// function closeBlogTab(bId, event) {
-//   if (event) event.stopPropagation();
-//   const tabId = `blog-tab-${bId}`;
-//   const btn = document.getElementById(`btn-${tabId}`);
-//   if (btn) btn.remove();
-
-//   const view = document.getElementById(tabId);
-//   if (view) view.classList.add('hidden');
-
-//   switchBlogTab('blog-tab-index');
-// }
-
 // ================= GESTOR DE VENTANAS Y TASKBAR =================
 function openWindow(winId) {
   const win = document.getElementById(winId);
@@ -188,7 +42,8 @@ function updateTaskbar() {
     { id: 'win-browser', label: 'proyectos.app' },
     { id: 'win-blog-browser', label: 'blog.reader' },
     { id: 'win-perfil', label: 'perfil.sh' },
-    { id: 'win-contacto', label: 'contacto.json' }
+    { id: 'win-contacto', label: 'contacto.json' },
+    { id: 'win-skills', label:'skills.config'}
   ];
 
   windows.forEach(w => {
@@ -242,7 +97,7 @@ function setupDragAndDrop() {
     });
   });
 }
-// Lógica Drag and Drop mejorada para Mouse y Pantallas Táctiles
+// Lógica Drag and Drop 
 document.querySelectorAll('.window').forEach(win => {
   const header = win.querySelector('.window-header');
   let isDragging = false;
@@ -272,21 +127,6 @@ document.querySelectorAll('.window').forEach(win => {
     isDragging = false;
   }
 
-  // // --- Eventos de Mouse ---
-  // header.addEventListener('mousedown', (e) => {
-  //   if (e.target.tagName === 'BUTTON') return;
-  //   startDrag(e.clientX, e.clientY);
-
-  //   function mouseMoveHandler(e) { onMove(e.clientX, e.clientY); }
-  //   function mouseUpHandler() {
-  //     endDrag();
-  //     window.removeEventListener('mousemove', mouseMoveHandler);
-  //     window.removeEventListener('mouseup', mouseUpHandler);
-  //   }
-
-  //   window.addEventListener('mousemove', mouseMoveHandler);
-  //   window.addEventListener('mouseup', mouseUpHandler);
-  // });
 
   // --- Eventos Táctiles (Tablets / Celulares) ---
   header.addEventListener('touchstart', (e) => {
@@ -314,9 +154,6 @@ window.addEventListener('DOMContentLoaded', () => {
   setupDragAndDrop();
   openWindow('win-perfil');
 });
-
-
-
 const form = document.getElementById("contactForm");
     
     async function handleSubmit(event) {
@@ -361,3 +198,9 @@ const form = document.getElementById("contactForm");
     }
     
     form.addEventListener("submit", handleSubmit);
+
+document.addEventListener("contextmenu", evt => evt.preventDefault(), false);
+document.addEventListener("copy", evt => {
+  evt.clipboardData.setData("text/plain", "No está permitido copiar el contenido");
+  evt.preventDefault();
+}, false);
