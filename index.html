@@ -1,127 +1,162 @@
 <!DOCTYPE html>
-<html class="font-karla font-thin scroll-smooth" lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cobos CV </title>
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.svg">
-    <script harset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-    <style>
-      p::selection, a::selection, span::selection, img::selection, iframe::selection{
-          background:#e11d48;
-      }
-      .langs .compact img{
-          width:100vw;
-          max-width:350px;
-      }
-      .langs .full-lang img{
-          width:100vw
-      }
-      .hid{
-          position:relative;
-          top:-60px;
-      }
-      //- .hero div p{
-      //-     bacbackground-color:#0000002e;
-      //- }
-      .repos{
-          grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-          gap:20px;
-      }
-      .grid-temp{
-          display: grid;
-      }
-      .tool-grid{
-          grid-template-columns: repeat(auto-fit, minmax(40px, auto));
-          gap:48px;
-      }
-      .icon-container span{
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size:contain;
-          width: 54px;
-          height:54px;
-      }
-      .icon-container p{
-          visibility:hidden;
-      }
-      .icon-container:hover p{
-              visibility:visible;
-      }
-      .icon-container{
-          transition: ease-in-out .2s;
-      }
-      .icon-container:hover{
-              transform:scale(1.2);
-              transition: ease-in-out .2s;
-      }
-      
-      .icon-container{
-          display:flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-      }
-      
-    </style>
-    <title>César Cobos Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" corssorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet">
   </head>
-  <body> 
-    <header class="text-white flex w-full">
-      <div class="full-nav w-full  flex justify-center items-center fixed ease-in-out duration-1000 z-10" id="full-navbar">
-        <div class="nav-buttons flex justify-end items-center w-full max-w-[1600px] md:px-24">
-              <ul class="flex pr-6">
-                <li class="px-4"><a class="hover:text-rose-600 ease-in-out duration-200 text-lg" href="#hero" rel="noreferrer">Home</a>
-                </li>
-                <li class="px-4"><a class="hover:text-rose-600 ease-in-out duration-200 text-lg" href="#project" rel="noreferrer">Proyectos</a>
-                </li>
-                <li class="px-4"><a class="hover:text-rose-600 ease-in-out duration-200 text-lg" href="#contact" rel="noreferrer">Contacto</a>
-                </li>
-              </ul><a class=" font-bold text-white bg-rose-600 hover:bg-rose-700 px-6 py-3  rounded-lg ease-in-out duration-200" href="https://drive.google.com/file/d/1qm18xIB3YEoZNyjdR1XD7jZ8I4VRu6TB/view?usp=sharing" target="_blank" rel="noreferrer">Ver CV</a>
-        </div>
+  <body class="h-[100vh] bg-bgc text-textc font-sans overflow-hidden flex flex-col justify-between relative bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:24px_24px]"></body>
+</html><!-- Barra Superior -->
+<header class="h-8 bg-os-panel/90 backdrop-blur border-b border-borderc px-4 flex items-center justify-between text-xs font-mono z-40 shadow-sm">
+  <div class="flex items-center gap-4">
+    <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 bg-accentc rounded-sm"></span><span class="font-bold text-textc tracking-wider">COBOSCV</span><span class="text-muted font-normal">v2026.08</span></div>
+    <div class="hidden sm:flex items-center gap-2 text-muted pl-4 border-l border-borderc"><span>Host:</span><span class="text-emerald-600 font-medium">cesar@workstation</span></div>
+  </div>
+  <div class="flex items-center gap-6"><span class="text-muted hidden md:inline">UTF-8 // Multi-Tab Environment</span>
+    <div class="text-textc font-bold tracking-widest" id="liveClock">00:00:00</div>
+  </div>
+</header><!-- Escritorio -->
+<main class=" flex-1 relative p-6 overflow-hidden" id="desktopArea">
+  <div class="grid grid-flow-row auto-rows-max gap-6 w-24">
+    <button class="flex flex-col items-center gap-2 p-2 rounded hover:bg-white/80 border border-transparent hover:border-borderc transition group text-center shadow-sm hover:shadow" onclick="openWindow('win-perfil')">
+      <div class="w-12 h-12 rounded bg-white border border-borderc flex items-center justify-center text-emerald-600 shadow group-hover:border-emerald-500 transition"><span class="font-mono text-base font-bold">&gt;_</span></div><span class="font-mono text-xs text-os-text group-hover:font-bold leading-tight">perfil.sh</span>
+    </button>
+    <button class="flex flex-col items-center gap-2 p-2 rounded hover:bg-white/80 border border-transparent hover:border-borderc transition group text-center shadow-sm hover:shadow" onclick="openWindow('win-browser')">
+      <div class="w-12 h-12 rounded bg-white border border-borderc flex items-center justify-center text-accentc shadow group-hover:border-accentc transition">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+        </svg>
+      </div><span class="font-mono text-xs text-textc group-hover:font-bold leading-tight">proyectos.app</span>
+    </button>
+    <button class="flex flex-col items-center gap-2 p-2 rounded hover:bg-white/80 border border-transparent hover:border-borderc transition group text-center shadow-sm hover:shadow" onclick="openWindow('win-blog-browser')">
+      <div class="w-12 h-12 rounded bg-white border border-borderc flex items-center justify-center text-amber-600 shadow group-hover:border-amber-500 transition">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
+        </svg>
+      </div><span class="font-mono text-xs text-os-text group-hover:font-bold leading-tight">blog.reader</span>
+    </button>
+    <button class="flex flex-col items-center gap-2 p-2 rounded hover:bg-white/80 border border-transparent hover:border-borderc transition group text-center shadow-sm hover:shadow" onclick="openWindow('win-contacto')">
+      <div class="w-12 h-12 rounded bg-white border border-borderc flex items-center justify-center text-violet-600 shadow group-hover:border-violet-500 transition">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+        </svg>
+      </div><span class="font-mono text-xs text-os-text group-hover:font-bold leading-tight">contacto.json</span>
+    </button>
+  </div>
+</main><!-- Terminal / Perfil -->
+<div class="window absolute w-[90vw] sm:w-[460px] bg-window rounded-lg shadow-window border border-borderDark flex flex-col hidden" id="win-perfil" style="top:60px; left:180px; z-index:10">
+  <div class="window-header h-9 bg-headerc rounded-t-lg px-4 flex items-center justify-between cursor-move border-b border-borderc"><span class="font-mono text-xs font-bold text-textc flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-500 flex items-center"> </span><span>cesar@worskstation: ~/perfil.sh</span></span>
+    <button class="w-3.5 h-3.5 rounded-full bg-accentc hover:bg-accentHover flex items-center justify-center text-[10px] text-white font-bold leading-none" onclick="closeWindow('win-perfil')">✕</button>
+  </div>
+  <div class="p-6 font-mono text-xs sm:text-sm space-y-4 overflow-y-auto max-h-[70vh] custom-scroll text-slate-800">
+    <div><span class="text-emerald-700 font-bold">cesar@workstation:~$ </span><span>whoami</span>
+      <p class="text-textc font-bold text-base mt-1 mb-[0px]">M.I.A César V. Cobos </p>
+      <p class="text-muted text-xs">Ingeniero Civil &amp; Project Lead | HVAC, Estructuras y Software</p>
+    </div>
+    <div><span class="text-emerald-700 font-bold">cesar@workstation:~$ </span><span>cat summary.txt</span>
+      <p class="text-slate-700 text-xs leading-relaxed mt-1">Soy ingeniero civil con más de 7 años de experiencia en el área HVAC, metal-mecánica, y conocimientos en diseño estructural. Pasión por la ingeniería, la administración de proyectos y habilidades en programación con Python, C#, JS. La combinación de todas estas áreas me permiten un desarrollo de soluciones eficientes y creativas.</p>
+    </div>
+    <div><span class="text-emerald-700 font-bold">cesar@workstation:~$ </span><span>neofetch --specs</span>
+      <div class="bg-white p-3 rounded border border-borderc text-xs space-y-1 text-slate-700 mt-1 shadow-inner"> 
+        <p> <span class="text-accentc font-bold">Grado: </span><span>Maestría en Ingeniería Administrativa </span></p>
+        <p> <span class="text-accentc font-bold">Idiomas: </span><span>inglés B2 </span></p>
+        <p> <span class="text-accentc font-bold">Core CAD: </span><span>Autodesk AutoCAD, Mechanical, Map, Revit, Inventor, Solidworks, Microstation</span></p>
+        <p> <span class="text-accentc font-bold">Dev Stack : </span><span>Python, C, C#, Javascript, AutoLISP</span></p>
       </div>
-    </header>
-    <section class="hero flex w-full items-center justify-center h-[calc(100vh+80px)] bg-top bg-no-repeat bg-cover mt-[-80px]" id="hero">
-      <div class="flex flex-col h-auto w-full max-w-[1200px] text-zinc-50 px-8"></div>
-    </section>
-    <main>
-      <section class="w-full h-full py-16 flex justify-center items-center flex-col font-bold py-10">
-        <div class="min-w-[250px] w-full max-w-[1600px] grid-temp tool-grid p-4" id="engineering-tools"></div>
-        <div class="min-w-[250px] w-full max-w-[1600px] tool-grid grid-temp p-4" id="dev-tools"></div>
-      </section>
-      <section class="w-full min-h-[50vh] flex flex-col justify-center items-center py-12 mt-[-156px] md:mt-[-64px]">
-            <div class="flex justify-center pt-32 pb-8 text-center">
-              <p class="text-4xl font-bold">Mis proyectos en Internet</p>
-            </div>
-        <div class="repos grid-temp justify-center min-w-[250px] w-full justify-center max-w-[1600px] px-6"><a href="https://github.com/cesarcoboscv/impractical-projects"><img class="hover:scale-[1.05] ease-in-out duration-200" align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=cesarcoboscv&amp;theme=swift&amp;repo=impractical-projects"></a><a href="https://github.com/cesarcoboscv/podcast-page"><img class="hover:scale-[1.05] ease-in-out duration-200" align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=cesarcoboscv&amp;theme=swift&amp;repo=podcast-page"></a><a href="https://github.com/cesarcoboscv/autolisp"><img class="hover:scale-[1.05] ease-in-out duration-200" align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=cesarcoboscv&amp;theme=swift&amp;repo=autolisp"></a>
-        </div>
-            <div class="flex justify-center pt-32 pb-8 text-center">
-              <p class="text-4xl font-bold">Los lenguajes que uso</p>
-            </div>
-        <div class="langs w-full flex justify-center"><a class="compact hidden md:block" href="https://github.com/cesarcoboscv"><img class="hover:scale-[1.05] ease-in-out duration-200" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=cesarcoboscv&amp;langs_count=10&amp;layout=compact&amp;theme=swift&amp;hide=pug,html,css,scss"></a><a class="full-lang md:hidden" href="https://github.com/cesarcoboscv"><img class="hover:scale-[1.05] ease-in-out duration-200" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=cesarcoboscv&amp;langs_count=10&amp;theme=swift&amp;hide=pug,html,css,scss"></a>
-        </div>
-            <div class="flex justify-center pt-32 pb-8 text-center">
-              <p class="text-4xl font-bold">Mis proyectos en el mundo</p>
-            </div>
-      </section>
-    </main>
-    <footer>
-      <div class="w-full h-auto flex justify-center items-center flex-col pb-10" id="contact">
-            <div class="flex justify-center pt-32 pb-8 text-center">
-              <p class="text-4xl font-bold">Sigamos la conversación</p>
-            </div>
-        <div class="w-full max-w-[1200px] h-32 flex items-center justify-center text-4xl md:text-3xl pt-12"><a class="mx-4 hover:scale-150 hoverSpan ease-in-out duration-200" href="https://github.com/cesarcoboscv" target="_blank" rel="noreferrer" title="GitHub"><i class="fa-brands fa-github"></i></a><a class="mx-4 hover:scale-150 hoverSpan ease-in-out duration-200" href="https://linkedin.com/in/cesarcoboscv" target="_blank" rel="noreferrer" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a><a class="mx-4 hover:scale-150 hoverSpan ease-in-out duration-200" href="mailto:cesar@coboscv.com" target="_blank" rel="noreferrer" title="cesar@coboscv.com"><i class="fa-solid fa-envelope"></i></a>
-        </div>
-        <div class="text-sm pt-6">
-          <p>César Cobos 202x</p>
-        </div>
+    </div>
+  </div>
+</div><!-- Proyectos --> 
+<div class="window absolute w-[96vw] sm:w-[860px] bg-window rounded-lg shadow-window border border-borderDark flex flex-col hidden" id="win-browser" style="top: 35px; left: 140px; z-index: 15;">
+  <div class="window-header h-9 bg-headerc rounded-t-lg px-4 flex items-center justify-between cursor-move border-b border-os-border"><span class="font-mono text-xs font-bold text-textc flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-accentc"> </span><span>Explorador // Proyectos</span></span>
+    <button class="w-3.5 h-3.5 rounded-full bg-accentc hover:bg-accentHover flex items-center justify-center text-[10px] text-white font-bold leading-none" onclick="closeWindow('win-browser')">✕</button>
+  </div>
+  <div class="bg-slate-100 border-b border-borderc px-3 pt-2 flex items-center gap-1.5 overflow-x-auto custom-scroll" id="browserTabsHeader">
+    <button class="browser-tab-btn px-3 py-1.5 rounded-t text-xs font-mono font-bold bg-white border-t border-x border-borderc text-textc flex items-center gap-2 shadow-sm" onclick="switchBrowserTab('tab-home')" id="btn-tab-home"><span>📁 Directorio de Proyectos</span></button>
+  </div>
+  <div class="bg-white border-b border-borderc px-4 py-2 flex items-center gap-3 text-xs font-mono">
+    <div class="flex items-center gap-1 text-muted">
+      <button class="p-1 hover:bg-slate-100 rounded" onclick="switchBrowserTab('tab-home')">◀</button>
+      <button class="p-1 hover:bg-slate-100 rounded text-slate-300">▶</button>
+      <button class="p-1 hover:bg-slate-100 rounded" onclick="location.reload()">⟳</button>
+    </div>
+    <div class="flex-1 bg-slate-50 border border-os-border rounded px-3 py-1 text-slate-600 flex items-center justify-between"><span id="browserUrlText">https://portfolio.local/proyectos</span><span class="text-[10px] text-emerald-600 font-bold">● SECURE</span></div>
+  </div>
+  <div class="p-6 overflow-y-auto max-h-[70vh] custom-scroll bg-white" id="browserTabContents">
+    <div class="browser-tab-view space-y-6" id="tab-home">
+      <div>
+        <h2 class="text-xl font-bold uppercase tracking-tight text-os-text">Directorio de Proyectos</h2>
+        <p class="text-xs text-os-muted mt-1">Haga clic en cualquier tarjeta para abrir su ficha en una nueva pestaña.</p>
       </div>
-    </footer>
-    <script src="./assets/js/main.js"></script>
-    <script src="https://kit.fontawesome.com/32dce108fb.js" crossorigin="anonymous"></script>
-  </body>
-</html>
+      <div class="flex flex-wrap gap-2 pt-1 border-b border-borderc pb-3"><span class="text-xs font-mono font-bold text-textc uppercase mr-2 flex items-center">Filtros</span>
+        <button class="text-xs font-mono px-2.5 py-1 rounded bg-textc text-white font-bold" onclick="filterCatalog('all')">Todos</button>
+        <button class="text-xs font-mono px-2.5 py-1 rounded bg-slate-100 border border-borderc text-slate-700 hover:bg-slate-200" onclick="filterCatalog('eng')">Ingeniería</button>
+        <button class="text-xs font-mono px-2.5 py-1 rounded bg-slate-100 border border-borderc text-slate-700 hover:bg-slate-200" onclick="filterCatalog('dev')">Dev</button>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+        <p>No se han cargado proyectos aún, vuelve más tarde.</p>
+      </div>
+    </div>
+  </div>
+</div><!-- Blog -->
+<div class="window absolute w-[96vw] sm:w-[840px] bg-window rounded-lg shadow-window border border-borderDark flex flex-col hidden" id="win-blog-browser" style="top: 50px; left: 170px; z-index: 14;">
+  <div class="window-header h-9 bg-headerc rounded-t-lg px-4 flex items-center justify-between cursor-move border-b border-borderc"><span class="font-mono text-xs font-bold text-textc flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-amber-500"></span><span>Blog Reader // Artículos Técnicos</span></span>
+    <button class="w-3.5 h-3.5 rounded-full bg-accentc hover:bg-accentHover flex items-center justify-center text-[10px] text-white font-bold leading-none" onclick="closeWindow('win-blog-browser')">✕</button>
+  </div>
+  <div class="bg-slate-100 border-b border-borderc px-3 pt-2 flex items-center gap-1.5 overflow-x-auto custom-scroll" id="blogTabsHeader">
+    <button class="blog-tab-btn px-3 py-1.5 rounded-t text-xs font-mono font-bold bg-white border-t border-x border-borderc text-os-text flex items-center gap-2 shadow-sm" onclick="switchBlogTab('blog-tab-index')" id="btn-blog-tab-index"><span>📰 Índice del Blog</span></button>
+  </div>
+  <div class="bg-white border-b border-borderc px-4 py-2 flex items-center gap-3 text-xs font-mono">
+    <div class="flex items-center gap-1 text-muted">
+      <button class="p-1 hover:bg-slate-100 rounded" onclick="switchBlogTab('blog-tab-index')">◀</button>
+      <button class="p-1 hover:bg-slate-100 rounded text-slate-300">▶</button>
+      <button class="p-1 hover:bg-slate-100 rounded" onclick="location.reload()">⟳</button>
+    </div>
+    <div class="flex-1 bg-slate-50 border border-borderc rounded px-3 py-1 text-slate-600 flex items-center justify-between"><span id="blogUrlText">https://portfolio.local/blog</span><span class="text-[10px] text-amber-600 font-bold">● RSS SYNCED</span></div>
+  </div>
+  <div class="p-6 overflow-y-auto max-h-[70vh] custom-scroll bg-white" id="blogTabContents">
+    <div class="blog-tab-view space-y-6" id="blog-tab-index">
+      <div>
+        <h2 class="text-xl font-bold uppercase tracking-tight text-textc">Publicaciones &amp; Artículos Técnicos</h2>
+        <p class="text-xs text-os-muted mt-1">Selecciona un artículo para abrir la lectura completa en una pestaña independiente.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2"></div>
+      <p>No se han creado entradas nuevas, vuelve más tarde.</p>
+    </div>
+  </div>
+</div><!-- Contacto -->
+<div class="window absolute w-[90vw] sm:w-[460px] bg-window rounded-lg shadow-window border border-borderDark flex flex-col hidden" id="win-contacto" style="top: 120px; left: 260px; z-index: 12;">
+  <div class="window-header h-9 bg-headerc rounded-t-lg px-4 flex items-center justify-between cursor-move border-b border-borderc"><span class="font-mono text-xs font-bold text-textc flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-violet-500"> </span><span>~/contacto.json</span></span>
+    <button class="w-3.5 h-3.5 rounded-full bg-accentc hover:bg-accentHover flex items-center justify-center text-[10px] text-white font-bold leading-none" onclick="closeWindow('win-contacto')">✕</button>
+  </div>
+  <div class="p-6 font-mono text-xs space-y-4">
+    <p class="text-muted text-xs">//Iniciar Comunicacón directa</p>
+    <form class="space-y-4" id="contactForm" action="https://formspree.io/f/xqpzddej" method="POST">
+      <div>
+        <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1" for="name">Nombre</label>
+        <input class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none text-sm" type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1" for="email">Correo</label>
+        <input class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none text-sm" type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1" for="message">Mensaje</label>
+        <textarea class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none text-sm" id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button class="w-full bg-accentc hover:bg-accentHover text-white font-semibold py-2.5 rounded-lg transition duration-200 text-sm shadow-md" type="submit" id="submitBtn">Enviar</button>
+      <p class="text-xs text-center font-medium mt-2 hidden" id="formStatus"></p>
+    </form>
+  </div>
+</div><!-- Barra de Tareas Inferior / Taskbar Claro -->
+<footer class="h-10 bg-panel/95 backdrop-blur border-t border-borderc px-4 flex items-center justify-between text-xs font-mono z-40 shadow-sm">
+  <div class="flex items-center gap-2">
+    <div class="flex items-center gap-2 px-2.5 py-1 rounded bg-accentc text-white font-bold text-xs shadow-sm"><span>⚙</span><span>OS-Apps</span></div>
+    <div class="flex items-center gap-2 pl-3 border-l border-os-border" id="taskbarItems"></div>
+  </div>
+  <div class="text-[11px] text-os-muted hidden sm:block">Escritorio Activo: 1920x1080 (Multi-Tab Engine)</div>
+</footer>
+<script src="./assets/js/app.js"> </script>

@@ -1,3 +1,4 @@
-node_modules
-*.json
-prepros.config
+*.config
+*.ignore
+input.css
+*.pug

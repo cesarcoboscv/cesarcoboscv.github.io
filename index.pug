@@ -1,105 +1,192 @@
 doctype html
-html(lang="es" class="font-karla font-thin scroll-smooth")
+html(lang="en")
     head
         meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Cobos CV 
+
         link(rel="stylesheet", href="./assets/css/styles.css")
+
         link(rel="preconnect" href="https://fonts.googleapis.com")
-        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
-        link(href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet")
-        //- link(rel="icon" type="image/x-icon" href="https://1drv.ms/u/s!AtpZB_T29ahVhrQd9uBZD12aaQuHbg?embed=1")
-        link(rel="icon" type="image/x-icon" href="./assets/icon/favicon.svg")
-
-        
-        script(harset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js")
-        
-     
-        style.
-            p::selection, a::selection, span::selection, img::selection, iframe::selection{
-                background:#e11d48;
-            }
-            .langs .compact img{
-                width:100vw;
-                max-width:350px;
-            }
-            .langs .full-lang img{
-                width:100vw
-            }
-            .hid{
-                position:relative;
-                top:-60px;
-            }
-            //- .hero div p{
-            //-     bacbackground-color:#0000002e;
-            //- }
-            .repos{
-                grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-                gap:20px;
-            }
-            .grid-temp{
-                display: grid;
-            }
-            .tool-grid{
-                grid-template-columns: repeat(auto-fit, minmax(40px, auto));
-                gap:48px;
-            }
-            .icon-container span{
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size:contain;
-                width: 54px;
-                height:54px;
-            }
-            .icon-container p{
-                visibility:hidden;
-            }
-            .icon-container:hover p{
-                    visibility:visible;
-            }
-            .icon-container{
-                transition: ease-in-out .2s;
-            }
-            .icon-container:hover{
-                    transform:scale(1.2);
-                    transition: ease-in-out .2s;
-            }
-
-            .icon-container{
-                display:flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-
-        title César Cobos Home
-    body 
-        include ./components/_header.pug
-
-        include ./components/_hero.pug
-
-        main
-            //- include ./components/_about.pug
-            //- include ./components/_projects.pug
-            include ./components/_tools.pug
-            include ./components/_github.pug
-            
-
-            //- +title-section("Déjame un mensaje","contact")
-            //- section( class="w-full h-auto flex")
-            //-     div(class="w-full max-w-[500px] relative md:left-[calc(50vw-250px)] px-4")
-            //-         script(src="./assets/js/form.js") 
-            //- div(class="hid w-full h-12 bg-white")
-
-        include ./components/_footer.pug
-
-        
-
-        script(src="./assets/js/main.js")
-        script(src="https://kit.fontawesome.com/32dce108fb.js" crossorigin="anonymous")
-        
-        
+        link(rel="preconnect" href="https://fonts.gstatic.com" corssorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet")
 
 
 
 
+    body(class="h-[100vh] bg-bgc text-textc font-sans overflow-hidden flex flex-col justify-between relative bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:24px_24px]")
+   
+<!-- Barra Superior -->
+        header(class="h-8 bg-os-panel/90 backdrop-blur border-b border-borderc px-4 flex items-center justify-between text-xs font-mono z-40 shadow-sm")
+            div(class="flex items-center gap-4")
+                div(class="flex items-center gap-2")
+                    span(class="w-2.5 h-2.5 bg-accentc rounded-sm")
+                    span(class="font-bold text-textc tracking-wider") COBOSCV
+                    span(class="text-muted font-normal") v2026.08
+                div(class="hidden sm:flex items-center gap-2 text-muted pl-4 border-l border-borderc")
+                    span Host:
+                    span(class="text-emerald-600 font-medium") cesar@workstation
+
+            div(class="flex items-center gap-6")
+                    span(class="text-muted hidden md:inline") UTF-8 // Multi-Tab Environment
+                    div(id="liveClock" class="text-textc font-bold tracking-widest") 00:00:00
+<!-- Escritorio -->
+        main(id="desktopArea" class=" flex-1 relative p-6 overflow-hidden")
+            div(class="grid grid-flow-row auto-rows-max gap-6 w-24")
+                button(onclick="openWindow('win-perfil')" class="flex flex-col items-center gap-2 p-2 rounded hover:bg-white/80 border border-transparent hover:border-borderc transition group text-center shadow-sm hover:shadow")
+                    div(class="w-12 h-12 rounded bg-white border border-borderc flex items-center justify-center text-emerald-600 shadow group-hover:border-emerald-500 transition")
+                        span(class="font-mono text-base font-bold") &gt;_
+                    span(class="font-mono text-xs text-os-text group-hover:font-bold leading-tight") perfil.sh
+                
+                button(onclick="openWindow('win-browser')" class="flex flex-col items-center gap-2 p-2 rounded hover:bg-white/80 border border-transparent hover:border-borderc transition group text-center shadow-sm hover:shadow")
+                    div(class="w-12 h-12 rounded bg-white border border-borderc flex items-center justify-center text-accentc shadow group-hover:border-accentc transition")
+                        svg(class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24")
+                            path(stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9")
+                    span(class="font-mono text-xs text-textc group-hover:font-bold leading-tight") proyectos.app
+                button(onclick="openWindow('win-blog-browser')" class="flex flex-col items-center gap-2 p-2 rounded hover:bg-white/80 border border-transparent hover:border-borderc transition group text-center shadow-sm hover:shadow")
+                    div(class="w-12 h-12 rounded bg-white border border-borderc flex items-center justify-center text-amber-600 shadow group-hover:border-amber-500 transition")
+                        svg(class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24")
+                            path(stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z")
+                    span(class="font-mono text-xs text-os-text group-hover:font-bold leading-tight") blog.reader
+                button(onclick="openWindow('win-contacto')" class="flex flex-col items-center gap-2 p-2 rounded hover:bg-white/80 border border-transparent hover:border-borderc transition group text-center shadow-sm hover:shadow")
+                    div(class="w-12 h-12 rounded bg-white border border-borderc flex items-center justify-center text-violet-600 shadow group-hover:border-violet-500 transition")
+                        svg(class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24")
+                            path(stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z")
+                    span(class="font-mono text-xs text-os-text group-hover:font-bold leading-tight") contacto.json
+
+<!-- Terminal / Perfil -->
+            div(id="win-perfil" class="window absolute w-[90vw] sm:w-[460px] bg-window rounded-lg shadow-window border border-borderDark flex flex-col hidden" style="top:60px; left:180px; z-index:10")
+                div(class="window-header h-9 bg-headerc rounded-t-lg px-4 flex items-center justify-between cursor-move border-b border-borderc")
+                    span(class="font-mono text-xs font-bold text-textc flex items-center gap-2")
+                        span(class="w-2 h-2 rounded-full bg-emerald-500 flex items-center") 
+                        span cesar@worskstation: ~/perfil.sh
+                    button(onclick="closeWindow('win-perfil')" class="w-3.5 h-3.5 rounded-full bg-accentc hover:bg-accentHover flex items-center justify-center text-[10px] text-white font-bold leading-none") ✕
+
+                div(class="p-6 font-mono text-xs sm:text-sm space-y-4 overflow-y-auto max-h-[70vh] custom-scroll text-slate-800")
+                    div()
+                        span(class="text-emerald-700 font-bold") cesar@workstation:~$ 
+                        span whoami
+                        p(class="text-textc font-bold text-base mt-1 mb-[0px]") M.I.A César V. Cobos 
+                        p(class="text-muted text-xs") Ingeniero Civil &amp; Project Lead | HVAC, Estructuras y Software
+                    div()
+                        span(class="text-emerald-700 font-bold") cesar@workstation:~$ 
+                        span cat summary.txt
+                        p(class="text-slate-700 text-xs leading-relaxed mt-1") Soy ingeniero civil con más de 7 años de experiencia en el área HVAC, metal-mecánica, y conocimientos en diseño estructural. Pasión por la ingeniería, la administración de proyectos y habilidades en programación con Python, C#, JS. La combinación de todas estas áreas me permiten un desarrollo de soluciones eficientes y creativas.
+                    div()
+                        span(class="text-emerald-700 font-bold") cesar@workstation:~$ 
+                        span neofetch --specs
+                        div(class="bg-white p-3 rounded border border-borderc text-xs space-y-1 text-slate-700 mt-1 shadow-inner")  
+                            p 
+                                span(class="text-accentc font-bold") Grado: 
+                                span Maestría en Ingeniería Administrativa 
+                            p 
+                                span(class="text-accentc font-bold") Idiomas: 
+                                span inglés B2 
+                            p 
+                                span(class="text-accentc font-bold") Core CAD: 
+                                span Autodesk AutoCAD, Mechanical, Map, Revit, Inventor, Solidworks, Microstation
+                            p 
+                                span(class="text-accentc font-bold") Dev Stack : 
+                                span Python, C, C#, Javascript, AutoLISP
+<!-- Proyectos --> 
+            div(id="win-browser" class="window absolute w-[96vw] sm:w-[860px] bg-window rounded-lg shadow-window border border-borderDark flex flex-col hidden" style="top: 35px; left: 140px; z-index: 15;")
+                div(class="window-header h-9 bg-headerc rounded-t-lg px-4 flex items-center justify-between cursor-move border-b border-os-border")
+                    span(class="font-mono text-xs font-bold text-textc flex items-center gap-2")
+                        span(class="w-2 h-2 rounded-full bg-accentc") 
+                        span Explorador // Proyectos
+                    button(onclick="closeWindow('win-browser')" class="w-3.5 h-3.5 rounded-full bg-accentc hover:bg-accentHover flex items-center justify-center text-[10px] text-white font-bold leading-none") ✕
+                div(id="browserTabsHeader" class="bg-slate-100 border-b border-borderc px-3 pt-2 flex items-center gap-1.5 overflow-x-auto custom-scroll")
+                    button(onclick="switchBrowserTab('tab-home')" id="btn-tab-home" class="browser-tab-btn px-3 py-1.5 rounded-t text-xs font-mono font-bold bg-white border-t border-x border-borderc text-textc flex items-center gap-2 shadow-sm")
+                        span() 📁 Directorio de Proyectos
+                div(class="bg-white border-b border-borderc px-4 py-2 flex items-center gap-3 text-xs font-mono")
+                    div(class="flex items-center gap-1 text-muted")
+                        button(onclick="switchBrowserTab('tab-home')" class="p-1 hover:bg-slate-100 rounded") ◀
+                        button(class="p-1 hover:bg-slate-100 rounded text-slate-300") ▶
+                        button(onclick="location.reload()" class="p-1 hover:bg-slate-100 rounded") ⟳
+                    div(class="flex-1 bg-slate-50 border border-os-border rounded px-3 py-1 text-slate-600 flex items-center justify-between")
+                        span(id="browserUrlText") https://portfolio.local/proyectos
+                        span(class="text-[10px] text-emerald-600 font-bold") ● SECURE
+                div(id="browserTabContents" class="p-6 overflow-y-auto max-h-[70vh] custom-scroll bg-white")
+                    div(id="tab-home" class="browser-tab-view space-y-6")
+                        div()
+                            h2(class="text-xl font-bold uppercase tracking-tight text-os-text") Directorio de Proyectos
+                            p(class="text-xs text-os-muted mt-1") Haga clic en cualquier tarjeta para abrir su ficha en una nueva pestaña.
+                        div(class="flex flex-wrap gap-2 pt-1 border-b border-borderc pb-3")
+                            span(class="text-xs font-mono font-bold text-textc uppercase mr-2 flex items-center") Filtros
+                            button(onclick="filterCatalog('all')" class="text-xs font-mono px-2.5 py-1 rounded bg-textc text-white font-bold") Todos
+                            button(onclick="filterCatalog('eng')" class="text-xs font-mono px-2.5 py-1 rounded bg-slate-100 border border-borderc text-slate-700 hover:bg-slate-200") Ingeniería
+                            button(onclick="filterCatalog('dev')" class="text-xs font-mono px-2.5 py-1 rounded bg-slate-100 border border-borderc text-slate-700 hover:bg-slate-200") Dev
+                        div(class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2")
+                            p() No se han cargado proyectos aún, vuelve más tarde.
+
+
+<!-- Blog -->
+            div(id="win-blog-browser" class="window absolute w-[96vw] sm:w-[840px] bg-window rounded-lg shadow-window border border-borderDark flex flex-col hidden" style="top: 50px; left: 170px; z-index: 14;")
+                div(class="window-header h-9 bg-headerc rounded-t-lg px-4 flex items-center justify-between cursor-move border-b border-borderc")
+                    span(class="font-mono text-xs font-bold text-textc flex items-center gap-2")
+                        span(class="w-2 h-2 rounded-full bg-amber-500")
+                        span() Blog Reader // Artículos Técnicos
+                    button(onclick="closeWindow('win-blog-browser')" class="w-3.5 h-3.5 rounded-full bg-accentc hover:bg-accentHover flex items-center justify-center text-[10px] text-white font-bold leading-none") ✕
+                div(id="blogTabsHeader" class="bg-slate-100 border-b border-borderc px-3 pt-2 flex items-center gap-1.5 overflow-x-auto custom-scroll")
+                    button(onclick="switchBlogTab('blog-tab-index')" id="btn-blog-tab-index" class="blog-tab-btn px-3 py-1.5 rounded-t text-xs font-mono font-bold bg-white border-t border-x border-borderc text-os-text flex items-center gap-2 shadow-sm")
+                        span() 📰 Índice del Blog
+                div(class="bg-white border-b border-borderc px-4 py-2 flex items-center gap-3 text-xs font-mono")
+                    div(class="flex items-center gap-1 text-muted")
+                        button(onclick="switchBlogTab('blog-tab-index')" class="p-1 hover:bg-slate-100 rounded") ◀
+                        button(class="p-1 hover:bg-slate-100 rounded text-slate-300") ▶
+                        button(onclick="location.reload()" class="p-1 hover:bg-slate-100 rounded") ⟳
+                    div(class="flex-1 bg-slate-50 border border-borderc rounded px-3 py-1 text-slate-600 flex items-center justify-between")
+                        span(id="blogUrlText") https://portfolio.local/blog
+                        span(class="text-[10px] text-amber-600 font-bold") ● RSS SYNCED
+                div(id="blogTabContents" class="p-6 overflow-y-auto max-h-[70vh] custom-scroll bg-white")
+                    div(id="blog-tab-index" class="blog-tab-view space-y-6")
+                        div()
+                            h2(class="text-xl font-bold uppercase tracking-tight text-textc") Publicaciones &amp; Artículos Técnicos
+                            p(class="text-xs text-os-muted mt-1") Selecciona un artículo para abrir la lectura completa en una pestaña independiente.
+                        div(class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2")
+                        p() No se han creado entradas nuevas, vuelve más tarde.
+
+
+<!-- Contacto -->
+            div(id="win-contacto" class="window absolute w-[90vw] sm:w-[460px] bg-window rounded-lg shadow-window border border-borderDark flex flex-col hidden" style="top: 120px; left: 260px; z-index: 12;")
+                div(class="window-header h-9 bg-headerc rounded-t-lg px-4 flex items-center justify-between cursor-move border-b border-borderc")
+                    span(class="font-mono text-xs font-bold text-textc flex items-center gap-2")
+                        span(class="w-2 h-2 rounded-full bg-violet-500") 
+                        span ~/contacto.json
+                    button(onclick="closeWindow('win-contacto')" class="w-3.5 h-3.5 rounded-full bg-accentc hover:bg-accentHover flex items-center justify-center text-[10px] text-white font-bold leading-none") ✕
+                div(class="p-6 font-mono text-xs space-y-4")
+                    p(class="text-muted text-xs") //Iniciar Comunicacón directa
+                    //- div(class="space-y-2.5")
+                    //-     a(href="mailto:cesar@coboscv.com" class="flex items-center justify-between p-3 rounded bg-slate-50 border border-borderc hover:border-violet-500 transition")
+                    //-         span(class="text-os-muted") email:
+                    //-         span(class="text-emerald-700 font-bold") Enviar mensaje
+                    //- a(href="https://coboscv.com" target="_blank" class="flex items-center justify-between p-3 rounded bg-slate-50 border border-borderc hover:border-violet-500 transition")
+                    //-     span(class="text-os-muted") Web:
+                    //-     span(class="text-emerald-700 font-bold") coboscv.com
+                    //- a(href="https://linkedin.com/in/cesarcoboscv" target="_blank" class="flex items-center justify-between p-3 rounded bg-slate-50 border border-borderc hover:border-violet-500 transition")
+                    //-     span(class="text-os-muted") LinkedIn:
+                    //-     span(class="text-emerald-700 font-bold") LinkedIn/cesarcoboscv
+                    form(id="contactForm" action="https://formspree.io/f/xqpzddej" method="POST" class="space-y-4")
+                        div()
+                            label(for="name" class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1") Nombre
+                            input(type="text" id="name" name="name" required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none text-sm")
+                        div()
+                            label(for="email" class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1") Correo
+                            input(type="email" id="email" name="email" required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none text-sm")
+                        div()
+                            label(for="message" class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1") Mensaje
+                            textarea(id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none text-sm")
+                        button(type="submit" id="submitBtn" class="w-full bg-accentc hover:bg-accentHover text-white font-semibold py-2.5 rounded-lg transition duration-200 text-sm shadow-md") Enviar
+                        p(id="formStatus" class="text-xs text-center font-medium mt-2 hidden")
+
+
+<!-- Barra de Tareas Inferior / Taskbar Claro -->
+        footer(class="h-10 bg-panel/95 backdrop-blur border-t border-borderc px-4 flex items-center justify-between text-xs font-mono z-40 shadow-sm")
+            div(class="flex items-center gap-2")
+                div(class="flex items-center gap-2 px-2.5 py-1 rounded bg-accentc text-white font-bold text-xs shadow-sm")
+                    span ⚙
+                    span OS-Apps
+                div(id="taskbarItems" class="flex items-center gap-2 pl-3 border-l border-os-border")
+            div(class="text-[11px] text-os-muted hidden sm:block") Escritorio Activo: 1920x1080 (Multi-Tab Engine)
+
+script(src="./assets/js/app.js") 
